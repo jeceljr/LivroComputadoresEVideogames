@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Digital by H.Neemann -->
+<!-- created: Sun Mar 17 23:37:20 BRT 2024 -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="229.2mm"
+   height="42.6mm"
+   viewBox="10 3 1528 284">
+<g stroke-linecap="square">
+<text text-anchor="end" x="102.0" y="31.0" fill="#000000" style="font-size:24px">d</text>
+<line x1="104.0" y1="5.0" x2="1536.0" y2="5.0" stroke="#000000" stroke-linecap="square" stroke-width="1.0" stroke-dasharray="4.0,4.0" />
+<text text-anchor="end" x="102.0" y="66.0" fill="#000000" style="font-size:24px">s</text>
+<line x1="104.0" y1="40.0" x2="1536.0" y2="40.0" stroke="#000000" stroke-linecap="square" stroke-width="1.0" stroke-dasharray="4.0,4.0" />
+<text text-anchor="end" x="102.0" y="101.0" fill="#000000" style="font-size:24px">z</text>
+<line x1="104.0" y1="75.0" x2="1536.0" y2="75.0" stroke="#000000" stroke-linecap="square" stroke-width="1.0" stroke-dasharray="4.0,4.0" />
+<text text-anchor="end" x="102.0" y="136.0" fill="#000000" style="font-size:24px">fim</text>
+<line x1="104.0" y1="110.0" x2="1536.0" y2="110.0" stroke="#000000" stroke-linecap="square" stroke-width="1.0" stroke-dasharray="4.0,4.0" />
+<text text-anchor="end" x="102.0" y="171.0" fill="#000000" style="font-size:24px">v</text>
+<line x1="104.0" y1="145.0" x2="1536.0" y2="145.0" stroke="#000000" stroke-linecap="square" stroke-width="1.0" stroke-dasharray="4.0,4.0" />
+<text text-anchor="end" x="102.0" y="206.0" fill="#000000" style="font-size:24px">carrega</text>
+<line x1="104.0" y1="180.0" x2="1536.0" y2="180.0" stroke="#000000" stroke-linecap="square" stroke-width="1.0" stroke-dasharray="4.0,4.0" />
+<text text-anchor="end" x="102.0" y="241.0" fill="#000000" style="font-size:24px">relógio</text>
+<line x1="104.0" y1="215.0" x2="1536.0" y2="215.0" stroke="#000000" stroke-linecap="square" stroke-width="1.0" stroke-dasharray="4.0,4.0" />
+<text text-anchor="end" x="102.0" y="276.0" fill="#000000" style="font-size:24px">x</text>
+<line x1="104.0" y1="250.0" x2="1536.0" y2="250.0" stroke="#000000" stroke-linecap="square" stroke-width="1.0" stroke-dasharray="4.0,4.0" />
+<line x1="104.0" y1="285.0" x2="1536.0" y2="285.0" stroke="#000000" stroke-linecap="square" stroke-width="1.0" stroke-dasharray="4.0,4.0" />
+<line x1="104.0" y1="5.0" x2="104.0" y2="285.0" stroke="#000000" stroke-linecap="square" stroke-width="1.0" stroke-dasharray="4.0,4.0" />
+<line x1="104.0" y1="35.0" x2="159.0" y2="35.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<text text-anchor="start" x="105.0" y="74.0" fill="#808080" style="font-size:18px">8</text>
+<line x1="104.0" y1="57.0" x2="159.0" y2="57.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<text text-anchor="start" x="105.0" y="89.5" fill="#808080" style="font-size:18px">8</text>
+<line x1="104.0" y1="99.0" x2="159.0" y2="99.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="104.0" y1="140.0" x2="159.0" y2="140.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="104.0" y1="175.0" x2="159.0" y2="175.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="104.0" y1="210.0" x2="159.0" y2="210.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="104.0" y1="220.0" x2="159.0" y2="220.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="104.0" y1="280.0" x2="159.0" y2="280.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="159.0" y1="5.0" x2="159.0" y2="285.0" stroke="#000000" stroke-linecap="square" stroke-width="1.0" stroke-dasharray="4.0,4.0" />
+<line x1="159.0" y1="35.0" x2="216.0" y2="35.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="159.0" y1="57.0" x2="216.0" y2="57.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="159.0" y1="99.0" x2="216.0" y2="99.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="159.0" y1="140.0" x2="216.0" y2="140.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="159.0" y1="175.0" x2="216.0" y2="175.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="159.0" y1="210.0" x2="216.0" y2="210.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="159.0" y1="245.0" x2="216.0" y2="245.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="159.0" y1="220.0" x2="159.0" y2="245.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="159.0" y1="280.0" x2="216.0" y2="280.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="216.0" y1="5.0" x2="216.0" y2="285.0" stroke="#000000" stroke-linecap="square" stroke-width="1.0" stroke-dasharray="4.0,4.0" />
+<line x1="216.0" y1="35.0" x2="273.0" y2="35.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<text text-anchor="start" x="217.0" y="74.0" fill="#808080" style="font-size:18px">9</text>
+<line x1="216.0" y1="55.0" x2="273.0" y2="55.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="216.0" y1="57.0" x2="216.0" y2="55.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="216.0" y1="50.0" x2="216.0" y2="60.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<text text-anchor="start" x="217.0" y="89.5" fill="#808080" style="font-size:18px">9</text>
+<line x1="216.0" y1="98.0" x2="273.0" y2="98.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="216.0" y1="99.0" x2="216.0" y2="98.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="216.0" y1="93.0" x2="216.0" y2="103.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="216.0" y1="140.0" x2="273.0" y2="140.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="216.0" y1="175.0" x2="273.0" y2="175.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="216.0" y1="210.0" x2="273.0" y2="210.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="216.0" y1="220.0" x2="273.0" y2="220.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="216.0" y1="245.0" x2="216.0" y2="220.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="216.0" y1="280.0" x2="273.0" y2="280.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="273.0" y1="5.0" x2="273.0" y2="285.0" stroke="#000000" stroke-linecap="square" stroke-width="1.0" stroke-dasharray="4.0,4.0" />
+<line x1="273.0" y1="35.0" x2="331.0" y2="35.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="273.0" y1="55.0" x2="331.0" y2="55.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="273.0" y1="98.0" x2="331.0" y2="98.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="273.0" y1="140.0" x2="331.0" y2="140.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="273.0" y1="175.0" x2="331.0" y2="175.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="273.0" y1="210.0" x2="331.0" y2="210.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="273.0" y1="245.0" x2="331.0" y2="245.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="273.0" y1="220.0" x2="273.0" y2="245.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="273.0" y1="280.0" x2="331.0" y2="280.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="331.0" y1="5.0" x2="331.0" y2="285.0" stroke="#000000" stroke-linecap="square" stroke-width="1.0" stroke-dasharray="4.0,4.0" />
+<line x1="331.0" y1="35.0" x2="388.0" y2="35.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<text text-anchor="start" x="332.0" y="74.0" fill="#808080" style="font-size:18px">A</text>
+<line x1="331.0" y1="54.0" x2="388.0" y2="54.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="331.0" y1="55.0" x2="331.0" y2="54.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="331.0" y1="49.0" x2="331.0" y2="59.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<text text-anchor="start" x="332.0" y="89.5" fill="#808080" style="font-size:18px">A</text>
+<line x1="331.0" y1="97.0" x2="388.0" y2="97.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="331.0" y1="98.0" x2="331.0" y2="97.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="331.0" y1="92.0" x2="331.0" y2="102.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="331.0" y1="140.0" x2="388.0" y2="140.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="331.0" y1="175.0" x2="388.0" y2="175.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="331.0" y1="210.0" x2="388.0" y2="210.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="331.0" y1="220.0" x2="388.0" y2="220.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="331.0" y1="245.0" x2="331.0" y2="220.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="331.0" y1="280.0" x2="388.0" y2="280.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="388.0" y1="5.0" x2="388.0" y2="285.0" stroke="#000000" stroke-linecap="square" stroke-width="1.0" stroke-dasharray="4.0,4.0" />
+<line x1="388.0" y1="35.0" x2="445.0" y2="35.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="388.0" y1="54.0" x2="445.0" y2="54.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="388.0" y1="97.0" x2="445.0" y2="97.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="388.0" y1="140.0" x2="445.0" y2="140.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="388.0" y1="175.0" x2="445.0" y2="175.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="388.0" y1="210.0" x2="445.0" y2="210.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="388.0" y1="245.0" x2="445.0" y2="245.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="388.0" y1="220.0" x2="388.0" y2="245.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="388.0" y1="280.0" x2="445.0" y2="280.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="445.0" y1="5.0" x2="445.0" y2="285.0" stroke="#000000" stroke-linecap="square" stroke-width="1.0" stroke-dasharray="4.0,4.0" />
+<line x1="445.0" y1="35.0" x2="502.0" y2="35.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<text text-anchor="start" x="446.0" y="74.0" fill="#808080" style="font-size:18px">B</text>
+<line x1="445.0" y1="52.0" x2="502.0" y2="52.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="445.0" y1="54.0" x2="445.0" y2="52.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="445.0" y1="47.0" x2="445.0" y2="57.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<text text-anchor="start" x="446.0" y="89.5" fill="#808080" style="font-size:18px">B</text>
+<line x1="445.0" y1="96.0" x2="502.0" y2="96.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="445.0" y1="97.0" x2="445.0" y2="96.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="445.0" y1="91.0" x2="445.0" y2="101.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="445.0" y1="140.0" x2="502.0" y2="140.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="445.0" y1="175.0" x2="502.0" y2="175.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="445.0" y1="210.0" x2="502.0" y2="210.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="445.0" y1="220.0" x2="502.0" y2="220.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="445.0" y1="245.0" x2="445.0" y2="220.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="445.0" y1="280.0" x2="502.0" y2="280.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="502.0" y1="5.0" x2="502.0" y2="285.0" stroke="#000000" stroke-linecap="square" stroke-width="1.0" stroke-dasharray="4.0,4.0" />
+<line x1="502.0" y1="35.0" x2="560.0" y2="35.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="502.0" y1="52.0" x2="560.0" y2="52.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="502.0" y1="96.0" x2="560.0" y2="96.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="502.0" y1="140.0" x2="560.0" y2="140.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="502.0" y1="175.0" x2="560.0" y2="175.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="502.0" y1="210.0" x2="560.0" y2="210.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="502.0" y1="245.0" x2="560.0" y2="245.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="502.0" y1="220.0" x2="502.0" y2="245.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="502.0" y1="280.0" x2="560.0" y2="280.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="560.0" y1="5.0" x2="560.0" y2="285.0" stroke="#000000" stroke-linecap="square" stroke-width="1.0" stroke-dasharray="4.0,4.0" />
+<line x1="560.0" y1="35.0" x2="617.0" y2="35.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<text text-anchor="start" x="561.0" y="74.0" fill="#808080" style="font-size:18px">C</text>
+<line x1="560.0" y1="50.0" x2="617.0" y2="50.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="560.0" y1="52.0" x2="560.0" y2="50.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="560.0" y1="45.0" x2="560.0" y2="55.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<text text-anchor="start" x="561.0" y="89.5" fill="#808080" style="font-size:18px">C</text>
+<line x1="560.0" y1="95.0" x2="617.0" y2="95.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="560.0" y1="96.0" x2="560.0" y2="95.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="560.0" y1="90.0" x2="560.0" y2="100.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="560.0" y1="140.0" x2="617.0" y2="140.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="560.0" y1="175.0" x2="617.0" y2="175.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="560.0" y1="210.0" x2="617.0" y2="210.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="560.0" y1="220.0" x2="617.0" y2="220.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="560.0" y1="245.0" x2="560.0" y2="220.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="560.0" y1="280.0" x2="617.0" y2="280.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="617.0" y1="5.0" x2="617.0" y2="285.0" stroke="#000000" stroke-linecap="square" stroke-width="1.0" stroke-dasharray="4.0,4.0" />
+<line x1="617.0" y1="35.0" x2="674.0" y2="35.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="617.0" y1="50.0" x2="674.0" y2="50.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="617.0" y1="95.0" x2="674.0" y2="95.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="617.0" y1="140.0" x2="674.0" y2="140.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="617.0" y1="175.0" x2="674.0" y2="175.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="617.0" y1="210.0" x2="674.0" y2="210.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="617.0" y1="245.0" x2="674.0" y2="245.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="617.0" y1="220.0" x2="617.0" y2="245.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="617.0" y1="280.0" x2="674.0" y2="280.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="674.0" y1="5.0" x2="674.0" y2="285.0" stroke="#000000" stroke-linecap="square" stroke-width="1.0" stroke-dasharray="4.0,4.0" />
+<line x1="674.0" y1="35.0" x2="732.0" y2="35.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<text text-anchor="start" x="675.0" y="74.0" fill="#808080" style="font-size:18px">D</text>
+<line x1="674.0" y1="49.0" x2="732.0" y2="49.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="674.0" y1="50.0" x2="674.0" y2="49.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="674.0" y1="44.0" x2="674.0" y2="54.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<text text-anchor="start" x="675.0" y="89.5" fill="#808080" style="font-size:18px">D</text>
+<line x1="674.0" y1="95.0" x2="732.0" y2="95.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="674.0" y1="90.0" x2="674.0" y2="100.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="674.0" y1="140.0" x2="732.0" y2="140.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="674.0" y1="175.0" x2="732.0" y2="175.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="674.0" y1="210.0" x2="732.0" y2="210.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="674.0" y1="220.0" x2="732.0" y2="220.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="674.0" y1="245.0" x2="674.0" y2="220.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="674.0" y1="280.0" x2="732.0" y2="280.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="732.0" y1="5.0" x2="732.0" y2="285.0" stroke="#000000" stroke-linecap="square" stroke-width="1.0" stroke-dasharray="4.0,4.0" />
+<line x1="732.0" y1="35.0" x2="789.0" y2="35.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="732.0" y1="49.0" x2="789.0" y2="49.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="732.0" y1="95.0" x2="789.0" y2="95.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="732.0" y1="140.0" x2="789.0" y2="140.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="732.0" y1="175.0" x2="789.0" y2="175.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="732.0" y1="210.0" x2="789.0" y2="210.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="732.0" y1="245.0" x2="789.0" y2="245.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="732.0" y1="220.0" x2="732.0" y2="245.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="732.0" y1="280.0" x2="789.0" y2="280.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="789.0" y1="5.0" x2="789.0" y2="285.0" stroke="#000000" stroke-linecap="square" stroke-width="1.0" stroke-dasharray="4.0,4.0" />
+<line x1="789.0" y1="35.0" x2="846.0" y2="35.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<text text-anchor="start" x="790.0" y="74.0" fill="#808080" style="font-size:18px">E</text>
+<line x1="789.0" y1="47.0" x2="846.0" y2="47.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="789.0" y1="49.0" x2="789.0" y2="47.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="789.0" y1="42.0" x2="789.0" y2="52.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<text text-anchor="start" x="790.0" y="89.5" fill="#808080" style="font-size:18px">E</text>
+<line x1="789.0" y1="94.0" x2="846.0" y2="94.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="789.0" y1="95.0" x2="789.0" y2="94.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="789.0" y1="89.0" x2="789.0" y2="99.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="789.0" y1="140.0" x2="846.0" y2="140.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="789.0" y1="175.0" x2="846.0" y2="175.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="789.0" y1="210.0" x2="846.0" y2="210.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="789.0" y1="220.0" x2="846.0" y2="220.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="789.0" y1="245.0" x2="789.0" y2="220.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="789.0" y1="280.0" x2="846.0" y2="280.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="846.0" y1="5.0" x2="846.0" y2="285.0" stroke="#000000" stroke-linecap="square" stroke-width="1.0" stroke-dasharray="4.0,4.0" />
+<line x1="846.0" y1="35.0" x2="903.0" y2="35.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="846.0" y1="47.0" x2="903.0" y2="47.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="846.0" y1="94.0" x2="903.0" y2="94.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="846.0" y1="140.0" x2="903.0" y2="140.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="846.0" y1="175.0" x2="903.0" y2="175.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="846.0" y1="210.0" x2="903.0" y2="210.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="846.0" y1="245.0" x2="903.0" y2="245.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="846.0" y1="220.0" x2="846.0" y2="245.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="846.0" y1="280.0" x2="903.0" y2="280.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="903.0" y1="5.0" x2="903.0" y2="285.0" stroke="#000000" stroke-linecap="square" stroke-width="1.0" stroke-dasharray="4.0,4.0" />
+<line x1="903.0" y1="35.0" x2="961.0" y2="35.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<text text-anchor="start" x="904.0" y="74.0" fill="#808080" style="font-size:18px">F</text>
+<line x1="903.0" y1="45.0" x2="961.0" y2="45.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="903.0" y1="47.0" x2="903.0" y2="45.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="903.0" y1="40.0" x2="903.0" y2="50.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<text text-anchor="start" x="904.0" y="89.5" fill="#808080" style="font-size:18px">F</text>
+<line x1="903.0" y1="93.0" x2="961.0" y2="93.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="903.0" y1="94.0" x2="903.0" y2="93.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="903.0" y1="88.0" x2="903.0" y2="98.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="903.0" y1="115.0" x2="961.0" y2="115.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="903.0" y1="140.0" x2="903.0" y2="115.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="903.0" y1="175.0" x2="961.0" y2="175.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="903.0" y1="210.0" x2="961.0" y2="210.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="903.0" y1="220.0" x2="961.0" y2="220.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="903.0" y1="245.0" x2="903.0" y2="220.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="903.0" y1="280.0" x2="961.0" y2="280.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="961.0" y1="5.0" x2="961.0" y2="285.0" stroke="#000000" stroke-linecap="square" stroke-width="1.0" stroke-dasharray="4.0,4.0" />
+<line x1="961.0" y1="35.0" x2="1018.0" y2="35.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="961.0" y1="45.0" x2="1018.0" y2="45.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="961.0" y1="93.0" x2="1018.0" y2="93.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="961.0" y1="115.0" x2="1018.0" y2="115.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="961.0" y1="175.0" x2="1018.0" y2="175.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="961.0" y1="210.0" x2="1018.0" y2="210.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="961.0" y1="245.0" x2="1018.0" y2="245.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="961.0" y1="220.0" x2="961.0" y2="245.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="961.0" y1="280.0" x2="1018.0" y2="280.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1018.0" y1="5.0" x2="1018.0" y2="285.0" stroke="#000000" stroke-linecap="square" stroke-width="1.0" stroke-dasharray="4.0,4.0" />
+<line x1="1018.0" y1="35.0" x2="1075.0" y2="35.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<text text-anchor="start" x="1019.0" y="54.5" fill="#808080" style="font-size:18px">0</text>
+<line x1="1018.0" y1="70.0" x2="1075.0" y2="70.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1018.0" y1="45.0" x2="1018.0" y2="70.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<text text-anchor="start" x="1019.0" y="109.0" fill="#808080" style="font-size:18px">0x10</text>
+<line x1="1018.0" y1="92.0" x2="1075.0" y2="92.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1018.0" y1="93.0" x2="1018.0" y2="92.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1018.0" y1="87.0" x2="1018.0" y2="97.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1018.0" y1="140.0" x2="1075.0" y2="140.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1018.0" y1="115.0" x2="1018.0" y2="140.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1018.0" y1="175.0" x2="1075.0" y2="175.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1018.0" y1="210.0" x2="1075.0" y2="210.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1018.0" y1="220.0" x2="1075.0" y2="220.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1018.0" y1="245.0" x2="1018.0" y2="220.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1018.0" y1="280.0" x2="1075.0" y2="280.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1075.0" y1="5.0" x2="1075.0" y2="285.0" stroke="#000000" stroke-linecap="square" stroke-width="1.0" stroke-dasharray="4.0,4.0" />
+<line x1="1075.0" y1="35.0" x2="1133.0" y2="35.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1075.0" y1="70.0" x2="1133.0" y2="70.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1075.0" y1="92.0" x2="1133.0" y2="92.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1075.0" y1="140.0" x2="1133.0" y2="140.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1075.0" y1="175.0" x2="1133.0" y2="175.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1075.0" y1="210.0" x2="1133.0" y2="210.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1075.0" y1="245.0" x2="1133.0" y2="245.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1075.0" y1="220.0" x2="1075.0" y2="245.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1075.0" y1="280.0" x2="1133.0" y2="280.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1133.0" y1="5.0" x2="1133.0" y2="285.0" stroke="#000000" stroke-linecap="square" stroke-width="1.0" stroke-dasharray="4.0,4.0" />
+<line x1="1133.0" y1="35.0" x2="1190.0" y2="35.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<text text-anchor="start" x="1134.0" y="54.5" fill="#808080" style="font-size:18px">1</text>
+<line x1="1133.0" y1="69.0" x2="1190.0" y2="69.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1133.0" y1="70.0" x2="1133.0" y2="69.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1133.0" y1="64.0" x2="1133.0" y2="74.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<text text-anchor="start" x="1134.0" y="109.0" fill="#808080" style="font-size:18px">0x11</text>
+<line x1="1133.0" y1="91.0" x2="1190.0" y2="91.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1133.0" y1="92.0" x2="1133.0" y2="91.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1133.0" y1="86.0" x2="1133.0" y2="96.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1133.0" y1="140.0" x2="1190.0" y2="140.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1133.0" y1="175.0" x2="1190.0" y2="175.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1133.0" y1="210.0" x2="1190.0" y2="210.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1133.0" y1="220.0" x2="1190.0" y2="220.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1133.0" y1="245.0" x2="1133.0" y2="220.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1133.0" y1="280.0" x2="1190.0" y2="280.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1190.0" y1="5.0" x2="1190.0" y2="285.0" stroke="#000000" stroke-linecap="square" stroke-width="1.0" stroke-dasharray="4.0,4.0" />
+<line x1="1190.0" y1="35.0" x2="1247.0" y2="35.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1190.0" y1="69.0" x2="1247.0" y2="69.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1190.0" y1="91.0" x2="1247.0" y2="91.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1190.0" y1="140.0" x2="1247.0" y2="140.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1190.0" y1="175.0" x2="1247.0" y2="175.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1190.0" y1="210.0" x2="1247.0" y2="210.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1190.0" y1="245.0" x2="1247.0" y2="245.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1190.0" y1="220.0" x2="1190.0" y2="245.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1190.0" y1="280.0" x2="1247.0" y2="280.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1247.0" y1="5.0" x2="1247.0" y2="285.0" stroke="#000000" stroke-linecap="square" stroke-width="1.0" stroke-dasharray="4.0,4.0" />
+<line x1="1247.0" y1="35.0" x2="1304.0" y2="35.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<text text-anchor="start" x="1248.0" y="54.5" fill="#808080" style="font-size:18px">2</text>
+<line x1="1247.0" y1="67.0" x2="1304.0" y2="67.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1247.0" y1="69.0" x2="1247.0" y2="67.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1247.0" y1="62.0" x2="1247.0" y2="72.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<text text-anchor="start" x="1248.0" y="109.0" fill="#808080" style="font-size:18px">0x12</text>
+<line x1="1247.0" y1="90.0" x2="1304.0" y2="90.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1247.0" y1="91.0" x2="1247.0" y2="90.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1247.0" y1="85.0" x2="1247.0" y2="95.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1247.0" y1="140.0" x2="1304.0" y2="140.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1247.0" y1="175.0" x2="1304.0" y2="175.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1247.0" y1="210.0" x2="1304.0" y2="210.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1247.0" y1="220.0" x2="1304.0" y2="220.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1247.0" y1="245.0" x2="1247.0" y2="220.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1247.0" y1="280.0" x2="1304.0" y2="280.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1304.0" y1="5.0" x2="1304.0" y2="285.0" stroke="#000000" stroke-linecap="square" stroke-width="1.0" stroke-dasharray="4.0,4.0" />
+<line x1="1304.0" y1="35.0" x2="1362.0" y2="35.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1304.0" y1="67.0" x2="1362.0" y2="67.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1304.0" y1="90.0" x2="1362.0" y2="90.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1304.0" y1="140.0" x2="1362.0" y2="140.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1304.0" y1="175.0" x2="1362.0" y2="175.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1304.0" y1="210.0" x2="1362.0" y2="210.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1304.0" y1="245.0" x2="1362.0" y2="245.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1304.0" y1="220.0" x2="1304.0" y2="245.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1304.0" y1="280.0" x2="1362.0" y2="280.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1362.0" y1="5.0" x2="1362.0" y2="285.0" stroke="#000000" stroke-linecap="square" stroke-width="1.0" stroke-dasharray="4.0,4.0" />
+<line x1="1362.0" y1="35.0" x2="1419.0" y2="35.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<text text-anchor="start" x="1363.0" y="54.5" fill="#808080" style="font-size:18px">3</text>
+<line x1="1362.0" y1="65.0" x2="1419.0" y2="65.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1362.0" y1="67.0" x2="1362.0" y2="65.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1362.0" y1="60.0" x2="1362.0" y2="70.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<text text-anchor="start" x="1363.0" y="109.0" fill="#808080" style="font-size:18px">0x13</text>
+<line x1="1362.0" y1="90.0" x2="1419.0" y2="90.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1362.0" y1="85.0" x2="1362.0" y2="95.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1362.0" y1="140.0" x2="1419.0" y2="140.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1362.0" y1="175.0" x2="1419.0" y2="175.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1362.0" y1="210.0" x2="1419.0" y2="210.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1362.0" y1="220.0" x2="1419.0" y2="220.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1362.0" y1="245.0" x2="1362.0" y2="220.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1362.0" y1="280.0" x2="1419.0" y2="280.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1419.0" y1="5.0" x2="1419.0" y2="285.0" stroke="#000000" stroke-linecap="square" stroke-width="1.0" stroke-dasharray="4.0,4.0" />
+<line x1="1419.0" y1="35.0" x2="1476.0" y2="35.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1419.0" y1="65.0" x2="1476.0" y2="65.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1419.0" y1="90.0" x2="1476.0" y2="90.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1419.0" y1="140.0" x2="1476.0" y2="140.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1419.0" y1="175.0" x2="1476.0" y2="175.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1419.0" y1="210.0" x2="1476.0" y2="210.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1419.0" y1="245.0" x2="1476.0" y2="245.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1419.0" y1="220.0" x2="1419.0" y2="245.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1419.0" y1="280.0" x2="1476.0" y2="280.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1476.0" y1="5.0" x2="1476.0" y2="285.0" stroke="#000000" stroke-linecap="square" stroke-width="1.0" stroke-dasharray="4.0,4.0" />
+<line x1="1476.0" y1="35.0" x2="1533.0" y2="35.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<text text-anchor="start" x="1477.0" y="54.5" fill="#808080" style="font-size:18px">4</text>
+<line x1="1476.0" y1="64.0" x2="1533.0" y2="64.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1476.0" y1="65.0" x2="1476.0" y2="64.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1476.0" y1="59.0" x2="1476.0" y2="69.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<text text-anchor="start" x="1477.0" y="109.0" fill="#808080" style="font-size:18px">0x14</text>
+<line x1="1476.0" y1="89.0" x2="1533.0" y2="89.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1476.0" y1="90.0" x2="1476.0" y2="89.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1476.0" y1="84.0" x2="1476.0" y2="94.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1476.0" y1="140.0" x2="1533.0" y2="140.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1476.0" y1="175.0" x2="1533.0" y2="175.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1476.0" y1="210.0" x2="1533.0" y2="210.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1476.0" y1="220.0" x2="1533.0" y2="220.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1476.0" y1="245.0" x2="1476.0" y2="220.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1476.0" y1="280.0" x2="1533.0" y2="280.0" stroke="#000000" stroke-linecap="square" stroke-width="4.0" />
+<line x1="1536.0" y1="5.0" x2="1536.0" y2="285.0" stroke="#000000" stroke-linecap="square" stroke-width="1.0" stroke-dasharray="4.0,4.0" />
+</g>
+</svg>

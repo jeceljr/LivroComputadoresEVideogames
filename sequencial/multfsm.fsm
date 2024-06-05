@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fsm>
+  <states>
+    <state>
+      <values>pronto=1</values>
+      <position x="360.0" y="300.0"/>
+      <number>0</number>
+      <name>pronto</name>
+      <radius>90</radius>
+      <isInitial>true</isInitial>
+      <initialAngle>12</initialAngle>
+      <defaultDC>false</defaultDC>
+    </state>
+    <state>
+      <values>inicia=1,hA=1, hQ=1,hM=1</values>
+      <position x="780.0" y="300.0"/>
+      <number>1</number>
+      <name>inicia</name>
+      <radius>90</radius>
+      <isInitial>false</isInitial>
+      <initialAngle>12</initialAngle>
+      <defaultDC>false</defaultDC>
+    </state>
+    <state>
+      <values>hA=1,desl=0</values>
+      <position x="1140.0" y="300.0"/>
+      <number>2</number>
+      <name>soma</name>
+      <radius>90</radius>
+      <isInitial>false</isInitial>
+      <initialAngle>12</initialAngle>
+      <defaultDC>false</defaultDC>
+    </state>
+    <state>
+      <values>hA=1,desl=1,hQ=1</values>
+      <position x="1140.0" y="0.0"/>
+      <number>3</number>
+      <name>desloca</name>
+      <radius>90</radius>
+      <isInitial>false</isInitial>
+      <initialAngle>12</initialAngle>
+      <defaultDC>false</defaultDC>
+    </state>
+    <state>
+      <values>hA=1,desl=0</values>
+      <position x="780.0" y="0.0"/>
+      <number>4</number>
+      <name>ultimo</name>
+      <radius>90</radius>
+      <isInitial>false</isInitial>
+      <initialAngle>12</initialAngle>
+      <defaultDC>false</defaultDC>
+    </state>
+  </states>
+  <transitions>
+    <transition>
+      <values></values>
+      <position x="570.0" y="300.33514"/>
+      <fromState reference="../../../states/state"/>
+      <toState reference="../../../states/state[2]"/>
+      <condition>mult=1</condition>
+    </transition>
+    <transition>
+      <values></values>
+      <position x="960.0" y="299.692"/>
+      <fromState reference="../../../states/state[2]"/>
+      <toState reference="../../../states/state[3]"/>
+      <condition></condition>
+    </transition>
+    <transition>
+      <values></values>
+      <position x="1289.0" y="150.0"/>
+      <fromState reference="../../../states/state[3]"/>
+      <toState reference="../../../states/state[4]"/>
+      <condition></condition>
+    </transition>
+    <transition>
+      <values></values>
+      <position x="982.0" y="150.0"/>
+      <fromState reference="../../../states/state[4]"/>
+      <toState reference="../../../states/state[3]"/>
+      <condition>fim=0</condition>
+    </transition>
+    <transition>
+      <values></values>
+      <position x="960.0" y="0.65988064"/>
+      <fromState reference="../../../states/state[4]"/>
+      <toState reference="../../../states/state[5]"/>
+      <condition>fim=1</condition>
+    </transition>
+    <transition>
+      <values></values>
+      <position x="570.4685" y="150.6559"/>
+      <fromState reference="../../../states/state[5]"/>
+      <toState reference="../../../states/state"/>
+      <condition></condition>
+    </transition>
+  </transitions>
+</fsm>

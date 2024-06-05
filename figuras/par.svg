@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Digital by H.Neemann -->
+<!-- created: Mon Mar 18 05:17:25 BRT 2024 -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="71.4mm"
+   height="28.35mm"
+   viewBox="436 196 476 189">
+<g stroke-linecap="square">
+<circle cx="540.0" cy="300.0" r="70.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<circle cx="448.0761" cy="208.07611" r="10.0" stroke="#000000" stroke-width="4.0" fill="#000000" />
+<path d="M 457.97562,217.9756 Q 472.82486,232.82486 487.6741,247.6741" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 469.2893,237.77461 L 489.08832,249.08832 L 477.7746,229.28932" stroke="#808080" stroke-width="2.0" fill="none"/>
+<text text-anchor="middle" x="540.0" y="285.0" fill="#000000" style="font-size:24px">0</text>
+<text text-anchor="middle" x="540.0" y="309.0" fill="#000000" style="font-size:24px">par</text>
+<text text-anchor="middle" x="540.0" y="333.0" fill="#000000" style="font-size:24px"><tspan style="font-style:italic;">s=1</tspan></text>
+<circle cx="840.0" cy="300.0" r="70.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<text text-anchor="middle" x="840.0" y="285.0" fill="#000000" style="font-size:24px">1</text>
+<text text-anchor="middle" x="840.0" y="309.0" fill="#000000" style="font-size:24px">impar</text>
+<text text-anchor="middle" x="840.0" y="333.0" fill="#000000" style="font-size:24px"><tspan style="font-style:italic;">s=0</tspan></text>
+<path d="M 601.2874,258.52887 Q 690.82825,226.03156 777.0562,257.40802" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 756.21014,256.2075 L 778.93567,258.09192 L 760.3134,244.93083" stroke="#808080" stroke-width="2.0" fill="none"/>
+<text text-anchor="middle" x="690.0" y="239.0" fill="#000000" style="font-size:24px"><tspan style="font-style:italic;">n=1</tspan></text>
+<path d="M 779.0446,341.9576 Q 689.1763,375.47537 602.60284,343.0916" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 623.4373,344.47894 L 600.7296,342.3909 L 619.2331,355.71838" stroke="#808080" stroke-width="2.0" fill="none"/>
+<text text-anchor="middle" x="690.0" y="380.0" fill="#000000" style="font-size:24px"><tspan style="font-style:italic;">n=1</tspan></text>
+</g>
+</svg>
