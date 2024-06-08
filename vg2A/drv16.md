@@ -63,3 +63,17 @@ A maioria das instruções tem duas variantes e é a presença de uma extensão 
 seleciona entre elas. No caso do **BEQ** e **BNE** é o bit menos siginificativo
 de **rD** (extendido ou não) que seleciona entre elas já que não faz sentido
 pular para um endereço ímpar.
+
+O drv16 tem a instrução **SUBI** que o RV32I não tem (já que constantes para **ADDI**
+podem ser negativos). Ele não tem comparações sem sinal (**SLTIU**, **SLTU**,
+**BLTU**, **BGEU**) e **LUI** ou **AUI** já que valores imediatos maiores são
+gerados de maneira diferente.
+
+Também faltam todas as instruções de deslocamente (**SLLI**, **SRLI**, **SRAI**,
+**SLL**, **SRL**, **SRA**) pois o hardware necessário para isso geralmente é grande
+comparado com o resto do processador. A instrução `SLLI x3,x4,3` pode ser
+implementada pela sequência `ADD x3,x4,x4. ADD x3,x3,x3. ADD x3,x3,x3`. Os
+deslocamentos para a direita são mais complexos, mas viáveis.
+
+Não foram implementadas **ECALL** ou **EBREAK** mas ainda existe uma operação
+não definida.
