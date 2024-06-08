@@ -36,9 +36,9 @@ imediato de 4 bits que pode ter sido extendido ou não para 16 bits.
 | 2 | OR | @rD := @rS1 \| @rS2 |
 | 2 | ORI | @rD := @rS1 \| (@IM \| rS2) |
 | 3 | XOR | @rD := @rS1 ^ @rS2 |
-| 3 | XORI | @rD := @rS1 ^ (@IM | rS2) |
+| 3 | XORI | @rD := @rS1 ^ (@IM \| rS2) |
 | 4 | JALR | @rD := @PC + 2. @IR := mem[@PC := @rS1 + @rS2] |
-| 4 | JAL | @rD := @PC + 2. @IR := mem[@PC := @rS1 + rS2] |
+| 4 | JAL | @rD := @PC + 2. @IR := mem[@PC := @rS1 + (@IM \| rS2)] |
 | 5 | ADD | @rD := @rS1 + @rS2 |
 | 5 | ADDI | @rD := @rS1 + (@IM \| rS2) |
 | 6 | SUB | @rD := @rS1 - @rS2 |
