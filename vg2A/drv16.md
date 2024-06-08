@@ -2,9 +2,9 @@
 
 O processador drv16 é baseado no padrão RISC-V mas com apenas 16 registradores
 de 16 bits cada. Ele implementa menos instruções que o RV32I mas as que implementa
-usam o mesmo mnemonico e tem uma funcionalidade diferente.
+usam o mesmo mnemonico e tem uma funcionalidade equivalente.
 
-O código binário das instruções é de 16 mas não é compatível com a extensão C do
+O código binário das instruções é de 16 bits mas não é compatível com a extensão C do
 RISC-V. A maior diferença é o código que acrescenta 12 bits ao valor imediato
 da instrução seguinte, criando uma instrução com 32 bits no total.
 
