@@ -31,20 +31,20 @@ imediato de 4 bits que pode ter sido extendido ou não para 16 bits.
 | operação | assembly | funcionamento |
 |----------|----------|---------------|
 | 0 |  | define bits 4 a 15 do valor imediato |
-| 1 | ADD | @rD := @rS1 + @rS2 |
-| 1 | ADDI | @rD := @rS1 + rS2 |
-| 2 | SUB | @rD := @rS1 - @rS2 |
-| 2 | SUBI | @rD := @rS1 - rS2 |
-| 3 | SLT | @rD := @rS1 < @rS2 |
-| 3 | SLTI | @rD := @rS1 < rS2 |
+| 1 | AND | @rD := @rS1 & @rS2 |
+| 1 | ANDI | @rD := @rS1 & rS2 |
+| 2 | OR | @rD := @rS1 \| @rS2 |
+| 2 | ORI | @rD := @rS1 \| rS2 |
+| 3 | XOR | @rD := @rS1 ^ @rS2 |
+| 3 | XORI | @rD := @rS1 ^ rS2 |
 | 4 | JALR | @rD := @PC + 2. @PC := @rS1 + @rS2 |
 | 4 | JAL | @rD := @PC + 2. @PC := @rS1 + rS2 |
-| 5 | AND | @rD := @rS1 & @rS2 |
-| 5 | ANDI | @rD := @rS1 & rS2 |
-| 6 | OR | @rD := @rS1 \| @rS2 |
-| 6 | ORI | @rD := @rS1 \| rS2 |
-| 7 | XOR | @rD := @rS1 ^ @rS2 |
-| 7 | XORI | @rD := @rS1 ^ rS2 |
+| 5 | ADD | @rD := @rS1 + @rS2 |
+| 5 | ADDI | @rD := @rS1 + rS2 |
+| 6 | SUB | @rD := @rS1 - @rS2 |
+| 6 | SUBI | @rD := @rS1 - rS2 |
+| 7 | SLT | @rD := @rS1 < @rS2 |
+| 7 | SLTI | @rD := @rS1 < rS2 |
 | 8 | | |
 | 9 | LH | @rD := mem[@rS1 + @rS2] |
 | 9 | LH | @rD := mem[@rS1 + rS2] |
