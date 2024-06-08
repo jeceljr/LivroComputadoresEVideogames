@@ -18,9 +18,10 @@ O registrador x0 contém o valor atual do contador de instruções (PC), mas qua
 os campo rD é zero nenhum registrador é alterado e quando os campos rS1 ou rS2
 são zero o valor 0 é usado e não o que está em x0.
 
-A busca normal das instruções equivale a
-
-' @RI := mem[@PC := @PC + 2]
+A busca normal das instruções equivale a `@RI := mem[@PC := @PC + 2]`. Nas memórias
+incluidas em FPGAs o dado só pode ser usado no ciclo seguinte ao que fornece o
+endereço para leitura. Isso faz a maioria das instruções usarem 2 ciclos de relógio
+enquanto as que leem da memória usam 3 ciclos.
 
 A notação **@rS2** indica o valor de 16 bits contido no registrador cujo endereço é
 o campo rS2 da instrução enquanto só **rS2** indica o valor imediato de 4 bits
