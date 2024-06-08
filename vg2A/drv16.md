@@ -54,10 +54,10 @@ imediato de 4 bits que pode ter sido extendido ou não para 16 bits.
 | B | LBU | @rD := ExtendeZeros(mem[@rS1 + (@IM \| rS2)]) |
 | C | SH | mem[@rS1 + rD] := @rS2 |
 | D | SB | mem[@rS1 + rD] := 8Bits(@rS2) |
-| E | BEQ | se @rS1 = @rS2 então @RI := mem[@PC := @PC + rD] |
-| E | BNE | se @rS1 ~= @rS2 então @RI := mem[@PC := @PC + rD] |
-| F | BLT | se @rS1 \< @rS2 então @RI := mem[@PC := @PC + rD] |
-| F | BGE | se @rS1 \>= @rS2 então @RI := mem[@PC := @PC + rD] |
+| E | BEQ | @RI := mem[@PC := @PC + (@rS1 = @rS2?rD:2)] |
+| E | BNE | @RI := mem[@PC := @PC + (@rS1 ~= @rS2?rD:2)] |
+| F | BLT | @RI := mem[@PC := @PC + (@rS1 \< @rS2?rD:2)] |
+| F | BGE | @RI := mem[@PC := @PC + (@rS1 \>= @rS2?rD:2)] |
 
 A maioria das instruções tem duas variantes e é a presença de uma extensão que
 seleciona entre elas. No caso do **BEQ** e **BNE** é o bit menos siginificativo
