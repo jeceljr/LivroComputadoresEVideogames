@@ -25,33 +25,33 @@ enquanto as que leem da memória usam 3 ciclos.
 
 A notação **@rS2** indica o valor de 16 bits contido no registrador cujo endereço é
 o campo rS2 da instrução enquanto só **rS2** indica o valor imediato de 4 bits
-extendido para 16 bits daquele campo (instrução de 32 bits). Já rD indica o valor
+extendido para 16 bits daquele campo (instrução de 32 bits). Já **rD** indica o valor
 imediato de 4 bits que pode ter sido extendido ou não para 16 bits.
 
 | operação | assembly | funcionamento |
 |----------|----------|---------------|
-| 0 |  | define bits 4 a 15 do valor imediato |
+| 0 |  | @IM := @IR, @IR := mem[@PC := @PC + 2] |
 | 1 | AND | @rD := @rS1 & @rS2 |
-| 1 | ANDI | @rD := @rS1 & rS2 |
+| 1 | ANDI | @rD := @rS1 & (@IM \| rS2) |
 | 2 | OR | @rD := @rS1 \| @rS2 |
-| 2 | ORI | @rD := @rS1 \| rS2 |
+| 2 | ORI | @rD := @rS1 \| (@IM \| rS2) |
 | 3 | XOR | @rD := @rS1 ^ @rS2 |
-| 3 | XORI | @rD := @rS1 ^ rS2 |
-| 4 | JALR | @rD := @PC + 2. @PC := @rS1 + @rS2 |
-| 4 | JAL | @rD := @PC + 2. @PC := @rS1 + rS2 |
+| 3 | XORI | @rD := @rS1 ^ (@IM | rS2) |
+| 4 | JALR | @rD := @PC + 2. @IR := mem[@PC := @rS1 + @rS2] |
+| 4 | JAL | @rD := @PC + 2. @IR := mem[@PC := @rS1 + rS2] |
 | 5 | ADD | @rD := @rS1 + @rS2 |
-| 5 | ADDI | @rD := @rS1 + rS2 |
+| 5 | ADDI | @rD := @rS1 + (@IM \| rS2) |
 | 6 | SUB | @rD := @rS1 - @rS2 |
-| 6 | SUBI | @rD := @rS1 - rS2 |
+| 6 | SUBI | @rD := @rS1 - (@IM \| rS2) |
 | 7 | SLT | @rD := @rS1 < @rS2 |
-| 7 | SLTI | @rD := @rS1 < rS2 |
+| 7 | SLTI | @rD := @rS1 < (@IM \| rS2) |
 | 8 | | |
 | 9 | LH | @rD := mem[@rS1 + @rS2] |
-| 9 | LH | @rD := mem[@rS1 + rS2] |
+| 9 | LH | @rD := mem[@rS1 + (@IM \| rS2)] |
 | A | LB | @rD := ExtendeSinal(mem[@rS1 + @rS2]) |
-| A | LB | @rD := ExtendeSinal(mem[@rS1 + rS2]) |
+| A | LB | @rD := ExtendeSinal(mem[@rS1 + (@IM \| rS2)]) |
 | B | LBU | @rD := ExtendeZeros(mem[@rS1 + @rS2]) |
-| B | LBU | @rD := ExtendeZeros(mem[@rS1 + rS2]) |
+| B | LBU | @rD := ExtendeZeros(mem[@rS1 + (@IM \| rS2)]) |
 | C | SH | mem[@rS1 + rD] := @rS2 |
 | D | SB | mem[@rS1 + rD] := 8Bits(@rS2) |
 | E | BEQ | se @rS1 = @rS2 então @RI := mem[@PC := @PC + rD] |
