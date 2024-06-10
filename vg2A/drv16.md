@@ -37,15 +37,14 @@ imediato de 4 bits que pode ter sido extendido ou não para 16 bits.
 | 2 | ORI | @rD := @rS1 \| (@IM \| rS2) |
 | 3 | XOR | @rD := @rS1 ^ @rS2 |
 | 3 | XORI | @rD := @rS1 ^ (@IM \| rS2) |
-| 4 | JALR | @rD := @PC + 2. @IR := mem[@PC := @rS1 + @rS2] |
-| 4 | JAL | @rD := @PC + 2. @IR := mem[@PC := @rS1 + (@IM \| rS2)] |
+| 4 | JAL | @rD := @PC + 2. @IR := mem[@PC := @PC + (@IM \| rS2)] |
 | 5 | ADD | @rD := @rS1 + @rS2 |
 | 5 | ADDI | @rD := @rS1 + (@IM \| rS2) |
 | 6 | SUB | @rD := @rS1 - @rS2 |
 | 6 | SUBI | @rD := @rS1 - (@IM \| rS2) |
 | 7 | SLT | @rD := @rS1 < @rS2 |
 | 7 | SLTI | @rD := @rS1 < (@IM \| rS2) |
-| 8 | | |
+| 8 | JALR | @rD := @PC + 2. @IR := mem[@PC := @rS1 + (@IM \| rS2)] |
 | 9 | LH | @rD := mem[@rS1 + (@IM \| rS2)] |
 | A | LB | @rD := ExtendeSinal(mem[@rS1 + (@IM \| rS2)]) |
 | B | LBU | @rD := ExtendeZeros(mem[@rS1 + (@IM \| rS2)]) |
@@ -72,5 +71,5 @@ comparado com o resto do processador. A instrução `SLLI x3,x4,3` pode ser
 implementada pela sequência `ADD x3,x4,x4. ADD x3,x3,x3. ADD x3,x3,x3`. Os
 deslocamentos para a direita são mais complexos, mas viáveis.
 
-Não foram implementadas **ECALL** ou **EBREAK** mas ainda existe uma operação
+Não foram implementadas **ECALL** ou **EBREAK**.
 não definida.
