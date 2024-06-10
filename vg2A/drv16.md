@@ -46,11 +46,8 @@ imediato de 4 bits que pode ter sido extendido ou não para 16 bits.
 | 7 | SLT | @rD := @rS1 < @rS2 |
 | 7 | SLTI | @rD := @rS1 < (@IM \| rS2) |
 | 8 | | |
-| 9 | LH | @rD := mem[@rS1 + @rS2] |
 | 9 | LH | @rD := mem[@rS1 + (@IM \| rS2)] |
-| A | LB | @rD := ExtendeSinal(mem[@rS1 + @rS2]) |
 | A | LB | @rD := ExtendeSinal(mem[@rS1 + (@IM \| rS2)]) |
-| B | LBU | @rD := ExtendeZeros(mem[@rS1 + @rS2]) |
 | B | LBU | @rD := ExtendeZeros(mem[@rS1 + (@IM \| rS2)]) |
 | C | SH | mem[@rS1 + rD] := @rS2 |
 | D | SB | mem[@rS1 + rD] := 8Bits(@rS2) |
