@@ -82,7 +82,7 @@ A ser definido. Uma possibilidade é expor os comands do cartão SD. Outra é im
 
 ## Interface de Depuração
 
-bmi_req_valid_i, bmi_req_ready_o, bmi_req_address_i[6:0], bmi_req_data_i[31:0], bmi_req_op_i[1:0], bmi_rsp_valid_o, bmi_rsp_ready_i, bmi_rsp_data_o[31:0], bmi_rsp_op_o[1:0]
+dmi_req_valid_i, dmi_req_ready_o, dmi_req_address_i[6:0], dmi_req_data_i[31:0], dmi_req_op_i[1:0], dmi_rsp_valid_o, dmi_rsp_ready_i, dmi_rsp_data_o[31:0], dmi_rsp_op_o[1:0]
 
 Implementa os sinais sugeridos no padrão de teste externo RISC-V 1.0-STABLE A.3
 com um módulo DM (Debug Module) dentro do bloco "vg" e um módulo DTM (Debug
