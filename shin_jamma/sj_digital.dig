@@ -60,7 +60,7 @@
         </entry>
         <entry>
           <string>Label</string>
-          <string>system</string>
+          <string>sistema</string>
         </entry>
         <entry>
           <string>RectWidth</string>
@@ -540,7 +540,7 @@
         </entry>
         <entry>
           <string>Label</string>
-          <string>player</string>
+          <string>Jogador</string>
         </entry>
         <entry>
           <string>RectWidth</string>
@@ -710,7 +710,7 @@
         </entry>
         <entry>
           <string>Label</string>
-          <string>keyboard</string>
+          <string>Teclado</string>
         </entry>
         <entry>
           <string>RectWidth</string>
@@ -1708,7 +1708,7 @@
         </entry>
         <entry>
           <string>Label</string>
-          <string>simple i/o</string>
+          <string>Entradas e Saídas Simples</string>
         </entry>
         <entry>
           <string>RectWidth</string>
@@ -1904,7 +1904,7 @@ Patch circuit for other options</string>
         </entry>
         <entry>
           <string>Label</string>
-          <string>external memory</string>
+          <string>Memória Externa</string>
         </entry>
         <entry>
           <string>RectWidth</string>
@@ -2239,6 +2239,133 @@ Patch circuit for other options</string>
         </entry>
       </elementAttributes>
       <pos x="120" y="1400"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>wb\_addr</string>
+        </entry>
+      </elementAttributes>
+      <pos x="980" y="2260"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>NetName</string>
+          <string>wb\_dat\_slave</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1180" y="2260"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation reference="../../../../visualElement[188]/elementAttributes/entry/rotation"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>wb\_dat\_master</string>
+        </entry>
+      </elementAttributes>
+      <pos x="980" y="2300"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation reference="../../../../visualElement[188]/elementAttributes/entry/rotation"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>wb\_we</string>
+        </entry>
+      </elementAttributes>
+      <pos x="980" y="2340"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation reference="../../../../visualElement[188]/elementAttributes/entry/rotation"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>wb\_sel</string>
+        </entry>
+      </elementAttributes>
+      <pos x="980" y="2380"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>NetName</string>
+          <string>wb\_ack</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1180" y="2300"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>wb\_stb</string>
+        </entry>
+      </elementAttributes>
+      <pos x="980" y="2420"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>wb\_cyc</string>
+        </entry>
+      </elementAttributes>
+      <pos x="980" y="2460"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Rectangle</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Wishbone</string>
+        </entry>
+        <entry>
+          <string>RectHeight</string>
+          <int>20</int>
+        </entry>
+        <entry>
+          <string>RectWidth</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="760" y="2180"/>
+    </visualElement>
+    <visualElement>
+      <elementName>vg.dig</elementName>
+      <elementAttributes/>
+      <pos x="840" y="380"/>
     </visualElement>
   </visualElements>
   <wires>

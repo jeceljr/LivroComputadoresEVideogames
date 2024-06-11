@@ -26,7 +26,7 @@ clock50MHz_i, resetn_i
 
 a_left_o[15:0], a_right_o[15:0], a_clk_o
 
-v_r_o[9:0], v_g_o[9:0], v_b_o[9:0], v_vs_o, v_hs_o, v_clk_o
+v_r_o[7:0], v_g_o[7:0], v_b_o[7:0], v_vs_o, v_hs_o, v_clk_o
 
 v_x_o[11:0], v_y_o[11:0], v_de_o
 
