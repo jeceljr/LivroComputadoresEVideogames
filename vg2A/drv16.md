@@ -72,4 +72,3 @@ implementada pela sequência `ADD x3,x4,x4. ADD x3,x3,x3. ADD x3,x3,x3`. Os
 deslocamentos para a direita são mais complexos, mas viáveis.
 
 Não foram implementadas **ECALL** ou **EBREAK**.
-não definida.
