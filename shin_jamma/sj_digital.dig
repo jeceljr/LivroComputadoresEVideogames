@@ -554,10 +554,10 @@
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>keyboard</string>
+          <string>teclado</string>
         </entry>
       </elementAttributes>
-      <pos x="1760" y="2200"/>
+      <pos x="1740" y="1560"/>
     </visualElement>
     <visualElement>
       <elementName>Splitter</elementName>
@@ -568,10 +568,10 @@
         </entry>
         <entry>
           <string>Output Splitting</string>
-          <string>7,10</string>
+          <string>7,9</string>
         </entry>
       </elementAttributes>
-      <pos x="1880" y="2200"/>
+      <pos x="1860" y="1560"/>
     </visualElement>
     <visualElement>
       <elementName>Splitter</elementName>
@@ -581,7 +581,7 @@
           <string>7,1</string>
         </entry>
       </elementAttributes>
-      <pos x="1960" y="2200"/>
+      <pos x="1940" y="1560"/>
     </visualElement>
     <visualElement>
       <elementName>Const</elementName>
@@ -591,7 +591,7 @@
           <long>0</long>
         </entry>
       </elementAttributes>
-      <pos x="1940" y="2220"/>
+      <pos x="1920" y="1580"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -605,108 +605,38 @@
           <string>clock50MHz</string>
         </entry>
       </elementAttributes>
-      <pos x="1640" y="2200"/>
+      <pos x="1620" y="1560"/>
     </visualElement>
     <visualElement>
       <elementName>Register</elementName>
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>lastKey</string>
+          <string>caracter</string>
         </entry>
         <entry>
           <string>Bits</string>
           <int>8</int>
         </entry>
       </elementAttributes>
-      <pos x="2020" y="2200"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Counter</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Label</string>
-          <string>delay8</string>
-        </entry>
-        <entry>
-          <string>Bits</string>
-          <int>3</int>
-        </entry>
-      </elementAttributes>
-      <pos x="1920" y="2520"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Register</elementName>
-      <elementAttributes/>
-      <pos x="1920" y="2380"/>
-    </visualElement>
-    <visualElement>
-      <elementName>And</elementName>
-      <elementAttributes>
-        <entry>
-          <string>wideShape</string>
-          <boolean>true</boolean>
-        </entry>
-        <entry>
-          <string>inverterConfig</string>
-          <inverterConfig>
-            <string>In_2</string>
-          </inverterConfig>
-        </entry>
-      </elementAttributes>
-      <pos x="1760" y="2320"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Or</elementName>
-      <elementAttributes>
-        <entry>
-          <string>wideShape</string>
-          <boolean>true</boolean>
-        </entry>
-      </elementAttributes>
-      <pos x="1700" y="2580"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Const</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Value</string>
-          <long>0</long>
-        </entry>
-      </elementAttributes>
-      <pos x="1900" y="2560"/>
-    </visualElement>
-    <visualElement>
-      <elementName>D_FF</elementName>
-      <elementAttributes/>
-      <pos x="2040" y="2340"/>
+      <pos x="2000" y="1560"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
       <elementAttributes>
         <entry>
           <string>NetName</string>
-          <string>key_d</string>
+          <string>caracter</string>
         </entry>
       </elementAttributes>
-      <pos x="2120" y="2220"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Tunnel</elementName>
-      <elementAttributes>
-        <entry>
-          <string>NetName</string>
-          <string>strobe</string>
-        </entry>
-      </elementAttributes>
-      <pos x="2120" y="2340"/>
+      <pos x="2100" y="1580"/>
     </visualElement>
     <visualElement>
       <elementName>Rectangle</elementName>
       <elementAttributes>
         <entry>
           <string>RectHeight</string>
-          <int>27</int>
+          <int>23</int>
         </entry>
         <entry>
           <string>Label</string>
@@ -714,10 +644,10 @@
         </entry>
         <entry>
           <string>RectWidth</string>
-          <int>35</int>
+          <int>38</int>
         </entry>
       </elementAttributes>
-      <pos x="1500" y="2160"/>
+      <pos x="1480" y="1520"/>
     </visualElement>
     <visualElement>
       <elementName>DipSwitch</elementName>
@@ -1726,181 +1656,50 @@
         </entry>
         <entry>
           <string>Label</string>
-          <string>exMem</string>
+          <string>Mem0</string>
         </entry>
         <entry>
           <string>Bits</string>
-          <int>32</int>
+          <int>8</int>
         </entry>
       </elementAttributes>
-      <pos x="1920" y="1660"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Tunnel</elementName>
-      <elementAttributes>
-        <entry>
-          <string>rotation</string>
-          <rotation rotation="2"/>
-        </entry>
-        <entry>
-          <string>NetName</string>
-          <string>mem_addr</string>
-        </entry>
-      </elementAttributes>
-      <pos x="1620" y="1640"/>
+      <pos x="1920" y="2140"/>
     </visualElement>
     <visualElement>
       <elementName>Splitter</elementName>
       <elementAttributes>
         <entry>
           <string>Input Splitting</string>
-          <string>32</string>
+          <string>22</string>
         </entry>
         <entry>
           <string>Output Splitting</string>
-          <string>16,16</string>
+          <string>16,6</string>
         </entry>
       </elementAttributes>
-      <pos x="1680" y="1640"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Tunnel</elementName>
-      <elementAttributes>
-        <entry>
-          <string>NetName</string>
-          <string>mem_d_out</string>
-        </entry>
-      </elementAttributes>
-      <pos x="2060" y="1700"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Tunnel</elementName>
-      <elementAttributes>
-        <entry>
-          <string>rotation</string>
-          <rotation rotation="2"/>
-        </entry>
-        <entry>
-          <string>NetName</string>
-          <string>mem_d_in</string>
-        </entry>
-      </elementAttributes>
-      <pos x="1620" y="1700"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Tunnel</elementName>
-      <elementAttributes>
-        <entry>
-          <string>rotation</string>
-          <rotation rotation="2"/>
-        </entry>
-        <entry>
-          <string>NetName</string>
-          <string>clock50Mhz</string>
-        </entry>
-      </elementAttributes>
-      <pos x="1620" y="1740"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Tunnel</elementName>
-      <elementAttributes>
-        <entry>
-          <string>rotation</string>
-          <rotation rotation="2"/>
-        </entry>
-        <entry>
-          <string>NetName</string>
-          <string>mem_write</string>
-        </entry>
-      </elementAttributes>
-      <pos x="1620" y="1800"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Tunnel</elementName>
-      <elementAttributes>
-        <entry>
-          <string>rotation</string>
-          <rotation rotation="2"/>
-        </entry>
-        <entry>
-          <string>NetName</string>
-          <string>mem_read</string>
-        </entry>
-      </elementAttributes>
-      <pos x="1620" y="1860"/>
-    </visualElement>
-    <visualElement>
-      <elementName>And</elementName>
-      <elementAttributes>
-        <entry>
-          <string>wideShape</string>
-          <boolean>true</boolean>
-        </entry>
-      </elementAttributes>
-      <pos x="1720" y="1780"/>
-    </visualElement>
-    <visualElement>
-      <elementName>And</elementName>
-      <elementAttributes>
-        <entry>
-          <string>wideShape</string>
-          <boolean>true</boolean>
-        </entry>
-      </elementAttributes>
-      <pos x="1720" y="1860"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Comparator</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Label</string>
-          <string>mem_base</string>
-        </entry>
-        <entry>
-          <string>Bits</string>
-          <int>16</int>
-        </entry>
-      </elementAttributes>
-      <pos x="1720" y="1960"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Const</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Value</string>
-          <long>0</long>
-        </entry>
-        <entry>
-          <string>Bits</string>
-          <int>16</int>
-        </entry>
-        <entry>
-          <string>intFormat</string>
-          <intFormat>hex</intFormat>
-        </entry>
-      </elementAttributes>
-      <pos x="1660" y="1980"/>
+      <pos x="1680" y="2120"/>
     </visualElement>
     <visualElement>
       <elementName>Text</elementName>
       <elementAttributes>
         <entry>
           <string>Description</string>
-          <string>256KB (64K Words) mapped  from
-0x00000000  to
-0x0000FFFF
+          <string>256KB (64K palavras)
+0x00000000  a
+0x0003FFFF
 
-Patch circuit for other options</string>
+e repetindo até
+0xEFFFFFFF</string>
         </entry>
       </elementAttributes>
-      <pos x="1960" y="1820"/>
+      <pos x="2140" y="2220"/>
     </visualElement>
     <visualElement>
       <elementName>Rectangle</elementName>
       <elementAttributes>
         <entry>
           <string>RectHeight</string>
-          <int>24</int>
+          <int>43</int>
         </entry>
         <entry>
           <string>Label</string>
@@ -1908,10 +1707,10 @@ Patch circuit for other options</string>
         </entry>
         <entry>
           <string>RectWidth</string>
-          <int>47</int>
+          <int>48</int>
         </entry>
       </elementAttributes>
-      <pos x="1480" y="1580"/>
+      <pos x="1480" y="2060"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
@@ -1919,6 +1718,10 @@ Patch circuit for other options</string>
         <entry>
           <string>Label</string>
           <string>left</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>16</int>
         </entry>
       </elementAttributes>
       <pos x="1660" y="320"/>
@@ -1929,6 +1732,10 @@ Patch circuit for other options</string>
         <entry>
           <string>Label</string>
           <string>right</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>16</int>
         </entry>
       </elementAttributes>
       <pos x="1660" y="360"/>
@@ -2249,7 +2056,7 @@ Patch circuit for other options</string>
         </entry>
         <entry>
           <string>NetName</string>
-          <string>wb\_addr</string>
+          <string>wb\_adr</string>
         </entry>
       </elementAttributes>
       <pos x="340" y="1820"/>
@@ -2269,7 +2076,7 @@ Patch circuit for other options</string>
       <elementAttributes>
         <entry>
           <string>rotation</string>
-          <rotation reference="../../../../visualElement[188]/elementAttributes/entry/rotation"/>
+          <rotation rotation="2"/>
         </entry>
         <entry>
           <string>NetName</string>
@@ -2283,7 +2090,7 @@ Patch circuit for other options</string>
       <elementAttributes>
         <entry>
           <string>rotation</string>
-          <rotation reference="../../../../visualElement[188]/elementAttributes/entry/rotation"/>
+          <rotation reference="../../../../visualElement[173]/elementAttributes/entry/rotation"/>
         </entry>
         <entry>
           <string>NetName</string>
@@ -2297,7 +2104,7 @@ Patch circuit for other options</string>
       <elementAttributes>
         <entry>
           <string>rotation</string>
-          <rotation reference="../../../../visualElement[188]/elementAttributes/entry/rotation"/>
+          <rotation reference="../../../../visualElement[173]/elementAttributes/entry/rotation"/>
         </entry>
         <entry>
           <string>NetName</string>
@@ -2349,7 +2156,7 @@ Patch circuit for other options</string>
       <elementAttributes>
         <entry>
           <string>RectHeight</string>
-          <int>36</int>
+          <int>48</int>
         </entry>
         <entry>
           <string>Label</string>
@@ -2357,10 +2164,10 @@ Patch circuit for other options</string>
         </entry>
         <entry>
           <string>RectWidth</string>
-          <int>56</int>
+          <int>65</int>
         </entry>
       </elementAttributes>
-      <pos x="120" y="1740"/>
+      <pos x="140" y="1740"/>
     </visualElement>
     <visualElement>
       <elementName>vg.dig</elementName>
@@ -2418,22 +2225,6 @@ Patch circuit for other options</string>
         </entry>
       </elementAttributes>
       <pos x="760" y="1980"/>
-    </visualElement>
-    <visualElement>
-      <elementName>And</elementName>
-      <elementAttributes>
-        <entry>
-          <string>wideShape</string>
-          <boolean>true</boolean>
-        </entry>
-        <entry>
-          <string>inverterConfig</string>
-          <inverterConfig>
-            <string>In_1</string>
-          </inverterConfig>
-        </entry>
-      </elementAttributes>
-      <pos x="800" y="1900"/>
     </visualElement>
     <visualElement>
       <elementName>And</elementName>
@@ -3161,6 +2952,501 @@ Patch circuit for other options</string>
       </elementAttributes>
       <pos x="780" y="1040"/>
     </visualElement>
+    <visualElement>
+      <elementName>Multiplexer</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="900" y="1760"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>caracter</string>
+        </entry>
+      </elementAttributes>
+      <pos x="780" y="1800"/>
+    </visualElement>
+    <visualElement>
+      <elementName>D_FF</elementName>
+      <elementAttributes/>
+      <pos x="1740" y="1700"/>
+    </visualElement>
+    <visualElement>
+      <elementName>D_FF</elementName>
+      <elementAttributes/>
+      <pos x="1880" y="1700"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
+      <pos x="1780" y="1840"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
+      <pos x="1980" y="1840"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Description</string>
+          <string>Mapa de memória Wishbone:
+   0x00000000 a 0xEFFFFFFF memória externa
+   0xF0000000 a 0xF0FFFFFF teclado
+   0xF1000000 a 0xF1FFFFFF cartão SD</string>
+        </entry>
+      </elementAttributes>
+      <pos x="880" y="2060"/>
+    </visualElement>
+    <visualElement>
+      <elementName>RAMDualPort</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>16</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>Mem1</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>8</int>
+        </entry>
+      </elementAttributes>
+      <pos x="1920" y="2360"/>
+    </visualElement>
+    <visualElement>
+      <elementName>RAMDualPort</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>16</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>Mem2</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>8</int>
+        </entry>
+      </elementAttributes>
+      <pos x="1920" y="2560"/>
+    </visualElement>
+    <visualElement>
+      <elementName>RAMDualPort</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>16</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>Mem3</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>8</int>
+        </entry>
+      </elementAttributes>
+      <pos x="1920" y="2760"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>32</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>8,8,8,8</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1680" y="2320"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>8,24</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>32</string>
+        </entry>
+      </elementAttributes>
+      <pos x="820" y="1800"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Const</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Value</string>
+          <long>0</long>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>24</int>
+        </entry>
+      </elementAttributes>
+      <pos x="780" y="1820"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>8,8,8,8</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>32</string>
+        </entry>
+      </elementAttributes>
+      <pos x="820" y="1660"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>NetName</string>
+          <string>mem0d</string>
+        </entry>
+      </elementAttributes>
+      <pos x="2040" y="2180"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>NetName</string>
+          <string>mem1d</string>
+        </entry>
+      </elementAttributes>
+      <pos x="2040" y="2400"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>NetName</string>
+          <string>mem2d</string>
+        </entry>
+      </elementAttributes>
+      <pos x="2040" y="2600"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>NetName</string>
+          <string>mem3d</string>
+        </entry>
+      </elementAttributes>
+      <pos x="2040" y="2800"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>mem0d</string>
+        </entry>
+      </elementAttributes>
+      <pos x="760" y="1660"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation reference="../../../../visualElement[262]/elementAttributes/entry/rotation"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>mem1d</string>
+        </entry>
+      </elementAttributes>
+      <pos x="760" y="1680"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation reference="../../../../visualElement[262]/elementAttributes/entry/rotation"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>mem2d</string>
+        </entry>
+      </elementAttributes>
+      <pos x="760" y="1700"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation reference="../../../../visualElement[262]/elementAttributes/entry/rotation"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>mem3d</string>
+        </entry>
+      </elementAttributes>
+      <pos x="760" y="1720"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>clock50MHz</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1760" y="2080"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>4</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>1,1,1,1</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1380" y="2540"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>Inputs</string>
+          <int>3</int>
+        </entry>
+      </elementAttributes>
+      <pos x="1560" y="2160"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>inverterConfig</string>
+          <inverterConfig>
+            <string>In_2</string>
+          </inverterConfig>
+        </entry>
+        <entry>
+          <string>Inputs</string>
+          <int>3</int>
+        </entry>
+      </elementAttributes>
+      <pos x="1560" y="2240"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>Inputs</string>
+          <int>3</int>
+        </entry>
+      </elementAttributes>
+      <pos x="1560" y="2360"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>inverterConfig</string>
+          <inverterConfig>
+            <string>In_2</string>
+          </inverterConfig>
+        </entry>
+        <entry>
+          <string>Inputs</string>
+          <int>3</int>
+        </entry>
+      </elementAttributes>
+      <pos x="1560" y="2440"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>Inputs</string>
+          <int>3</int>
+        </entry>
+      </elementAttributes>
+      <pos x="1560" y="2560"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>inverterConfig</string>
+          <inverterConfig>
+            <string>In_2</string>
+          </inverterConfig>
+        </entry>
+        <entry>
+          <string>Inputs</string>
+          <int>3</int>
+        </entry>
+      </elementAttributes>
+      <pos x="1560" y="2640"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>Inputs</string>
+          <int>3</int>
+        </entry>
+      </elementAttributes>
+      <pos x="1560" y="2760"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>inverterConfig</string>
+          <inverterConfig>
+            <string>In_2</string>
+          </inverterConfig>
+        </entry>
+        <entry>
+          <string>Inputs</string>
+          <int>3</int>
+        </entry>
+      </elementAttributes>
+      <pos x="1560" y="2840"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>X</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>12</int>
+        </entry>
+      </elementAttributes>
+      <pos x="1780" y="220"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Y</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>12</int>
+        </entry>
+      </elementAttributes>
+      <pos x="1820" y="240"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>DE</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1860" y="260"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>ACLK</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1700" y="400"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>CYC</string>
+        </entry>
+      </elementAttributes>
+      <pos x="460" y="2020"/>
+    </visualElement>
   </visualElements>
   <wires>
     <wire>
@@ -3172,12 +3458,28 @@ Patch circuit for other options</string>
       <p2 x="1620" y="1280"/>
     </wire>
     <wire>
-      <p1 x="1900" y="2560"/>
+      <p1 x="1840" y="2560"/>
       <p2 x="1920" y="2560"/>
+    </wire>
+    <wire>
+      <p1 x="1400" y="2560"/>
+      <p2 x="1460" y="2560"/>
+    </wire>
+    <wire>
+      <p1 x="1520" y="2560"/>
+      <p2 x="1560" y="2560"/>
     </wire>
     <wire>
       <p1 x="260" y="260"/>
       <p2 x="360" y="260"/>
+    </wire>
+    <wire>
+      <p1 x="1600" y="260"/>
+      <p2 x="1860" y="260"/>
+    </wire>
+    <wire>
+      <p1 x="1820" y="2820"/>
+      <p2 x="1920" y="2820"/>
     </wire>
     <wire>
       <p1 x="1560" y="520"/>
@@ -3192,12 +3494,16 @@ Patch circuit for other options</string>
       <p2 x="1220" y="520"/>
     </wire>
     <wire>
-      <p1 x="1620" y="1800"/>
-      <p2 x="1640" y="1800"/>
+      <p1 x="1740" y="1800"/>
+      <p2 x="1820" y="1800"/>
     </wire>
     <wire>
-      <p1 x="1800" y="1800"/>
-      <p2 x="1860" y="1800"/>
+      <p1 x="840" y="1800"/>
+      <p2 x="900" y="1800"/>
+    </wire>
+    <wire>
+      <p1 x="780" y="1800"/>
+      <p2 x="820" y="1800"/>
     </wire>
     <wire>
       <p1 x="1880" y="780"/>
@@ -3232,20 +3538,36 @@ Patch circuit for other options</string>
       <p2 x="840" y="1040"/>
     </wire>
     <wire>
-      <p1 x="1700" y="2320"/>
-      <p2 x="1760" y="2320"/>
-    </wire>
-    <wire>
       <p1 x="520" y="2320"/>
       <p2 x="780" y="2320"/>
+    </wire>
+    <wire>
+      <p1 x="1400" y="2320"/>
+      <p2 x="1680" y="2320"/>
+    </wire>
+    <wire>
+      <p1 x="1700" y="2320"/>
+      <p2 x="1740" y="2320"/>
     </wire>
     <wire>
       <p1 x="1640" y="1300"/>
       <p2 x="2280" y="1300"/>
     </wire>
     <wire>
-      <p1 x="1660" y="2580"/>
-      <p2 x="1700" y="2580"/>
+      <p1 x="1740" y="2580"/>
+      <p2 x="1920" y="2580"/>
+    </wire>
+    <wire>
+      <p1 x="1640" y="2580"/>
+      <p2 x="1660" y="2580"/>
+    </wire>
+    <wire>
+      <p1 x="1400" y="2580"/>
+      <p2 x="1460" y="2580"/>
+    </wire>
+    <wire>
+      <p1 x="1500" y="2580"/>
+      <p2 x="1560" y="2580"/>
     </wire>
     <wire>
       <p1 x="60" y="1560"/>
@@ -3260,6 +3582,34 @@ Patch circuit for other options</string>
       <p2 x="200" y="1560"/>
     </wire>
     <wire>
+      <p1 x="1800" y="1560"/>
+      <p2 x="1860" y="1560"/>
+    </wire>
+    <wire>
+      <p1 x="1880" y="1560"/>
+      <p2 x="1940" y="1560"/>
+    </wire>
+    <wire>
+      <p1 x="1620" y="1560"/>
+      <p2 x="1660" y="1560"/>
+    </wire>
+    <wire>
+      <p1 x="1960" y="1560"/>
+      <p2 x="2000" y="1560"/>
+    </wire>
+    <wire>
+      <p1 x="1660" y="1560"/>
+      <p2 x="1740" y="1560"/>
+    </wire>
+    <wire>
+      <p1 x="1680" y="2840"/>
+      <p2 x="1920" y="2840"/>
+    </wire>
+    <wire>
+      <p1 x="1520" y="2840"/>
+      <p2 x="1560" y="2840"/>
+    </wire>
+    <wire>
       <p1 x="60" y="540"/>
       <p2 x="140" y="540"/>
     </wire>
@@ -3272,12 +3622,16 @@ Patch circuit for other options</string>
       <p2 x="1220" y="540"/>
     </wire>
     <wire>
-      <p1 x="1700" y="1820"/>
-      <p2 x="1720" y="1820"/>
-    </wire>
-    <wire>
       <p1 x="340" y="1820"/>
       <p2 x="460" y="1820"/>
+    </wire>
+    <wire>
+      <p1 x="960" y="1820"/>
+      <p2 x="1000" y="1820"/>
+    </wire>
+    <wire>
+      <p1 x="780" y="1820"/>
+      <p2 x="820" y="1820"/>
     </wire>
     <wire>
       <p1 x="1880" y="800"/>
@@ -3300,28 +3654,32 @@ Patch circuit for other options</string>
       <p2 x="1220" y="800"/>
     </wire>
     <wire>
-      <p1 x="1840" y="2340"/>
-      <p2 x="1880" y="2340"/>
+      <p1 x="1760" y="2080"/>
+      <p2 x="1820" y="2080"/>
     </wire>
     <wire>
-      <p1 x="2020" y="2340"/>
-      <p2 x="2040" y="2340"/>
+      <p1 x="1700" y="2340"/>
+      <p2 x="1760" y="2340"/>
     </wire>
     <wire>
-      <p1 x="2100" y="2340"/>
-      <p2 x="2120" y="2340"/>
+      <p1 x="1980" y="2600"/>
+      <p2 x="2040" y="2600"/>
     </wire>
     <wire>
-      <p1 x="1880" y="2340"/>
-      <p2 x="2000" y="2340"/>
+      <p1 x="1660" y="2600"/>
+      <p2 x="1920" y="2600"/>
+    </wire>
+    <wire>
+      <p1 x="1460" y="2600"/>
+      <p2 x="1560" y="2600"/>
+    </wire>
+    <wire>
+      <p1 x="1400" y="2600"/>
+      <p2 x="1420" y="2600"/>
     </wire>
     <wire>
       <p1 x="1640" y="1320"/>
       <p2 x="2180" y="1320"/>
-    </wire>
-    <wire>
-      <p1 x="1780" y="2600"/>
-      <p2 x="1840" y="2600"/>
     </wire>
     <wire>
       <p1 x="240" y="300"/>
@@ -3334,6 +3692,30 @@ Patch circuit for other options</string>
     <wire>
       <p1 x="80" y="1580"/>
       <p2 x="120" y="1580"/>
+    </wire>
+    <wire>
+      <p1 x="1920" y="1580"/>
+      <p2 x="1940" y="1580"/>
+    </wire>
+    <wire>
+      <p1 x="2060" y="1580"/>
+      <p2 x="2100" y="1580"/>
+    </wire>
+    <wire>
+      <p1 x="1960" y="1580"/>
+      <p2 x="2000" y="1580"/>
+    </wire>
+    <wire>
+      <p1 x="1720" y="1580"/>
+      <p2 x="1740" y="1580"/>
+    </wire>
+    <wire>
+      <p1 x="1640" y="2860"/>
+      <p2 x="1680" y="2860"/>
+    </wire>
+    <wire>
+      <p1 x="1500" y="2860"/>
+      <p2 x="1540" y="2860"/>
     </wire>
     <wire>
       <p1 x="1880" y="560"/>
@@ -3364,6 +3746,18 @@ Patch circuit for other options</string>
       <p2 x="1220" y="560"/>
     </wire>
     <wire>
+      <p1 x="1740" y="1840"/>
+      <p2 x="1780" y="1840"/>
+    </wire>
+    <wire>
+      <p1 x="1960" y="1840"/>
+      <p2 x="1980" y="1840"/>
+    </wire>
+    <wire>
+      <p1 x="480" y="1840"/>
+      <p2 x="940" y="1840"/>
+    </wire>
+    <wire>
       <p1 x="1880" y="820"/>
       <p2 x="1920" y="820"/>
     </wire>
@@ -3384,12 +3778,20 @@ Patch circuit for other options</string>
       <p2 x="1220" y="820"/>
     </wire>
     <wire>
+      <p1 x="1840" y="2360"/>
+      <p2 x="1920" y="2360"/>
+    </wire>
+    <wire>
       <p1 x="1700" y="2360"/>
       <p2 x="1740" y="2360"/>
     </wire>
     <wire>
-      <p1 x="1980" y="2360"/>
-      <p2 x="2040" y="2360"/>
+      <p1 x="1520" y="2360"/>
+      <p2 x="1560" y="2360"/>
+    </wire>
+    <wire>
+      <p1 x="1820" y="2620"/>
+      <p2 x="1920" y="2620"/>
     </wire>
     <wire>
       <p1 x="1640" y="1340"/>
@@ -3404,8 +3806,16 @@ Patch circuit for other options</string>
       <p2 x="260" y="1340"/>
     </wire>
     <wire>
-      <p1 x="1680" y="2620"/>
-      <p2 x="1700" y="2620"/>
+      <p1 x="60" y="1600"/>
+      <p2 x="120" y="1600"/>
+    </wire>
+    <wire>
+      <p1 x="1980" y="1600"/>
+      <p2 x="2000" y="1600"/>
+    </wire>
+    <wire>
+      <p1 x="1580" y="1600"/>
+      <p2 x="1720" y="1600"/>
     </wire>
     <wire>
       <p1 x="1600" y="320"/>
@@ -3416,8 +3826,8 @@ Patch circuit for other options</string>
       <p2 x="140" y="320"/>
     </wire>
     <wire>
-      <p1 x="60" y="1600"/>
-      <p2 x="120" y="1600"/>
+      <p1 x="1420" y="2880"/>
+      <p2 x="1560" y="2880"/>
     </wire>
     <wire>
       <p1 x="1880" y="580"/>
@@ -3436,12 +3846,24 @@ Patch circuit for other options</string>
       <p2 x="1220" y="580"/>
     </wire>
     <wire>
-      <p1 x="1620" y="1860"/>
-      <p2 x="1720" y="1860"/>
-    </wire>
-    <wire>
       <p1 x="480" y="1860"/>
       <p2 x="520" y="1860"/>
+    </wire>
+    <wire>
+      <p1 x="1860" y="1860"/>
+      <p2 x="1900" y="1860"/>
+    </wire>
+    <wire>
+      <p1 x="2060" y="1860"/>
+      <p2 x="2080" y="1860"/>
+    </wire>
+    <wire>
+      <p1 x="340" y="1860"/>
+      <p2 x="440" y="1860"/>
+    </wire>
+    <wire>
+      <p1 x="980" y="1860"/>
+      <p2 x="1000" y="1860"/>
     </wire>
     <wire>
       <p1 x="1880" y="840"/>
@@ -3464,12 +3886,32 @@ Patch circuit for other options</string>
       <p2 x="640" y="2120"/>
     </wire>
     <wire>
-      <p1 x="1880" y="2380"/>
-      <p2 x="1920" y="2380"/>
+      <p1 x="1700" y="2120"/>
+      <p2 x="1840" y="2120"/>
+    </wire>
+    <wire>
+      <p1 x="1460" y="2120"/>
+      <p2 x="1680" y="2120"/>
     </wire>
     <wire>
       <p1 x="280" y="1100"/>
       <p2 x="360" y="1100"/>
+    </wire>
+    <wire>
+      <p1 x="1760" y="2380"/>
+      <p2 x="1920" y="2380"/>
+    </wire>
+    <wire>
+      <p1 x="1700" y="2380"/>
+      <p2 x="1720" y="2380"/>
+    </wire>
+    <wire>
+      <p1 x="1640" y="2380"/>
+      <p2 x="1660" y="2380"/>
+    </wire>
+    <wire>
+      <p1 x="1500" y="2380"/>
+      <p2 x="1560" y="2380"/>
     </wire>
     <wire>
       <p1 x="240" y="80"/>
@@ -3486,6 +3928,14 @@ Patch circuit for other options</string>
     <wire>
       <p1 x="280" y="1360"/>
       <p2 x="340" y="1360"/>
+    </wire>
+    <wire>
+      <p1 x="1680" y="2640"/>
+      <p2 x="1920" y="2640"/>
+    </wire>
+    <wire>
+      <p1 x="1520" y="2640"/>
+      <p2 x="1560" y="2640"/>
     </wire>
     <wire>
       <p1 x="1600" y="340"/>
@@ -3512,16 +3962,24 @@ Patch circuit for other options</string>
       <p2 x="1220" y="600"/>
     </wire>
     <wire>
-      <p1 x="1800" y="1880"/>
-      <p2 x="1880" y="1880"/>
-    </wire>
-    <wire>
       <p1 x="480" y="1880"/>
       <p2 x="540" y="1880"/>
     </wire>
     <wire>
       <p1 x="560" y="1880"/>
       <p2 x="620" y="1880"/>
+    </wire>
+    <wire>
+      <p1 x="1420" y="1880"/>
+      <p2 x="1620" y="1880"/>
+    </wire>
+    <wire>
+      <p1 x="1940" y="1880"/>
+      <p2 x="1980" y="1880"/>
+    </wire>
+    <wire>
+      <p1 x="1620" y="1880"/>
+      <p2 x="1780" y="1880"/>
     </wire>
     <wire>
       <p1 x="280" y="860"/>
@@ -3552,16 +4010,24 @@ Patch circuit for other options</string>
       <p2 x="760" y="2140"/>
     </wire>
     <wire>
-      <p1 x="1980" y="2400"/>
-      <p2 x="2020" y="2400"/>
+      <p1 x="1840" y="2140"/>
+      <p2 x="1920" y="2140"/>
     </wire>
     <wire>
-      <p1 x="1680" y="2400"/>
+      <p1 x="1700" y="2140"/>
+      <p2 x="1720" y="2140"/>
+    </wire>
+    <wire>
+      <p1 x="1980" y="2400"/>
+      <p2 x="2040" y="2400"/>
+    </wire>
+    <wire>
+      <p1 x="1660" y="2400"/>
       <p2 x="1920" y="2400"/>
     </wire>
     <wire>
-      <p1 x="1680" y="2660"/>
-      <p2 x="2000" y="2660"/>
+      <p1 x="1460" y="2400"/>
+      <p2 x="1560" y="2400"/>
     </wire>
     <wire>
       <p1 x="1640" y="1380"/>
@@ -3580,12 +4046,12 @@ Patch circuit for other options</string>
       <p2 x="1700" y="100"/>
     </wire>
     <wire>
-      <p1 x="1620" y="1640"/>
-      <p2 x="1680" y="1640"/>
+      <p1 x="1640" y="2660"/>
+      <p2 x="1680" y="2660"/>
     </wire>
     <wire>
-      <p1 x="1700" y="1640"/>
-      <p2 x="1840" y="1640"/>
+      <p1 x="1500" y="2660"/>
+      <p2 x="1540" y="2660"/>
     </wire>
     <wire>
       <p1 x="1640" y="360"/>
@@ -3612,16 +4078,16 @@ Patch circuit for other options</string>
       <p2 x="1220" y="620"/>
     </wire>
     <wire>
-      <p1 x="1700" y="1900"/>
-      <p2 x="1720" y="1900"/>
-    </wire>
-    <wire>
       <p1 x="560" y="1900"/>
       <p2 x="620" y="1900"/>
     </wire>
     <wire>
+      <p1 x="340" y="1900"/>
+      <p2 x="400" y="1900"/>
+    </wire>
+    <wire>
       <p1 x="740" y="1900"/>
-      <p2 x="780" y="1900"/>
+      <p2 x="920" y="1900"/>
     </wire>
     <wire>
       <p1 x="60" y="880"/>
@@ -3636,7 +4102,15 @@ Patch circuit for other options</string>
       <p2 x="640" y="2160"/>
     </wire>
     <wire>
-      <p1 x="1840" y="2420"/>
+      <p1 x="1740" y="2160"/>
+      <p2 x="1920" y="2160"/>
+    </wire>
+    <wire>
+      <p1 x="1520" y="2160"/>
+      <p2 x="1560" y="2160"/>
+    </wire>
+    <wire>
+      <p1 x="1820" y="2420"/>
       <p2 x="1920" y="2420"/>
     </wire>
     <wire>
@@ -3656,12 +4130,20 @@ Patch circuit for other options</string>
       <p2 x="1700" y="120"/>
     </wire>
     <wire>
-      <p1 x="1840" y="1660"/>
-      <p2 x="1920" y="1660"/>
+      <p1 x="1460" y="2680"/>
+      <p2 x="1560" y="2680"/>
     </wire>
     <wire>
-      <p1 x="1700" y="1660"/>
-      <p2 x="1720" y="1660"/>
+      <p1 x="760" y="1660"/>
+      <p2 x="820" y="1660"/>
+    </wire>
+    <wire>
+      <p1 x="1860" y="1660"/>
+      <p2 x="1960" y="1660"/>
+    </wire>
+    <wire>
+      <p1 x="840" y="1660"/>
+      <p2 x="860" y="1660"/>
     </wire>
     <wire>
       <p1 x="280" y="380"/>
@@ -3700,10 +4182,6 @@ Patch circuit for other options</string>
       <p2 x="1220" y="640"/>
     </wire>
     <wire>
-      <p1 x="1700" y="1920"/>
-      <p2 x="1820" y="1920"/>
-    </wire>
-    <wire>
       <p1 x="560" y="1920"/>
       <p2 x="600" y="1920"/>
     </wire>
@@ -3716,8 +4194,32 @@ Patch circuit for other options</string>
       <p2 x="840" y="900"/>
     </wire>
     <wire>
+      <p1 x="1980" y="2180"/>
+      <p2 x="2040" y="2180"/>
+    </wire>
+    <wire>
+      <p1 x="1640" y="2180"/>
+      <p2 x="1920" y="2180"/>
+    </wire>
+    <wire>
+      <p1 x="1500" y="2180"/>
+      <p2 x="1560" y="2180"/>
+    </wire>
+    <wire>
       <p1 x="280" y="1160"/>
       <p2 x="360" y="1160"/>
+    </wire>
+    <wire>
+      <p1 x="440" y="2440"/>
+      <p2 x="1400" y="2440"/>
+    </wire>
+    <wire>
+      <p1 x="1680" y="2440"/>
+      <p2 x="1920" y="2440"/>
+    </wire>
+    <wire>
+      <p1 x="1520" y="2440"/>
+      <p2 x="1560" y="2440"/>
     </wire>
     <wire>
       <p1 x="220" y="140"/>
@@ -3736,6 +4238,14 @@ Patch circuit for other options</string>
       <p2 x="360" y="1420"/>
     </wire>
     <wire>
+      <p1 x="760" y="1680"/>
+      <p2 x="820" y="1680"/>
+    </wire>
+    <wire>
+      <p1 x="1980" y="1680"/>
+      <p2 x="2080" y="1680"/>
+    </wire>
+    <wire>
       <p1 x="60" y="400"/>
       <p2 x="100" y="400"/>
     </wire>
@@ -3748,8 +4258,36 @@ Patch circuit for other options</string>
       <p2 x="1220" y="400"/>
     </wire>
     <wire>
-      <p1 x="1840" y="1680"/>
-      <p2 x="1920" y="1680"/>
+      <p1 x="1600" y="400"/>
+      <p2 x="1700" y="400"/>
+    </wire>
+    <wire>
+      <p1 x="1460" y="1940"/>
+      <p2 x="1580" y="1940"/>
+    </wire>
+    <wire>
+      <p1 x="600" y="1940"/>
+      <p2 x="620" y="1940"/>
+    </wire>
+    <wire>
+      <p1 x="560" y="1940"/>
+      <p2 x="580" y="1940"/>
+    </wire>
+    <wire>
+      <p1 x="340" y="1940"/>
+      <p2 x="420" y="1940"/>
+    </wire>
+    <wire>
+      <p1 x="720" y="1940"/>
+      <p2 x="980" y="1940"/>
+    </wire>
+    <wire>
+      <p1 x="980" y="1940"/>
+      <p2 x="1420" y="1940"/>
+    </wire>
+    <wire>
+      <p1 x="1580" y="1940"/>
+      <p2 x="1900" y="1940"/>
     </wire>
     <wire>
       <p1 x="1880" y="660"/>
@@ -3768,18 +4306,6 @@ Patch circuit for other options</string>
       <p2 x="1220" y="660"/>
     </wire>
     <wire>
-      <p1 x="600" y="1940"/>
-      <p2 x="620" y="1940"/>
-    </wire>
-    <wire>
-      <p1 x="560" y="1940"/>
-      <p2 x="580" y="1940"/>
-    </wire>
-    <wire>
-      <p1 x="720" y="1940"/>
-      <p2 x="800" y="1940"/>
-    </wire>
-    <wire>
       <p1 x="280" y="920"/>
       <p2 x="360" y="920"/>
     </wire>
@@ -3793,43 +4319,39 @@ Patch circuit for other options</string>
     </wire>
     <wire>
       <p1 x="1820" y="2200"/>
-      <p2 x="1880" y="2200"/>
+      <p2 x="1920" y="2200"/>
     </wire>
     <wire>
-      <p1 x="1900" y="2200"/>
-      <p2 x="1960" y="2200"/>
+      <p1 x="1420" y="2200"/>
+      <p2 x="1560" y="2200"/>
     </wire>
     <wire>
-      <p1 x="1640" y="2200"/>
-      <p2 x="1680" y="2200"/>
+      <p1 x="1640" y="2460"/>
+      <p2 x="1680" y="2460"/>
     </wire>
     <wire>
-      <p1 x="1980" y="2200"/>
-      <p2 x="2020" y="2200"/>
-    </wire>
-    <wire>
-      <p1 x="1680" y="2200"/>
-      <p2 x="1760" y="2200"/>
-    </wire>
-    <wire>
-      <p1 x="1700" y="2460"/>
-      <p2 x="2020" y="2460"/>
+      <p1 x="1500" y="2460"/>
+      <p2 x="1540" y="2460"/>
     </wire>
     <wire>
       <p1 x="1600" y="160"/>
       <p2 x="1700" y="160"/>
     </wire>
     <wire>
-      <p1 x="1980" y="1700"/>
-      <p2 x="2060" y="1700"/>
+      <p1 x="760" y="1700"/>
+      <p2 x="820" y="1700"/>
     </wire>
     <wire>
-      <p1 x="1620" y="1700"/>
+      <p1 x="1800" y="1700"/>
       <p2 x="1840" y="1700"/>
     </wire>
     <wire>
-      <p1 x="1860" y="1700"/>
-      <p2 x="1920" y="1700"/>
+      <p1 x="1620" y="1700"/>
+      <p2 x="1740" y="1700"/>
+    </wire>
+    <wire>
+      <p1 x="1840" y="1700"/>
+      <p2 x="1880" y="1700"/>
     </wire>
     <wire>
       <p1 x="780" y="420"/>
@@ -3860,36 +4382,24 @@ Patch circuit for other options</string>
       <p2 x="1220" y="680"/>
     </wire>
     <wire>
-      <p1 x="1680" y="1960"/>
-      <p2 x="1720" y="1960"/>
-    </wire>
-    <wire>
       <p1 x="580" y="1960"/>
       <p2 x="620" y="1960"/>
     </wire>
     <wire>
-      <p1 x="1940" y="2220"/>
-      <p2 x="1960" y="2220"/>
-    </wire>
-    <wire>
-      <p1 x="2080" y="2220"/>
-      <p2 x="2120" y="2220"/>
-    </wire>
-    <wire>
-      <p1 x="1980" y="2220"/>
-      <p2 x="2020" y="2220"/>
-    </wire>
-    <wire>
-      <p1 x="1740" y="2220"/>
-      <p2 x="1760" y="2220"/>
-    </wire>
-    <wire>
-      <p1 x="1820" y="2220"/>
-      <p2 x="1860" y="2220"/>
-    </wire>
-    <wire>
       <p1 x="780" y="940"/>
       <p2 x="840" y="940"/>
+    </wire>
+    <wire>
+      <p1 x="1720" y="2220"/>
+      <p2 x="1920" y="2220"/>
+    </wire>
+    <wire>
+      <p1 x="600" y="2480"/>
+      <p2 x="1400" y="2480"/>
+    </wire>
+    <wire>
+      <p1 x="1460" y="2480"/>
+      <p2 x="1560" y="2480"/>
     </wire>
     <wire>
       <p1 x="1600" y="180"/>
@@ -3898,6 +4408,26 @@ Patch circuit for other options</string>
     <wire>
       <p1 x="300" y="1460"/>
       <p2 x="360" y="1460"/>
+    </wire>
+    <wire>
+      <p1 x="760" y="1720"/>
+      <p2 x="820" y="1720"/>
+    </wire>
+    <wire>
+      <p1 x="1660" y="1720"/>
+      <p2 x="1740" y="1720"/>
+    </wire>
+    <wire>
+      <p1 x="1860" y="1720"/>
+      <p2 x="1880" y="1720"/>
+    </wire>
+    <wire>
+      <p1 x="1800" y="1720"/>
+      <p2 x="1820" y="1720"/>
+    </wire>
+    <wire>
+      <p1 x="1940" y="1720"/>
+      <p2 x="1960" y="1720"/>
     </wire>
     <wire>
       <p1 x="280" y="440"/>
@@ -3916,10 +4446,6 @@ Patch circuit for other options</string>
       <p2 x="1220" y="440"/>
     </wire>
     <wire>
-      <p1 x="1820" y="1720"/>
-      <p2 x="1920" y="1720"/>
-    </wire>
-    <wire>
       <p1 x="1880" y="700"/>
       <p2 x="1920" y="700"/>
     </wire>
@@ -3936,24 +4462,16 @@ Patch circuit for other options</string>
       <p2 x="1220" y="700"/>
     </wire>
     <wire>
-      <p1 x="1780" y="1980"/>
-      <p2 x="1820" y="1980"/>
-    </wire>
-    <wire>
-      <p1 x="1660" y="1980"/>
-      <p2 x="1720" y="1980"/>
-    </wire>
-    <wire>
       <p1 x="340" y="1980"/>
       <p2 x="600" y="1980"/>
     </wire>
     <wire>
-      <p1 x="600" y="1980"/>
-      <p2 x="720" y="1980"/>
+      <p1 x="800" y="1980"/>
+      <p2 x="1460" y="1980"/>
     </wire>
     <wire>
-      <p1 x="2000" y="2240"/>
-      <p2 x="2020" y="2240"/>
+      <p1 x="600" y="1980"/>
+      <p2 x="720" y="1980"/>
     </wire>
     <wire>
       <p1 x="1680" y="960"/>
@@ -3992,12 +4510,20 @@ Patch circuit for other options</string>
       <p2 x="840" y="960"/>
     </wire>
     <wire>
-      <p1 x="1620" y="1740"/>
-      <p2 x="1820" y="1740"/>
+      <p1 x="1520" y="2240"/>
+      <p2 x="1560" y="2240"/>
     </wire>
     <wire>
-      <p1 x="1880" y="1740"/>
-      <p2 x="1920" y="1740"/>
+      <p1 x="400" y="2500"/>
+      <p2 x="1500" y="2500"/>
+    </wire>
+    <wire>
+      <p1 x="1840" y="2760"/>
+      <p2 x="1920" y="2760"/>
+    </wire>
+    <wire>
+      <p1 x="1520" y="2760"/>
+      <p2 x="1560" y="2760"/>
     </wire>
     <wire>
       <p1 x="780" y="460"/>
@@ -4024,10 +4550,6 @@ Patch circuit for other options</string>
       <p2 x="1220" y="720"/>
     </wire>
     <wire>
-      <p1 x="1700" y="2260"/>
-      <p2 x="1860" y="2260"/>
-    </wire>
-    <wire>
       <p1 x="280" y="980"/>
       <p2 x="360" y="980"/>
     </wire>
@@ -4036,12 +4558,40 @@ Patch circuit for other options</string>
       <p2 x="840" y="980"/>
     </wire>
     <wire>
-      <p1 x="1700" y="2520"/>
-      <p2 x="1920" y="2520"/>
+      <p1 x="1640" y="2260"/>
+      <p2 x="1720" y="2260"/>
     </wire>
     <wire>
-      <p1 x="1680" y="1760"/>
-      <p2 x="1720" y="1760"/>
+      <p1 x="1500" y="2260"/>
+      <p2 x="1540" y="2260"/>
+    </wire>
+    <wire>
+      <p1 x="1400" y="2520"/>
+      <p2 x="1520" y="2520"/>
+    </wire>
+    <wire>
+      <p1 x="1720" y="2780"/>
+      <p2 x="1920" y="2780"/>
+    </wire>
+    <wire>
+      <p1 x="1640" y="2780"/>
+      <p2 x="1660" y="2780"/>
+    </wire>
+    <wire>
+      <p1 x="1500" y="2780"/>
+      <p2 x="1560" y="2780"/>
+    </wire>
+    <wire>
+      <p1 x="1600" y="220"/>
+      <p2 x="1780" y="220"/>
+    </wire>
+    <wire>
+      <p1 x="1660" y="1760"/>
+      <p2 x="1860" y="1760"/>
+    </wire>
+    <wire>
+      <p1 x="860" y="1760"/>
+      <p2 x="900" y="1760"/>
     </wire>
     <wire>
       <p1 x="780" y="480"/>
@@ -4072,20 +4622,40 @@ Patch circuit for other options</string>
       <p2 x="1220" y="740"/>
     </wire>
     <wire>
-      <p1 x="1680" y="2280"/>
-      <p2 x="1980" y="2280"/>
+      <p1 x="940" y="2020"/>
+      <p2 x="1460" y="2020"/>
+    </wire>
+    <wire>
+      <p1 x="340" y="2020"/>
+      <p2 x="460" y="2020"/>
     </wire>
     <wire>
       <p1 x="780" y="1000"/>
       <p2 x="840" y="1000"/>
     </wire>
     <wire>
-      <p1 x="1680" y="2540"/>
-      <p2 x="1920" y="2540"/>
+      <p1 x="1420" y="2280"/>
+      <p2 x="1560" y="2280"/>
     </wire>
     <wire>
-      <p1 x="1980" y="2540"/>
-      <p2 x="2000" y="2540"/>
+      <p1 x="420" y="2540"/>
+      <p2 x="1380" y="2540"/>
+    </wire>
+    <wire>
+      <p1 x="1400" y="2540"/>
+      <p2 x="1420" y="2540"/>
+    </wire>
+    <wire>
+      <p1 x="1980" y="2800"/>
+      <p2 x="2040" y="2800"/>
+    </wire>
+    <wire>
+      <p1 x="1660" y="2800"/>
+      <p2 x="1920" y="2800"/>
+    </wire>
+    <wire>
+      <p1 x="1420" y="2800"/>
+      <p2 x="1560" y="2800"/>
     </wire>
     <wire>
       <p1 x="300" y="1520"/>
@@ -4094,6 +4664,18 @@ Patch circuit for other options</string>
     <wire>
       <p1 x="60" y="1520"/>
       <p2 x="100" y="1520"/>
+    </wire>
+    <wire>
+      <p1 x="1600" y="240"/>
+      <p2 x="1820" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="1840" y="1780"/>
+      <p2 x="1940" y="1780"/>
+    </wire>
+    <wire>
+      <p1 x="940" y="1780"/>
+      <p2 x="960" y="1780"/>
     </wire>
     <wire>
       <p1 x="280" y="500"/>
@@ -4106,10 +4688,6 @@ Patch circuit for other options</string>
     <wire>
       <p1 x="1160" y="500"/>
       <p2 x="1220" y="500"/>
-    </wire>
-    <wire>
-      <p1 x="1640" y="1780"/>
-      <p2 x="1720" y="1780"/>
     </wire>
     <wire>
       <p1 x="1880" y="760"/>
@@ -4130,14 +4708,6 @@ Patch circuit for other options</string>
     <wire>
       <p1 x="620" y="2040"/>
       <p2 x="740" y="2040"/>
-    </wire>
-    <wire>
-      <p1 x="1660" y="2300"/>
-      <p2 x="1740" y="2300"/>
-    </wire>
-    <wire>
-      <p1 x="1740" y="2300"/>
-      <p2 x="1880" y="2300"/>
     </wire>
     <wire>
       <p1 x="60" y="1020"/>
@@ -4220,6 +4790,26 @@ Patch circuit for other options</string>
       <p2 x="780" y="2320"/>
     </wire>
     <wire>
+      <p1 x="1420" y="2200"/>
+      <p2 x="1420" y="2280"/>
+    </wire>
+    <wire>
+      <p1 x="1420" y="2600"/>
+      <p2 x="1420" y="2800"/>
+    </wire>
+    <wire>
+      <p1 x="1420" y="1880"/>
+      <p2 x="1420" y="1940"/>
+    </wire>
+    <wire>
+      <p1 x="1420" y="2280"/>
+      <p2 x="1420" y="2540"/>
+    </wire>
+    <wire>
+      <p1 x="1420" y="2800"/>
+      <p2 x="1420" y="2880"/>
+    </wire>
+    <wire>
       <p1 x="1680" y="1000"/>
       <p2 x="1680" y="1020"/>
     </wire>
@@ -4240,24 +4830,16 @@ Patch circuit for other options</string>
       <p2 x="1680" y="1420"/>
     </wire>
     <wire>
-      <p1 x="1680" y="1760"/>
-      <p2 x="1680" y="1960"/>
+      <p1 x="1680" y="2440"/>
+      <p2 x="1680" y="2460"/>
     </wire>
     <wire>
-      <p1 x="1680" y="2620"/>
+      <p1 x="1680" y="2640"/>
       <p2 x="1680" y="2660"/>
     </wire>
     <wire>
-      <p1 x="1680" y="2200"/>
-      <p2 x="1680" y="2280"/>
-    </wire>
-    <wire>
-      <p1 x="1680" y="2280"/>
-      <p2 x="1680" y="2400"/>
-    </wire>
-    <wire>
-      <p1 x="1680" y="2400"/>
-      <p2 x="1680" y="2540"/>
+      <p1 x="1680" y="2840"/>
+      <p2 x="1680" y="2860"/>
     </wire>
     <wire>
       <p1 x="2320" y="1000"/>
@@ -4268,6 +4850,10 @@ Patch circuit for other options</string>
       <p2 x="2320" y="1180"/>
     </wire>
     <wire>
+      <p1 x="400" y="1900"/>
+      <p2 x="400" y="2500"/>
+    </wire>
+    <wire>
       <p1 x="1940" y="1000"/>
       <p2 x="1940" y="1020"/>
     </wire>
@@ -4276,8 +4862,16 @@ Patch circuit for other options</string>
       <p2 x="1940" y="1180"/>
     </wire>
     <wire>
+      <p1 x="1940" y="1780"/>
+      <p2 x="1940" y="1880"/>
+    </wire>
+    <wire>
       <p1 x="2200" y="960"/>
       <p2 x="2200" y="1240"/>
+    </wire>
+    <wire>
+      <p1 x="920" y="1800"/>
+      <p2 x="920" y="1900"/>
     </wire>
     <wire>
       <p1 x="1820" y="520"/>
@@ -4293,11 +4887,23 @@ Patch circuit for other options</string>
     </wire>
     <wire>
       <p1 x="1820" y="1720"/>
-      <p2 x="1820" y="1740"/>
+      <p2 x="1820" y="1800"/>
     </wire>
     <wire>
-      <p1 x="1820" y="1920"/>
-      <p2 x="1820" y="1980"/>
+      <p1 x="1820" y="2080"/>
+      <p2 x="1820" y="2200"/>
+    </wire>
+    <wire>
+      <p1 x="1820" y="2200"/>
+      <p2 x="1820" y="2420"/>
+    </wire>
+    <wire>
+      <p1 x="1820" y="2420"/>
+      <p2 x="1820" y="2620"/>
+    </wire>
+    <wire>
+      <p1 x="1820" y="2620"/>
+      <p2 x="1820" y="2820"/>
     </wire>
     <wire>
       <p1 x="2080" y="1000"/>
@@ -4320,28 +4926,12 @@ Patch circuit for other options</string>
       <p2 x="2080" y="1340"/>
     </wire>
     <wire>
+      <p1 x="2080" y="1680"/>
+      <p2 x="2080" y="1860"/>
+    </wire>
+    <wire>
       <p1 x="1700" y="960"/>
       <p2 x="1700" y="1240"/>
-    </wire>
-    <wire>
-      <p1 x="1700" y="1820"/>
-      <p2 x="1700" y="1900"/>
-    </wire>
-    <wire>
-      <p1 x="1700" y="2260"/>
-      <p2 x="1700" y="2320"/>
-    </wire>
-    <wire>
-      <p1 x="1700" y="2360"/>
-      <p2 x="1700" y="2460"/>
-    </wire>
-    <wire>
-      <p1 x="1700" y="1900"/>
-      <p2 x="1700" y="1920"/>
-    </wire>
-    <wire>
-      <p1 x="1700" y="2460"/>
-      <p2 x="1700" y="2520"/>
     </wire>
     <wire>
       <p1 x="2340" y="1000"/>
@@ -4352,12 +4942,24 @@ Patch circuit for other options</string>
       <p2 x="2340" y="1180"/>
     </wire>
     <wire>
+      <p1 x="420" y="1940"/>
+      <p2 x="420" y="2540"/>
+    </wire>
+    <wire>
       <p1 x="1960" y="1000"/>
       <p2 x="1960" y="1020"/>
     </wire>
     <wire>
       <p1 x="1960" y="1160"/>
       <p2 x="1960" y="1180"/>
+    </wire>
+    <wire>
+      <p1 x="1960" y="1720"/>
+      <p2 x="1960" y="1840"/>
+    </wire>
+    <wire>
+      <p1 x="1960" y="1580"/>
+      <p2 x="1960" y="1660"/>
     </wire>
     <wire>
       <p1 x="2220" y="1000"/>
@@ -4372,6 +4974,14 @@ Patch circuit for other options</string>
       <p2 x="300" y="1460"/>
     </wire>
     <wire>
+      <p1 x="1580" y="1600"/>
+      <p2 x="1580" y="1940"/>
+    </wire>
+    <wire>
+      <p1 x="940" y="1840"/>
+      <p2 x="940" y="2020"/>
+    </wire>
+    <wire>
       <p1 x="1840" y="1000"/>
       <p2 x="1840" y="1020"/>
     </wire>
@@ -4380,16 +4990,48 @@ Patch circuit for other options</string>
       <p2 x="1840" y="1180"/>
     </wire>
     <wire>
-      <p1 x="1840" y="1640"/>
-      <p2 x="1840" y="1660"/>
+      <p1 x="1840" y="1700"/>
+      <p2 x="1840" y="1780"/>
     </wire>
     <wire>
-      <p1 x="1840" y="1680"/>
-      <p2 x="1840" y="1700"/>
+      <p1 x="1840" y="2120"/>
+      <p2 x="1840" y="2140"/>
     </wire>
     <wire>
-      <p1 x="1840" y="2420"/>
-      <p2 x="1840" y="2600"/>
+      <p1 x="1840" y="2360"/>
+      <p2 x="1840" y="2560"/>
+    </wire>
+    <wire>
+      <p1 x="1840" y="2560"/>
+      <p2 x="1840" y="2760"/>
+    </wire>
+    <wire>
+      <p1 x="1840" y="2140"/>
+      <p2 x="1840" y="2360"/>
+    </wire>
+    <wire>
+      <p1 x="1460" y="1940"/>
+      <p2 x="1460" y="1980"/>
+    </wire>
+    <wire>
+      <p1 x="1460" y="2020"/>
+      <p2 x="1460" y="2120"/>
+    </wire>
+    <wire>
+      <p1 x="1460" y="2400"/>
+      <p2 x="1460" y="2480"/>
+    </wire>
+    <wire>
+      <p1 x="1460" y="2580"/>
+      <p2 x="1460" y="2600"/>
+    </wire>
+    <wire>
+      <p1 x="1460" y="2480"/>
+      <p2 x="1460" y="2560"/>
+    </wire>
+    <wire>
+      <p1 x="1460" y="2600"/>
+      <p2 x="1460" y="2680"/>
     </wire>
     <wire>
       <p1 x="2100" y="960"/>
@@ -4404,8 +5046,16 @@ Patch circuit for other options</string>
       <p2 x="1720" y="1180"/>
     </wire>
     <wire>
-      <p1 x="1720" y="1660"/>
-      <p2 x="1720" y="1760"/>
+      <p1 x="1720" y="1580"/>
+      <p2 x="1720" y="1600"/>
+    </wire>
+    <wire>
+      <p1 x="1720" y="2380"/>
+      <p2 x="1720" y="2780"/>
+    </wire>
+    <wire>
+      <p1 x="1720" y="2220"/>
+      <p2 x="1720" y="2260"/>
     </wire>
     <wire>
       <p1 x="2360" y="1000"/>
@@ -4414,6 +5064,10 @@ Patch circuit for other options</string>
     <wire>
       <p1 x="2360" y="1160"/>
       <p2 x="2360" y="1180"/>
+    </wire>
+    <wire>
+      <p1 x="440" y="1860"/>
+      <p2 x="440" y="2440"/>
     </wire>
     <wire>
       <p1 x="1980" y="1000"/>
@@ -4436,12 +5090,8 @@ Patch circuit for other options</string>
       <p2 x="1980" y="1360"/>
     </wire>
     <wire>
-      <p1 x="1980" y="2220"/>
-      <p2 x="1980" y="2280"/>
-    </wire>
-    <wire>
-      <p1 x="1980" y="2280"/>
-      <p2 x="1980" y="2360"/>
+      <p1 x="1980" y="1600"/>
+      <p2 x="1980" y="1680"/>
     </wire>
     <wire>
       <p1 x="60" y="400"/>
@@ -4464,6 +5114,10 @@ Patch circuit for other options</string>
       <p2 x="320" y="1420"/>
     </wire>
     <wire>
+      <p1 x="960" y="1780"/>
+      <p2 x="960" y="1820"/>
+    </wire>
+    <wire>
       <p1 x="1860" y="1000"/>
       <p2 x="1860" y="1020"/>
     </wire>
@@ -4472,12 +5126,12 @@ Patch circuit for other options</string>
       <p2 x="1860" y="1180"/>
     </wire>
     <wire>
-      <p1 x="1860" y="1700"/>
-      <p2 x="1860" y="1800"/>
+      <p1 x="1860" y="1660"/>
+      <p2 x="1860" y="1720"/>
     </wire>
     <wire>
-      <p1 x="1860" y="2220"/>
-      <p2 x="1860" y="2260"/>
+      <p1 x="1860" y="1720"/>
+      <p2 x="1860" y="1760"/>
     </wire>
     <wire>
       <p1 x="580" y="1940"/>
@@ -4500,8 +5154,16 @@ Patch circuit for other options</string>
       <p2 x="1740" y="1180"/>
     </wire>
     <wire>
-      <p1 x="1740" y="2220"/>
-      <p2 x="1740" y="2300"/>
+      <p1 x="1740" y="1800"/>
+      <p2 x="1740" y="1840"/>
+    </wire>
+    <wire>
+      <p1 x="1740" y="2160"/>
+      <p2 x="1740" y="2320"/>
+    </wire>
+    <wire>
+      <p1 x="1740" y="2360"/>
+      <p2 x="1740" y="2580"/>
     </wire>
     <wire>
       <p1 x="2380" y="1000"/>
@@ -4528,14 +5190,6 @@ Patch circuit for other options</string>
       <p2 x="2000" y="1240"/>
     </wire>
     <wire>
-      <p1 x="2000" y="2240"/>
-      <p2 x="2000" y="2340"/>
-    </wire>
-    <wire>
-      <p1 x="2000" y="2540"/>
-      <p2 x="2000" y="2660"/>
-    </wire>
-    <wire>
       <p1 x="80" y="1560"/>
       <p2 x="80" y="1580"/>
     </wire>
@@ -4552,6 +5206,10 @@ Patch circuit for other options</string>
       <p2 x="1620" y="1180"/>
     </wire>
     <wire>
+      <p1 x="1620" y="1700"/>
+      <p2 x="1620" y="1880"/>
+    </wire>
+    <wire>
       <p1 x="2260" y="1000"/>
       <p2 x="2260" y="1020"/>
     </wire>
@@ -4562,6 +5220,10 @@ Patch circuit for other options</string>
     <wire>
       <p1 x="340" y="1360"/>
       <p2 x="340" y="1380"/>
+    </wire>
+    <wire>
+      <p1 x="980" y="1860"/>
+      <p2 x="980" y="1940"/>
     </wire>
     <wire>
       <p1 x="1880" y="1000"/>
@@ -4584,24 +5246,16 @@ Patch circuit for other options</string>
       <p2 x="1880" y="1380"/>
     </wire>
     <wire>
-      <p1 x="1880" y="1740"/>
-      <p2 x="1880" y="1880"/>
-    </wire>
-    <wire>
-      <p1 x="1880" y="2300"/>
-      <p2 x="1880" y="2340"/>
-    </wire>
-    <wire>
-      <p1 x="1880" y="2340"/>
-      <p2 x="1880" y="2380"/>
-    </wire>
-    <wire>
       <p1 x="600" y="1920"/>
       <p2 x="600" y="1940"/>
     </wire>
     <wire>
       <p1 x="600" y="1980"/>
       <p2 x="600" y="2160"/>
+    </wire>
+    <wire>
+      <p1 x="600" y="2160"/>
+      <p2 x="600" y="2480"/>
     </wire>
     <wire>
       <p1 x="2140" y="1000"/>
@@ -4612,12 +5266,52 @@ Patch circuit for other options</string>
       <p2 x="2140" y="1180"/>
     </wire>
     <wire>
+      <p1 x="1500" y="2180"/>
+      <p2 x="1500" y="2260"/>
+    </wire>
+    <wire>
+      <p1 x="1500" y="2660"/>
+      <p2 x="1500" y="2780"/>
+    </wire>
+    <wire>
+      <p1 x="1500" y="2780"/>
+      <p2 x="1500" y="2860"/>
+    </wire>
+    <wire>
+      <p1 x="1500" y="2260"/>
+      <p2 x="1500" y="2380"/>
+    </wire>
+    <wire>
+      <p1 x="1500" y="2380"/>
+      <p2 x="1500" y="2460"/>
+    </wire>
+    <wire>
+      <p1 x="1500" y="2460"/>
+      <p2 x="1500" y="2500"/>
+    </wire>
+    <wire>
+      <p1 x="1500" y="2500"/>
+      <p2 x="1500" y="2580"/>
+    </wire>
+    <wire>
+      <p1 x="1500" y="2580"/>
+      <p2 x="1500" y="2660"/>
+    </wire>
+    <wire>
+      <p1 x="860" y="1660"/>
+      <p2 x="860" y="1760"/>
+    </wire>
+    <wire>
       <p1 x="1760" y="1000"/>
       <p2 x="1760" y="1020"/>
     </wire>
     <wire>
       <p1 x="1760" y="1160"/>
       <p2 x="1760" y="1180"/>
+    </wire>
+    <wire>
+      <p1 x="1760" y="2340"/>
+      <p2 x="1760" y="2380"/>
     </wire>
     <wire>
       <p1 x="2400" y="960"/>
@@ -4630,14 +5324,6 @@ Patch circuit for other options</string>
     <wire>
       <p1 x="2020" y="1160"/>
       <p2 x="2020" y="1180"/>
-    </wire>
-    <wire>
-      <p1 x="2020" y="2340"/>
-      <p2 x="2020" y="2400"/>
-    </wire>
-    <wire>
-      <p1 x="2020" y="2400"/>
-      <p2 x="2020" y="2460"/>
     </wire>
     <wire>
       <p1 x="100" y="380"/>
@@ -4668,10 +5354,6 @@ Patch circuit for other options</string>
       <p2 x="1640" y="1180"/>
     </wire>
     <wire>
-      <p1 x="1640" y="1780"/>
-      <p2 x="1640" y="1800"/>
-    </wire>
-    <wire>
       <p1 x="1640" y="340"/>
       <p2 x="1640" y="360"/>
     </wire>
@@ -4696,6 +5378,10 @@ Patch circuit for other options</string>
       <p2 x="2280" y="1300"/>
     </wire>
     <wire>
+      <p1 x="1900" y="1860"/>
+      <p2 x="1900" y="1940"/>
+    </wire>
+    <wire>
       <p1 x="1900" y="960"/>
       <p2 x="1900" y="1240"/>
     </wire>
@@ -4710,6 +5396,38 @@ Patch circuit for other options</string>
     <wire>
       <p1 x="2160" y="1160"/>
       <p2 x="2160" y="1180"/>
+    </wire>
+    <wire>
+      <p1 x="1520" y="2160"/>
+      <p2 x="1520" y="2240"/>
+    </wire>
+    <wire>
+      <p1 x="1520" y="2240"/>
+      <p2 x="1520" y="2360"/>
+    </wire>
+    <wire>
+      <p1 x="1520" y="2360"/>
+      <p2 x="1520" y="2440"/>
+    </wire>
+    <wire>
+      <p1 x="1520" y="2440"/>
+      <p2 x="1520" y="2520"/>
+    </wire>
+    <wire>
+      <p1 x="1520" y="2520"/>
+      <p2 x="1520" y="2560"/>
+    </wire>
+    <wire>
+      <p1 x="1520" y="2560"/>
+      <p2 x="1520" y="2640"/>
+    </wire>
+    <wire>
+      <p1 x="1520" y="2640"/>
+      <p2 x="1520" y="2760"/>
+    </wire>
+    <wire>
+      <p1 x="1520" y="2760"/>
+      <p2 x="1520" y="2840"/>
     </wire>
     <wire>
       <p1 x="1780" y="1000"/>
@@ -4740,8 +5458,16 @@ Patch circuit for other options</string>
       <p2 x="2040" y="1180"/>
     </wire>
     <wire>
-      <p1 x="1660" y="2300"/>
-      <p2 x="1660" y="2580"/>
+      <p1 x="1400" y="2320"/>
+      <p2 x="1400" y="2440"/>
+    </wire>
+    <wire>
+      <p1 x="1400" y="2480"/>
+      <p2 x="1400" y="2520"/>
+    </wire>
+    <wire>
+      <p1 x="1660" y="1560"/>
+      <p2 x="1660" y="1720"/>
     </wire>
     <wire>
       <p1 x="1660" y="1000"/>
@@ -4750,6 +5476,22 @@ Patch circuit for other options</string>
     <wire>
       <p1 x="1660" y="1160"/>
       <p2 x="1660" y="1180"/>
+    </wire>
+    <wire>
+      <p1 x="1660" y="2380"/>
+      <p2 x="1660" y="2400"/>
+    </wire>
+    <wire>
+      <p1 x="1660" y="2580"/>
+      <p2 x="1660" y="2600"/>
+    </wire>
+    <wire>
+      <p1 x="1660" y="2780"/>
+      <p2 x="1660" y="2800"/>
+    </wire>
+    <wire>
+      <p1 x="1660" y="1720"/>
+      <p2 x="1660" y="1760"/>
     </wire>
     <wire>
       <p1 x="2300" y="960"/>
