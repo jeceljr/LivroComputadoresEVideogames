@@ -17,16 +17,16 @@ module sj_nano20k(
     output [1:0] led,
 
     // SDRAM
-    output O_sdram_clk,
-    output O_sdram_cke,
-    output O_sdram_cs_n,            // chip select
-    output O_sdram_cas_n,           // columns address select
-    output O_sdram_ras_n,           // row address select
-    output O_sdram_wen_n,           // write enable
-    inout [31:0] IO_sdram_dq,       // 32 bit bidirectional data bus
-    output [10:0] O_sdram_addr,     // 11 bit multiplexed address bus
-    output [1:0] O_sdram_ba,        // two banks
-    output [3:0] O_sdram_dqm,       // 32/4
+    //output O_sdram_clk,
+    //output O_sdram_cke,
+    //output O_sdram_cs_n,            // chip select
+    //output O_sdram_cas_n,           // columns address select
+    //output O_sdram_ras_n,           // row address select
+    //output O_sdram_wen_n,           // write enable
+    //inout [31:0] IO_sdram_dq,       // 32 bit bidirectional data bus
+    //output [10:0] O_sdram_addr,     // 11 bit multiplexed address bus
+    //output [1:0] O_sdram_ba,        // two banks
+    //output [3:0] O_sdram_dqm,       // 32/4
 
     // MicroSD
     output sd_clk,
@@ -73,7 +73,7 @@ module sj_nano20k(
 
   reg sys_resetn = 0;
   reg [7:0] reset_cnt = 255;      // reset for 255 cycles before start everything
-  always @(posedge clk) begin
+  always @(posedge sys_clk) begin
       reset_cnt <= reset_cnt == 0 ? 0 : reset_cnt - 1;
       if (reset_cnt == 0)
           sys_resetn <= ~s1;
@@ -94,12 +94,12 @@ module sj_nano20k(
 
   reg [3:0] clk_cnt;
   always@(posedge clk_p10) begin
-      clk_p5 <= ~clock_p5;
+      clk_p5 <= ~clk_p5;
       clk_cnt <= (clk_cnt == 9) ? 0 : clk_cnt+1;
   end
 
   assign clk_p = clk_cnt[3] | (clk_cnt[2] & clk_cnt[0]) | (clk_cnt[2] & clk_cnt[1]);
-  assign clock50MHz = clk_cnt[3] | (clk_cnt[2:0] == 3'b011) | (clk_cnt[2:0] = 3'b100);
+  assign clock50MHz = clk_cnt[3] | (clk_cnt[2:0] == 3'b011) | (clk_cnt[2:0] == 3'b100);
 //0000 00
 //0001 00
 //0010 00
@@ -110,15 +110,31 @@ module sj_nano20k(
 //0111 10
 //1000 11
 //1001 11
+  // debug via LEDs
+  reg [31:0] lcnt;
+  always @(posedge clock50MHz) lcnt <= lcnt + 1;
+  assign led = lcnt[29:28];
+  
 
   wire [15:0] p1;
   wire [15:0] p2;
   wire [11:0] gx;
   wire [11:0] gy;
+
+// HDMI output.
+  wire[2:0] tmds;
+
+//HDMI input
+  wire clk_audio;
+  wire [23:0] rgb;     // actual RGB output
+  wire [15:0] audio_sample_word_L;
+  wire [15:0] audio_sample_word_R;
+  wire [9:0] cx;
+  wire [9:0] cy;
   
   vg videogame(
   .clock50MHz_i(clock50MHz),
-  .resetn_i(resetn),
+  .resetn_i(sys_resetn),
   .p1_select_i(p1[0]),
   .p1_start_i(p1[3]),
   .p1_up_i(p1[4]),
@@ -160,8 +176,8 @@ module sj_nano20k(
   .v_x_o(),
   .v_y_o(),
   .v_de_o(),
-  .a_left_o(audio_sample_word[1]),
-  .a_right_o(audio_sample_word[0]),
+  .a_left_o(audio_sample_word_L),
+  .a_right_o(audio_sample_word_R),
   .a_clk_o(clk_audio),
   .led_o(),
   .seg_o(),
@@ -179,7 +195,7 @@ module sj_nano20k(
 
 //  dualshock buttons:  0:(L D R U St R3 L3 Se)  1:(□ X O △ R1 L1 R2 L2)
 //                         7 6 5 4 3  2  1  0       1514131211 10 9  8
-  dualshock_controller #(.FREQ(21_600_000)) ds1 (
+  dualshock_controller #(.FREQ(50_000_000)) ds1 (
     .clk(clock50MHz), .I_RSTn(1'b1),
     .O_psCLK(joystick_clk), .O_psSEL(joystick_cs), .O_psTXD(joystick_mosi),
     .I_psRXD(joystick_miso),
@@ -187,7 +203,7 @@ module sj_nano20k(
     .O_RXD_4(), .O_RXD_5(), .O_RXD_6()
   );
 
-  dualshock_controller #(.FREQ(21_600_000)) ds2 (
+  dualshock_controller #(.FREQ(50_000_000)) ds2 (
     .clk(clock50MHz), .I_RSTn(1'b1),
     .O_psCLK(joystick_clk2), .O_psSEL(joystick_cs2), .O_psTXD(joystick_mosi2),
     .I_psRXD(joystick_miso2),
@@ -195,21 +211,11 @@ module sj_nano20k(
     .O_RXD_4(), .O_RXD_5(), .O_RXD_6()
   );
 
-// HDMI output.
-  logic[2:0] tmds;
-
-//HDMI input
-  logic clk_audio;
-  wire [23:0] rgb;     // actual RGB output
-  logic [AUDIO_BIT_WIDTH-1:0] audio_sample_word [1:0],
-  wire [9:0] cx;
-  wire [9:0] cy;
-
 hdmi #( .VIDEO_ID_CODE(1), //640x480
         .DVI_OUTPUT(0), 
         .VIDEO_REFRESH_RATE(60.0),
         .IT_CONTENT(1),
-        .AUDIO_RATE(AUDIO_RATE), 
+        .AUDIO_RATE(15687), 
         .AUDIO_BIT_WIDTH(16),
         .START_X(0),
         .START_Y(0) )
@@ -218,16 +224,16 @@ hdmi #( .VIDEO_ID_CODE(1), //640x480
         .clk_pixel(clk_p), 
         .clk_audio(clk_audio),
         .rgb(rgb), 
-        .reset( ~resetn | (gx[9:0] != cx) | (gy[9:0] != cy)), // sync counters
-        .audio_sample_word(audio_sample_word),
+        .reset( ~sys_resetn | (gx[9:0] != cx) | (gy[9:0] != cy)), // sync counters
+        .audio_sample_word({audio_sample_word_L,audio_sample_word_R}),
         .tmds(tmds), 
-        .tmds_clock(tmdsClk), 
+        .tmds_clock(),//(tmdsClk), 
         .cx(cx), 
         .cy(cy) );
 
 // Gowin LVDS output buffer
   ELVDS_OBUF tmds_bufds [3:0] (
-    .I({clk_pixel, tmds}),
+    .I({clk_p, tmds}),
     .O({tmds_clk_p, tmds_d_p}),
     .OB({tmds_clk_n, tmds_d_n})
   );
@@ -286,7 +292,7 @@ defparam rpll_inst.CLKOUTD_BYPASS = "false";
 defparam rpll_inst.DYN_SDIV_SEL = 2;
 defparam rpll_inst.CLKOUTD_SRC = "CLKOUT";
 defparam rpll_inst.CLKOUTD3_SRC = "CLKOUT";
-defparam rpll_inst.DEVICE = "GW2AR-18";
+defparam rpll_inst.DEVICE = "GW2AR-18C";
 
 endmodule //Gowin_rPLL
 
