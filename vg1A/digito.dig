@@ -158,12 +158,12 @@
       <elementName>ROM</elementName>
       <elementAttributes>
         <entry>
-          <string>Label</string>
-          <string>hex2seg</string>
-        </entry>
-        <entry>
           <string>AddrBits</string>
           <int>4</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>hex2seg</string>
         </entry>
         <entry>
           <string>Bits</string>
@@ -262,7 +262,7 @@
       <elementAttributes>
         <entry>
           <string>Value</string>
-          <long>5</long>
+          <long>2</long>
         </entry>
         <entry>
           <string>Bits</string>
@@ -314,7 +314,7 @@
       <elementAttributes>
         <entry>
           <string>Value</string>
-          <long>10</long>
+          <long>13</long>
         </entry>
         <entry>
           <string>Bits</string>
@@ -616,7 +616,7 @@
       <elementAttributes>
         <entry>
           <string>Value</string>
-          <long>35</long>
+          <long>32</long>
         </entry>
         <entry>
           <string>Bits</string>
@@ -652,7 +652,7 @@
       <elementAttributes>
         <entry>
           <string>Value</string>
-          <long>45</long>
+          <long>44</long>
         </entry>
         <entry>
           <string>Bits</string>
@@ -670,7 +670,7 @@
       <elementAttributes>
         <entry>
           <string>Value</string>
-          <long>40</long>
+          <long>42</long>
         </entry>
         <entry>
           <string>Bits</string>
@@ -706,7 +706,7 @@
       <elementAttributes>
         <entry>
           <string>Value</string>
-          <long>50</long>
+          <long>53</long>
         </entry>
         <entry>
           <string>Bits</string>
@@ -742,7 +742,7 @@
       <elementAttributes>
         <entry>
           <string>Value</string>
-          <long>40</long>
+          <long>42</long>
         </entry>
         <entry>
           <string>Bits</string>
@@ -796,7 +796,7 @@
       <elementAttributes>
         <entry>
           <string>Value</string>
-          <long>45</long>
+          <long>44</long>
         </entry>
         <entry>
           <string>Bits</string>
@@ -814,7 +814,7 @@
       <elementAttributes>
         <entry>
           <string>Value</string>
-          <long>40</long>
+          <long>42</long>
         </entry>
         <entry>
           <string>Bits</string>
@@ -832,7 +832,7 @@
       <elementAttributes>
         <entry>
           <string>Value</string>
-          <long>45</long>
+          <long>44</long>
         </entry>
         <entry>
           <string>Bits</string>
