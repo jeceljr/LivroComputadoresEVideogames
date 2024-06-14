@@ -110,11 +110,6 @@ module sj_nano20k(
 //0111 10
 //1000 11
 //1001 11
-  // debug via LEDs
-  reg [31:0] lcnt;
-  always @(posedge clock50MHz) lcnt <= lcnt + 1;
-  assign led = lcnt[29:28];
-  
 
   wire [15:0] p1;
   wire [15:0] p2;
@@ -131,34 +126,43 @@ module sj_nano20k(
   wire [15:0] audio_sample_word_R;
   wire [9:0] cx;
   wire [9:0] cy;
+
+  // debug via LEDs
+  wire v_clk;
+  reg [31:0] lcnt;
+  always @(posedge gy[0]) lcnt <= lcnt + 1;
+  //assign led = {lcnt[2],~lcnt[1]};
+  //assign led[0] = p1[5];
+  //assign led[1] = p1[7];
+  assign led = {p1[3],p1[3]}; 
   
   vg videogame(
   .clock50MHz_i(clock50MHz),
   .resetn_i(sys_resetn),
-  .p1_select_i(p1[0]),
-  .p1_start_i(p1[3]),
-  .p1_up_i(p1[4]),
-  .p1_down_i(p1[6]),
-  .p1_left_i(p1[7]),
-  .p1_right_i(p1[5]),
-  .p1_button1_i(p1[13]),
-  .p1_button2_i(p1[14]),
-  .p1_button3_i(p1[12]),
-  .p1_button4_i(p1[15]),
-  .p1_button5_i(p1[0]|p1[2]),
-  .p1_button6_i(p1[1]|p1[3]),
-  .p2_select_i(p2[0]),
-  .p2_start_i(p2[3]),
-  .p2_up_i(p2[4]),
-  .p2_down_i(p2[6]),
-  .p2_left_i(p2[7]),
-  .p2_right_i(p2[5]),
-  .p2_button1_i(p2[13]),
-  .p2_button2_i(p2[14]),
-  .p2_button3_i(p2[12]),
-  .p2_button4_i(p2[15]),
-  .p2_button5_i(p2[0]|p2[2]),
-  .p2_button6_i(p2[1]|p2[3]),
+  .p1_select_i(~p1[0]),
+  .p1_start_i(~p1[3]),
+  .p1_up_i(~p1[4]),
+  .p1_down_i(~p1[6]),
+  .p1_left_i(~p1[7]),
+  .p1_right_i(~p1[5]),
+  .p1_button1_i(~p1[13]),
+  .p1_button2_i(~p1[14]),
+  .p1_button3_i(~p1[12]),
+  .p1_button4_i(~p1[15]),
+  .p1_button5_i(~p1[0]|~p1[2]),
+  .p1_button6_i(~p1[1]|~p1[3]),
+  .p2_select_i(~p2[0]),
+  .p2_start_i(~p2[3]),
+  .p2_up_i(~p2[4]),
+  .p2_down_i(~p2[6]),
+  .p2_left_i(~p2[7]),
+  .p2_right_i(~p2[5]),
+  .p2_button1_i(~p2[13]),
+  .p2_button2_i(~p2[14]),
+  .p2_button3_i(~p2[12]),
+  .p2_button4_i(~p2[15]),
+  .p2_button5_i(~p2[0]|~p2[2]),
+  .p2_button6_i(~p2[1]|~p2[3]),
   .switch_i(0),
   .wb_data_i(0),
   .wb_ack_i(0),
@@ -172,9 +176,9 @@ module sj_nano20k(
   .v_b_o(rgb[7:0]),
   .v_vs_o(),
   .v_hs_o(),
-  .v_clk_o(),
-  .v_x_o(),
-  .v_y_o(),
+  .v_clk_o(v_clk),
+  .v_x_o(gx),
+  .v_y_o(gy),
   .v_de_o(),
   .a_left_o(audio_sample_word_L),
   .a_right_o(audio_sample_word_R),
@@ -199,7 +203,7 @@ module sj_nano20k(
     .clk(clock50MHz), .I_RSTn(1'b1),
     .O_psCLK(joystick_clk), .O_psSEL(joystick_cs), .O_psTXD(joystick_mosi),
     .I_psRXD(joystick_miso),
-    .O_RXD_1(p1[15:8]), .O_RXD_2(p1[7:0]), .O_RXD_3(),
+    .O_RXD_1(p1[7:0]), .O_RXD_2(p1[15:8]), .O_RXD_3(),
     .O_RXD_4(), .O_RXD_5(), .O_RXD_6()
   );
 
@@ -207,9 +211,12 @@ module sj_nano20k(
     .clk(clock50MHz), .I_RSTn(1'b1),
     .O_psCLK(joystick_clk2), .O_psSEL(joystick_cs2), .O_psTXD(joystick_mosi2),
     .I_psRXD(joystick_miso2),
-    .O_RXD_1(p2[15:8]), .O_RXD_2(p2[7:0]), .O_RXD_3(),
+    .O_RXD_1(p2[7:0]), .O_RXD_2(p2[15:8]), .O_RXD_3(),
     .O_RXD_4(), .O_RXD_5(), .O_RXD_6()
   );
+
+wire [23:0] testrgb;
+assign testrgb = (cx[3] | cy[3]) ? 24'hFFFFFF : 24'h000000;
 
 hdmi #( .VIDEO_ID_CODE(1), //640x480
         .DVI_OUTPUT(0), 
@@ -223,11 +230,13 @@ hdmi #( .VIDEO_ID_CODE(1), //640x480
   hdmi( .clk_pixel_x5(clk_p5), 
         .clk_pixel(clk_p), 
         .clk_audio(clk_audio),
-        .rgb(rgb), 
-        .reset( ~sys_resetn | (gx[9:0] != cx) | (gy[9:0] != cy)), // sync counters
+        .rgb(testrgb), 
+        .reset(~sys_resetn),
         .audio_sample_word({audio_sample_word_L,audio_sample_word_R}),
         .tmds(tmds), 
-        .tmds_clock(),//(tmdsClk), 
+        .tmds_clock(),//(tmdsClk),
+        .scrollx(~p1[12]),
+        .scrolly(~p1[15]), 
         .cx(cx), 
         .cy(cy) );
 
@@ -673,6 +682,10 @@ module hdmi
     // i.e. always_ff @(posedge pixel_clk) rgb <= {8'd0, 8'(cx), 8'(cy)};
     output logic [BIT_WIDTH-1:0] cx = START_X,
     output logic [BIT_HEIGHT-1:0] cy = START_Y,
+    //input logic [11:0] gx,
+    //input logic [11:0] gy,
+    input logic scrollx,
+    input logic scrolly,
 
     // The screen is at the upper left corner of the frame.
     // 0,0 = 0,0 in video
@@ -814,7 +827,7 @@ begin
     else
     begin
         cx <= cx == frame_width-1'b1 ? BIT_WIDTH'(0) : cx + 1'b1;
-        cy <= cx == frame_width-1'b1 ? cy == frame_height-1'b1 ? BIT_HEIGHT'(0) : cy + 1'b1 : cy;
+        cy <= cx == frame_width-1'b1 ? cy == frame_height-1'b1 ? (scrolly ? BIT_HEIGHT'(1) :BIT_HEIGHT'(0)) : cy + 1'b1 : cy;
     end
 end
 
