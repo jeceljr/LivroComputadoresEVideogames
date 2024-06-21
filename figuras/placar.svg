@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Digital by H.Neemann -->
-<!-- created: Tue Mar 19 15:38:20 BRT 2024 -->
+<!-- created: Fri Jun 21 19:00:51 BRT 2024 -->
 
 <svg
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   width="125.1mm"
+   width="125.25mm"
    height="53.4mm"
-   viewBox="250 58 834 356">
+   viewBox="249 58 835 356">
 <g stroke-linecap="square">
-<path d="M 840,100 L 850,100 L 860,100" stroke="#000000" stroke-width="4.0" fill="none"/>
-<path d="M 860,120 L 850,120" stroke="#000000" stroke-width="4.0" fill="none"/>
-<path d="M 860,140 L 850,140" stroke="#000000" stroke-width="4.0" fill="none"/>
-<path d="M 860,160 L 850,160" stroke="#000000" stroke-width="4.0" fill="none"/>
-<path d="M 921,100 L 921,109" stroke="#000000" stroke-width="4.0" fill="none"/>
-<path d="M 921,180 L 921,171" stroke="#000000" stroke-width="4.0" fill="none"/>
 <path d="M 860,160 L 920,160" stroke="#0000b2" stroke-width="4.0" fill="none"/>
 <path d="M 820,200 L 820,100 L 840,100" stroke="#0000b2" stroke-width="4.0" fill="none"/>
 <path d="M 860,100 L 920,100" stroke="#0000b2" stroke-width="4.0" fill="none"/>
@@ -22,17 +16,26 @@
 <path d="M 660,220 L 660,360 L 740,360" stroke="#0000b2" stroke-width="4.0" fill="none"/>
 <path d="M 400,360 L 620,360 L 620,200" stroke="#0000b2" stroke-width="4.0" fill="none"/>
 <path d="M 860,140 L 900,140" stroke="#0000b2" stroke-width="4.0" fill="none"/>
-<path d="M 1000,140 L 1020,140 L 1020,60 L 700,60 L 700,240 L 740,240" stroke="#0000b2" stroke-width="4.0" fill="none"/>
+<path d="M 1000,140 L 1020,140 L 1020,60 L 560,60 L 560,100 L 580,100 L 584,100" stroke="#0000b2" stroke-width="4.0" fill="none"/>
+<path d="M 540,280 L 540,140 L 580,140 L 584,140" stroke="#0000b2" stroke-width="4.0" fill="none"/>
 <path d="M 800,340 L 940,340" stroke="#0000b2" stroke-width="4.0" fill="none"/>
 <path d="M 700,240 L 700,340 L 740,340" stroke="#0000b2" stroke-width="4.0" fill="none"/>
-<path d="M 400,280 L 640,280 L 640,380 L 740,380" stroke="#0000b2" stroke-width="4.0" fill="none"/>
+<path d="M 400,280 L 540,280 L 640,280 L 640,380 L 740,380" stroke="#0000b2" stroke-width="4.0" fill="none"/>
 <path d="M 860,120 L 900,120" stroke="#0000b2" stroke-width="4.0" fill="none"/>
+<path d="M 660,120 L 700,120 L 700,240 L 740,240" stroke="#0000b2" stroke-width="4.0" fill="none"/>
 <path d="M 400,220 L 660,220 L 740,220" stroke="#0000b2" stroke-width="4.0" fill="none"/>
 <path d="M 740,200 L 620,200 L 620,180 L 920,180" stroke="#0000b2" stroke-width="4.0" fill="none"/>
+<path d="M 840,100 L 850,100 L 860,100" stroke="#000000" stroke-width="4.0" fill="none"/>
+<path d="M 860,120 L 850,120" stroke="#000000" stroke-width="4.0" fill="none"/>
+<path d="M 860,140 L 850,140" stroke="#000000" stroke-width="4.0" fill="none"/>
+<path d="M 860,160 L 850,160" stroke="#000000" stroke-width="4.0" fill="none"/>
+<path d="M 921,100 L 921,109" stroke="#000000" stroke-width="4.0" fill="none"/>
+<path d="M 921,180 L 921,171" stroke="#000000" stroke-width="4.0" fill="none"/>
 <g>
 <circle cx="820.0" cy="200.0" r="4.0" stroke="#0000b2" stroke-width="4.0" fill="#0000b2" />
 <circle cx="620.0" cy="200.0" r="4.0" stroke="#0000b2" stroke-width="4.0" fill="#0000b2" />
 <circle cx="700.0" cy="240.0" r="4.0" stroke="#0000b2" stroke-width="4.0" fill="#0000b2" />
+<circle cx="540.0" cy="280.0" r="4.0" stroke="#0000b2" stroke-width="4.0" fill="#0000b2" />
 <circle cx="660.0" cy="220.0" r="4.0" stroke="#0000b2" stroke-width="4.0" fill="#0000b2" />
 </g>
 <g>
@@ -118,6 +121,12 @@
 <circle cx="920.0" cy="160.0" r="2.0" stroke="#0000b2" stroke-width="4.0" fill="#0000b2" />
 <circle cx="920.0" cy="180.0" r="2.0" stroke="#0000b2" stroke-width="4.0" fill="#0000b2" />
 <circle cx="1000.0" cy="140.0" r="2.0" stroke="#b20000" stroke-width="4.0" fill="#b20000" />
+</g>
+<g>
+<path d="M 610,150 L 580,150 C 590,134 590,106 580,90 L 600,90 C 630,90 650,100 660,120 C 650,140 630,150 610,150 Z" stroke="#000000" stroke-width="4.0" fill="none"/>
+<circle cx="580.0" cy="100.0" r="2.0" stroke="#0000b2" stroke-width="4.0" fill="#0000b2" />
+<circle cx="580.0" cy="140.0" r="2.0" stroke="#0000b2" stroke-width="4.0" fill="#0000b2" />
+<circle cx="660.0" cy="120.0" r="2.0" stroke="#b20000" stroke-width="4.0" fill="#b20000" />
 </g>
 </g>
 </svg>

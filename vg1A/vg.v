@@ -391,7 +391,7 @@ module placar (
     .clr( s0 ),
     .out( digito1_temp )
   );
-  assign s0 = (digito1_temp[0] & ~ digito1_temp[1] & ~ digito1_temp[2] & digito1_temp[3] & conta);
+  assign s0 = ((digito1_temp[0] & ~ digito1_temp[1] & ~ digito1_temp[2] & digito1_temp[3] & conta) | inicializa);
   assign digito1 = digito1_temp;
 endmodule
 
