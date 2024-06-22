@@ -451,9 +451,9 @@ module bola1d (
   wire s9;
   wire [11:0] s10;
   assign s1 = (inicializa | move);
+  assign s6[0] = (desce | inicializa);
+  assign s6[1] = (sobe | inicializa);
   assign s9 = (volta | inicializa);
-  assign s6[0] = (desce | s1);
-  assign s6[1] = (sobe | s1);
   // posicao
   DIG_Register_BUS #(
     .Bits(12)
@@ -1366,7 +1366,7 @@ module vg (
   )
   Mux_8x1_NBits_i6 (
     .sel( s14 ),
-    .in_0( 24'b1000000000000000 ),
+    .in_0( 24'b100000000000000 ),
     .in_1( 24'b111111111111000011111111 ),
     .in_2( 24'b111111110111111100000000 ),
     .in_3( 24'b111111110111111100000000 ),
