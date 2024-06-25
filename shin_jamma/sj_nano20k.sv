@@ -118,12 +118,36 @@ module sj_nano20k(
   wire[2:0] tmds;
 
 //HDMI input
-  wire clk_audio;
+  reg clk_audio;
   wire [23:0] rgb;     // actual RGB output
   wire [15:0] audio_sample_word_L;
   wire [15:0] audio_sample_word_R;
   wire [9:0] cx;
   wire [9:0] cy;
+
+  reg [10:0] audio_divider;
+  always @(posedge clock50MHz)
+  begin
+     if (audio_divider != 524 )
+         audio_divider <= audio_divider + 1;
+     else begin
+         audio_divider <= 0;
+         clk_audio <= ~clk_audio; // 48000 Hz
+     end
+  end
+  
+  wire a_clk;
+  reg [15:0] a_samp0L;
+  reg [15:0] a_samp0R;
+  reg [15:0] a_samp1L;
+  reg [15:0] a_samp1R;
+  always @(posedge v_clk) // de uma região de relógio para outra
+  begin
+      a_samp0L <= audio_sample_word_L;
+      a_samp0R <= audio_sample_word_R;
+      a_samp1L <= a_samp0L;
+      a_samp1R <= a_samp0R;
+  end
 
   // debug via LEDs
   wire v_clk;
@@ -177,7 +201,7 @@ module sj_nano20k(
   .v_de_o(),
   .a_left_o(audio_sample_word_L),
   .a_right_o(audio_sample_word_R),
-  .a_clk_o(clk_audio),
+  .a_clk_o(a_clk),
   .led_o(),
   .seg_o(),
   .wb_adr_o(),
@@ -235,7 +259,7 @@ hdmi #( .VIDEO_ID_CODE(1), //640x480
         .DVI_OUTPUT(0), 
         .VIDEO_REFRESH_RATE(60.0),
         .IT_CONTENT(1),
-        .AUDIO_RATE(15687), 
+        .AUDIO_RATE(48000), 
         .AUDIO_BIT_WIDTH(16),
         .START_X(0),
         .START_Y(0) )
@@ -245,7 +269,7 @@ hdmi #( .VIDEO_ID_CODE(1), //640x480
         .clk_audio(clk_audio),
         .rgb((cy != 10'd0) ? rgb : 24'h000000), 
         .reset(~sys_resetn),
-        .audio_sample_word({audio_sample_word_L,audio_sample_word_R}),
+        .audio_sample_word({a_samp1L,a_samp1R}),
         .tmds(tmds), 
         .tmds_clock(),//(tmdsClk),
         .cx(cx), 

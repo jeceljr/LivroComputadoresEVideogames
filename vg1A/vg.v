@@ -1319,12 +1319,12 @@ module vg (
   );
   assign s30[14:0] = 15'b0;
   assign s30[15] = (s29 & p1_button3_i);
-  assign s31[9:0] = 10'b0;
-  assign s31[10] = (s29 & p1_button4_i);
-  assign s31[15:11] = 5'b0;
-  assign s32[4:0] = 5'b0;
-  assign s32[5] = (s29 & p1_button5_i);
-  assign s32[15:6] = 10'b0;
+  assign s31[13:0] = 14'b0;
+  assign s31[14] = (s29 & p1_button4_i);
+  assign s31[15] = 1'b0;
+  assign s32[12:0] = 13'b0;
+  assign s32[13] = (s29 & p1_button5_i);
+  assign s32[15:14] = 2'b0;
   assign v_vs_o = ~ s5;
   assign v_hs_o = ~ s3;
   assign v_de_o_temp = (s4 & s2);

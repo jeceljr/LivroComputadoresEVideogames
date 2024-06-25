@@ -1307,7 +1307,7 @@
       <elementAttributes>
         <entry>
           <string>Input Splitting</string>
-          <string>10,1,5</string>
+          <string>14,1,1</string>
         </entry>
         <entry>
           <string>Output Splitting</string>
@@ -1321,7 +1321,7 @@
       <elementAttributes>
         <entry>
           <string>Input Splitting</string>
-          <string>5,1,10</string>
+          <string>13,1,2</string>
         </entry>
         <entry>
           <string>Output Splitting</string>
@@ -1345,18 +1345,14 @@
       <pos x="1100" y="1120"/>
     </visualElement>
     <visualElement>
-      <elementName>Const</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Value</string>
-          <long>0</long>
-        </entry>
-        <entry>
-          <string>Bits</string>
-          <int>10</int>
-        </entry>
-      </elementAttributes>
-      <pos x="1100" y="1220"/>
+      <elementName>D_FF</elementName>
+      <elementAttributes/>
+      <pos x="1600" y="880"/>
+    </visualElement>
+    <visualElement>
+      <elementName>D_FF</elementName>
+      <elementAttributes/>
+      <pos x="1600" y="980"/>
     </visualElement>
     <visualElement>
       <elementName>Const</elementName>
@@ -1367,7 +1363,17 @@
         </entry>
         <entry>
           <string>Bits</string>
-          <int>5</int>
+          <int>14</int>
+        </entry>
+      </elementAttributes>
+      <pos x="1100" y="1220"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Const</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Value</string>
+          <long>0</long>
         </entry>
       </elementAttributes>
       <pos x="1100" y="1260"/>
@@ -1381,7 +1387,7 @@
         </entry>
         <entry>
           <string>Bits</string>
-          <int>5</int>
+          <int>13</int>
         </entry>
       </elementAttributes>
       <pos x="1100" y="1320"/>
@@ -1395,20 +1401,10 @@
         </entry>
         <entry>
           <string>Bits</string>
-          <int>10</int>
+          <int>2</int>
         </entry>
       </elementAttributes>
       <pos x="1100" y="1360"/>
-    </visualElement>
-    <visualElement>
-      <elementName>D_FF</elementName>
-      <elementAttributes/>
-      <pos x="1600" y="880"/>
-    </visualElement>
-    <visualElement>
-      <elementName>D_FF</elementName>
-      <elementAttributes/>
-      <pos x="1600" y="980"/>
     </visualElement>
   </visualElements>
   <wires>
