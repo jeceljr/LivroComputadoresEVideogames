@@ -563,7 +563,10 @@ module jogo (
   output [3:0] digito1,
   output [3:0] digito10,
   output [3:0] digito2,
-  output [3:0] digito20
+  output [3:0] digito20,
+  output a_rebate,
+  output a_reflete,
+  output a_torcida
 );
   wire [11:0] bolax_temp;
   wire [11:0] bolay_temp;
@@ -571,19 +574,34 @@ module jogo (
   wire s1;
   wire s2;
   wire s3;
+  wire volta;
+  wire reflete;
   wire s4;
   wire s5;
-  wire s6;
-  wire s7;
   wire rebate;
   wire xdir;
+  wire s6;
+  wire s7;
   wire s8;
   wire s9;
   wire s10;
   wire s11;
   wire s12;
+  wire a_rebate_temp;
+  wire a_reflete_temp;
+  wire a_torcida_temp;
   wire s13;
-  wire s14;
+  wire [5:0] s14;
+  wire s15;
+  wire s16;
+  wire s17;
+  wire [2:0] s18;
+  wire s19;
+  wire s20;
+  wire s21;
+  wire [3:0] s22;
+  wire s23;
+  wire s24;
   DIG_D_FF_1bit #(
     .Default(0)
   )
@@ -592,8 +610,11 @@ module jogo (
     .C( relogio ),
     .\~Q ( s0 )
   );
+  assign s16 = ~ relogio;
+  assign s20 = ~ relogio;
+  assign s24 = ~ relogio;
   assign s1 = (vs & s0);
-  assign s8 = ~ (s0 | vs);
+  assign s6 = ~ (s0 | vs);
   raquete raquete_i1 (
     .relogio( relogio ),
     .inicializa( inicializa ),
@@ -612,13 +633,13 @@ module jogo (
   );
   ffsr ffsr_i3 (
     .S( colj1 ),
-    .R( s8 ),
-    .Q( s13 )
+    .R( s6 ),
+    .Q( s11 )
   );
   ffsr ffsr_i4 (
     .S( colj2 ),
-    .R( s8 ),
-    .Q( s14 )
+    .R( s6 ),
+    .Q( s12 )
   );
   placar placar_i5 (
     .relogio( relogio ),
@@ -640,10 +661,10 @@ module jogo (
     .inicializa( inicializa ),
     .move( s1 ),
     .centro( 12'b11110000 ),
-    .volta( s4 ),
-    .reflete( s5 ),
-    .sobe( s6 ),
-    .desce( s7 ),
+    .volta( volta ),
+    .reflete( reflete ),
+    .sobe( s4 ),
+    .desce( s5 ),
     .posicao( bolay_temp )
   );
   // horizontal
@@ -652,54 +673,114 @@ module jogo (
     .inicializa( inicializa ),
     .move( s1 ),
     .centro( 12'b101000000 ),
-    .volta( s4 ),
+    .volta( volta ),
     .reflete( rebate ),
     .sobe( 1'b0 ),
     .desce( 1'b0 ),
     .posicao( bolax_temp ),
     .dir( xdir )
   );
-  assign rebate = ((s13 & xdir) | (s14 & ~ xdir));
-  assign s2 = (s10 & s1);
-  assign s3 = (s9 & s1);
-  assign s7 = (rebate & ((s14 & desce2) | (s13 & desce1)));
-  assign s6 = (rebate & ((s14 & sobe2) | (s13 & sobe1)));
+  assign rebate = ((s11 & xdir) | (s12 & ~ xdir));
+  assign s2 = (s8 & s1);
+  assign s3 = (s7 & s1);
+  assign s5 = (rebate & ((s12 & desce2) | (s11 & desce1)));
+  assign s4 = (rebate & ((s12 & sobe2) | (s11 & sobe1)));
+  DIG_Counter_Nbit #(
+    .Bits(6)
+  )
+  DIG_Counter_Nbit_i9 (
+    .en( s13 ),
+    .C( relogio ),
+    .clr( volta ),
+    .out( s14 )
+  );
+  assign s13 = (a_torcida_temp & s6);
+  DIG_D_FF_1bit #(
+    .Default(0)
+  )
+  DIG_D_FF_1bit_i10 (
+    .D( s15 ),
+    .C( s16 ),
+    .\~Q ( a_torcida_temp )
+  );
+  DIG_Counter_Nbit #(
+    .Bits(3)
+  )
+  DIG_Counter_Nbit_i11 (
+    .en( s17 ),
+    .C( relogio ),
+    .clr( reflete ),
+    .out( s18 )
+  );
+  assign s17 = (a_reflete_temp & s6);
+  DIG_D_FF_1bit #(
+    .Default(0)
+  )
+  DIG_D_FF_1bit_i12 (
+    .D( s19 ),
+    .C( s20 ),
+    .\~Q ( a_reflete_temp )
+  );
+  DIG_Counter_Nbit #(
+    .Bits(4)
+  )
+  DIG_Counter_Nbit_i13 (
+    .en( s21 ),
+    .C( relogio ),
+    .clr( rebate ),
+    .out( s22 )
+  );
+  assign s21 = (a_rebate_temp & s6);
+  DIG_D_FF_1bit #(
+    .Default(0)
+  )
+  DIG_D_FF_1bit_i14 (
+    .D( s23 ),
+    .C( s24 ),
+    .\~Q ( a_rebate_temp )
+  );
   CompUnsigned #(
     .Bits(12)
   )
-  CompUnsigned_i9 (
+  CompUnsigned_i15 (
     .a( bolax_temp ),
+    .b( 12'b1000 ),
+    .\< ( s7 )
+  );
+  CompUnsigned #(
+    .Bits(12)
+  )
+  CompUnsigned_i16 (
+    .a( bolax_temp ),
+    .b( 12'b1001111000 ),
+    .\> ( s8 )
+  );
+  CompUnsigned #(
+    .Bits(12)
+  )
+  CompUnsigned_i17 (
+    .a( bolay_temp ),
     .b( 12'b1000 ),
     .\< ( s9 )
   );
   CompUnsigned #(
     .Bits(12)
   )
-  CompUnsigned_i10 (
-    .a( bolax_temp ),
-    .b( 12'b1001111000 ),
-    .\> ( s10 )
-  );
-  CompUnsigned #(
-    .Bits(12)
-  )
-  CompUnsigned_i11 (
-    .a( bolay_temp ),
-    .b( 12'b1000 ),
-    .\< ( s11 )
-  );
-  CompUnsigned #(
-    .Bits(12)
-  )
-  CompUnsigned_i12 (
+  CompUnsigned_i18 (
     .a( bolay_temp ),
     .b( 12'b111011000 ),
-    .\> ( s12 )
+    .\> ( s10 )
   );
-  assign s5 = (s11 | s12);
-  assign s4 = (s9 | s10);
+  assign s15 = s14[5];
+  assign s19 = s18[2];
+  assign s23 = s22[3];
+  assign reflete = (s9 | s10);
+  assign volta = (s7 | s8);
   assign bolax = bolax_temp;
   assign bolay = bolay_temp;
+  assign a_rebate = a_rebate_temp;
+  assign a_reflete = a_reflete_temp;
+  assign a_torcida = a_torcida_temp;
 endmodule
 module DIG_ROM_16X7_hex2seg (
     input [3:0] A,
@@ -1153,6 +1234,31 @@ module Mux_8x1_NBits #(
     end
 endmodule
 
+module DIG_D_FF_Nbit
+#(
+    parameter Bits = 2,
+    parameter Default = 0
+)
+(
+   input [(Bits-1):0] D,
+   input C,
+   output [(Bits-1):0] Q,
+   output [(Bits-1):0] \~Q
+);
+    reg [(Bits-1):0] state;
+
+    assign Q = state;
+    assign \~Q = ~state;
+
+    always @ (posedge C) begin
+        state <= D;
+    end
+
+    initial begin
+        state = Default;
+    end
+endmodule
+
 
 module vg (
   input clock50MHz_i,
@@ -1219,6 +1325,7 @@ module vg (
   wire [11:0] v_y_o_temp;
   wire v_de_o_temp;
   wire [15:0] a_right_o_temp;
+  wire a_clk_o_temp;
   wire [31:0] wb_dat_o_temp;
   wire wb_cyc_o_temp;
   wire s0;
@@ -1251,9 +1358,12 @@ module vg (
   wire s27;
   wire s28;
   wire s29;
-  wire [15:0] s30;
-  wire [15:0] s31;
-  wire [15:0] s32;
+  wire s30;
+  wire s31;
+  wire s32;
+  wire [14:0] s33;
+  wire [14:0] s34;
+  wire s35;
   assign led_o = 16'b0;
   assign seg_o = 64'b0;
   assign wb_dat_o_temp = 32'b0;
@@ -1307,7 +1417,10 @@ module vg (
     .digito1( s19 ),
     .digito10( s20 ),
     .digito2( s21 ),
-    .digito20( s22 )
+    .digito20( s22 ),
+    .a_rebate( s27 ),
+    .a_reflete( s28 ),
+    .a_torcida( s29 )
   );
   DIG_D_FF_1bit #(
     .Default(0)
@@ -1317,14 +1430,6 @@ module vg (
     .C( clock50MHz_i ),
     .\~Q ( v_clk_o_temp )
   );
-  assign s30[14:0] = 15'b0;
-  assign s30[15] = (s29 & p1_button3_i);
-  assign s31[13:0] = 14'b0;
-  assign s31[14] = (s29 & p1_button4_i);
-  assign s31[15] = 1'b0;
-  assign s32[12:0] = 13'b0;
-  assign s32[13] = (s29 & p1_button5_i);
-  assign s32[15:14] = 2'b0;
   assign v_vs_o = ~ s5;
   assign v_hs_o = ~ s3;
   assign v_de_o_temp = (s4 & s2);
@@ -1346,12 +1451,10 @@ module vg (
     .jogador1( s11 ),
     .bola( s12 )
   );
-  assign a_right_o_temp = (s30 | s31 | s32);
-  assign a_clk_o = v_y_o_temp[0];
-  assign s29 = v_y_o_temp[3];
+  assign a_clk_o_temp = v_y_o_temp[0];
   assign s13 = ~ v_de_o_temp;
-  assign s27 = (s12 & s11);
-  assign s28 = (s12 & s9);
+  assign s30 = (s12 & s11);
+  assign s31 = (s12 & s9);
   PriorityEncoder3 PriorityEncoder3_i5 (
     .in0( 1'b1 ),
     .in1( s7 ),
@@ -1367,7 +1470,7 @@ module vg (
     .Default(0)
   )
   DIG_D_FF_1bit_i6 (
-    .D( s27 ),
+    .D( s30 ),
     .C( v_clk_o_temp ),
     .Q( s25 )
   );
@@ -1375,7 +1478,7 @@ module vg (
     .Default(0)
   )
   DIG_D_FF_1bit_i7 (
-    .D( s28 ),
+    .D( s31 ),
     .C( v_clk_o_temp ),
     .Q( s26 )
   );
@@ -1397,12 +1500,30 @@ module vg (
   assign v_r_o = s6[7:0];
   assign v_g_o = s6[15:8];
   assign v_b_o = s6[23:16];
+  assign a_right_o_temp[12:0] = 13'b0;
+  assign a_right_o_temp[13] = ((v_y_o_temp[4] & s27) | (v_y_o_temp[2] & s28) | (s32 & s29));
+  assign a_right_o_temp[15:14] = 2'b0;
+  DIG_D_FF_Nbit #(
+    .Bits(15),
+    .Default(0)
+  )
+  DIG_D_FF_Nbit_i9 (
+    .D( s33 ),
+    .C( a_clk_o_temp ),
+    .Q( s34 )
+  );
+  assign s35 = s34[13];
+  assign s32 = ~ (s35 ^ s34[14]);
+  assign s33[0] = s32;
+  assign s33[13:1] = s34[12:0];
+  assign s33[14] = s35;
   assign v_clk_o = v_clk_o_temp;
   assign v_x_o = v_x_o_temp;
   assign v_y_o = v_y_o_temp;
   assign v_de_o = v_de_o_temp;
   assign a_left_o = a_right_o_temp;
   assign a_right_o = a_right_o_temp;
+  assign a_clk_o = a_clk_o_temp;
   assign wb_adr_o = wb_dat_o_temp;
   assign wb_dat_o = wb_dat_o_temp;
   assign wb_we_o = wb_cyc_o_temp;
