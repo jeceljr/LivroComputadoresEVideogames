@@ -1249,9 +1249,11 @@ module vg (
   wire s25;
   wire s26;
   wire s27;
-  wire [15:0] s28;
-  wire [15:0] s29;
+  wire s28;
+  wire s29;
   wire [15:0] s30;
+  wire [15:0] s31;
+  wire [15:0] s32;
   assign led_o = 16'b0;
   assign seg_o = 64'b0;
   assign wb_dat_o_temp = 32'b0;
@@ -1315,14 +1317,14 @@ module vg (
     .C( clock50MHz_i ),
     .\~Q ( v_clk_o_temp )
   );
-  assign s28[14:0] = 15'b0;
-  assign s28[15] = (s27 & p1_button3_i);
-  assign s29[9:0] = 10'b0;
-  assign s29[10] = (s27 & p1_button4_i);
-  assign s29[15:11] = 5'b0;
-  assign s30[4:0] = 5'b0;
-  assign s30[5] = (s27 & p1_button5_i);
-  assign s30[15:6] = 10'b0;
+  assign s30[14:0] = 15'b0;
+  assign s30[15] = (s29 & p1_button3_i);
+  assign s31[9:0] = 10'b0;
+  assign s31[10] = (s29 & p1_button4_i);
+  assign s31[15:11] = 5'b0;
+  assign s32[4:0] = 5'b0;
+  assign s32[5] = (s29 & p1_button5_i);
+  assign s32[15:6] = 10'b0;
   assign v_vs_o = ~ s5;
   assign v_hs_o = ~ s3;
   assign v_de_o_temp = (s4 & s2);
@@ -1344,12 +1346,12 @@ module vg (
     .jogador1( s11 ),
     .bola( s12 )
   );
-  assign a_right_o_temp = (s28 | s29 | s30);
+  assign a_right_o_temp = (s30 | s31 | s32);
   assign a_clk_o = v_y_o_temp[0];
-  assign s27 = v_y_o_temp[3];
+  assign s29 = v_y_o_temp[3];
   assign s13 = ~ v_de_o_temp;
-  assign s25 = (s12 & s11);
-  assign s26 = (s12 & s9);
+  assign s27 = (s12 & s11);
+  assign s28 = (s12 & s9);
   PriorityEncoder3 PriorityEncoder3_i5 (
     .in0( 1'b1 ),
     .in1( s7 ),
@@ -1361,10 +1363,26 @@ module vg (
     .in7( s13 ),
     .num( s14 )
   );
+  DIG_D_FF_1bit #(
+    .Default(0)
+  )
+  DIG_D_FF_1bit_i6 (
+    .D( s27 ),
+    .C( v_clk_o_temp ),
+    .Q( s25 )
+  );
+  DIG_D_FF_1bit #(
+    .Default(0)
+  )
+  DIG_D_FF_1bit_i7 (
+    .D( s28 ),
+    .C( v_clk_o_temp ),
+    .Q( s26 )
+  );
   Mux_8x1_NBits #(
     .Bits(24)
   )
-  Mux_8x1_NBits_i6 (
+  Mux_8x1_NBits_i8 (
     .sel( s14 ),
     .in_0( 24'b100000000000000 ),
     .in_1( 24'b111111111111000011111111 ),
