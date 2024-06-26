@@ -306,7 +306,7 @@ module raquete (
   )
   CompUnsigned_i1 (
     .a( y_temp ),
-    .b( 12'b101000 ),
+    .b( 12'b10010110 ),
     .\> ( s2 )
   );
   CompUnsigned #(
@@ -314,7 +314,7 @@ module raquete (
   )
   CompUnsigned_i2 (
     .a( y_temp ),
-    .b( 12'b110111000 ),
+    .b( 12'b101001010 ),
     .\< ( s3 )
   );
   DIG_Add #(
@@ -587,21 +587,25 @@ module jogo (
   wire s10;
   wire s11;
   wire s12;
+  wire s13;
   wire a_rebate_temp;
   wire a_reflete_temp;
   wire a_torcida_temp;
-  wire s13;
-  wire [5:0] s14;
-  wire s15;
+  wire s14;
+  wire [5:0] s15;
   wire s16;
   wire s17;
-  wire [2:0] s18;
-  wire s19;
+  wire s18;
+  wire [2:0] s19;
   wire s20;
   wire s21;
-  wire [3:0] s22;
-  wire s23;
+  wire s22;
+  wire [3:0] s23;
   wire s24;
+  wire s25;
+  wire s26;
+  wire s27;
+  wire s28;
   DIG_D_FF_1bit #(
     .Default(0)
   )
@@ -610,9 +614,9 @@ module jogo (
     .C( relogio ),
     .\~Q ( s0 )
   );
-  assign s16 = ~ relogio;
-  assign s20 = ~ relogio;
-  assign s24 = ~ relogio;
+  assign s17 = ~ relogio;
+  assign s21 = ~ relogio;
+  assign s25 = ~ relogio;
   assign s1 = (vs & s0);
   assign s6 = ~ (s0 | vs);
   raquete raquete_i1 (
@@ -634,12 +638,12 @@ module jogo (
   ffsr ffsr_i3 (
     .S( colj1 ),
     .R( s6 ),
-    .Q( s11 )
+    .Q( s12 )
   );
   ffsr ffsr_i4 (
     .S( colj2 ),
     .R( s6 ),
-    .Q( s12 )
+    .Q( s13 )
   );
   placar placar_i5 (
     .relogio( relogio ),
@@ -680,63 +684,63 @@ module jogo (
     .posicao( bolax_temp ),
     .dir( xdir )
   );
-  assign rebate = ((s11 & xdir) | (s12 & ~ xdir));
-  assign s2 = (s8 & s1);
-  assign s3 = (s7 & s1);
-  assign s5 = (rebate & ((s12 & desce2) | (s11 & desce1)));
-  assign s4 = (rebate & ((s12 & sobe2) | (s11 & sobe1)));
+  assign rebate = ((s11 & s28) | (s12 & xdir) | (s13 & ~ xdir));
+  assign s2 = ((s8 & ~ s28) & s1);
+  assign s3 = ((s7 & ~ s28) & s1);
+  assign s5 = (rebate & ((s13 & desce2) | (s12 & desce1)));
+  assign s4 = (rebate & ((s13 & sobe2) | (s12 & sobe1)));
   DIG_Counter_Nbit #(
     .Bits(6)
   )
   DIG_Counter_Nbit_i9 (
-    .en( s13 ),
+    .en( s14 ),
     .C( relogio ),
     .clr( volta ),
-    .out( s14 )
+    .out( s15 )
   );
-  assign s13 = (a_torcida_temp & s6);
+  assign s14 = (a_torcida_temp & s6);
   DIG_D_FF_1bit #(
     .Default(0)
   )
   DIG_D_FF_1bit_i10 (
-    .D( s15 ),
-    .C( s16 ),
+    .D( s16 ),
+    .C( s17 ),
     .\~Q ( a_torcida_temp )
   );
   DIG_Counter_Nbit #(
     .Bits(3)
   )
   DIG_Counter_Nbit_i11 (
-    .en( s17 ),
+    .en( s18 ),
     .C( relogio ),
     .clr( reflete ),
-    .out( s18 )
+    .out( s19 )
   );
-  assign s17 = (a_reflete_temp & s6);
+  assign s18 = (a_reflete_temp & s6);
   DIG_D_FF_1bit #(
     .Default(0)
   )
   DIG_D_FF_1bit_i12 (
-    .D( s19 ),
-    .C( s20 ),
+    .D( s20 ),
+    .C( s21 ),
     .\~Q ( a_reflete_temp )
   );
   DIG_Counter_Nbit #(
     .Bits(4)
   )
   DIG_Counter_Nbit_i13 (
-    .en( s21 ),
+    .en( s22 ),
     .C( relogio ),
     .clr( rebate ),
-    .out( s22 )
+    .out( s23 )
   );
-  assign s21 = (a_rebate_temp & s6);
+  assign s22 = (a_rebate_temp & s6);
   DIG_D_FF_1bit #(
     .Default(0)
   )
   DIG_D_FF_1bit_i14 (
-    .D( s23 ),
-    .C( s24 ),
+    .D( s24 ),
+    .C( s25 ),
     .\~Q ( a_rebate_temp )
   );
   CompUnsigned #(
@@ -744,7 +748,7 @@ module jogo (
   )
   CompUnsigned_i15 (
     .a( bolax_temp ),
-    .b( 12'b1000 ),
+    .b( 12'b11000 ),
     .\< ( s7 )
   );
   CompUnsigned #(
@@ -752,7 +756,7 @@ module jogo (
   )
   CompUnsigned_i16 (
     .a( bolax_temp ),
-    .b( 12'b1001111000 ),
+    .b( 12'b1001101000 ),
     .\> ( s8 )
   );
   CompUnsigned #(
@@ -771,11 +775,29 @@ module jogo (
     .b( 12'b111011000 ),
     .\> ( s10 )
   );
-  assign s15 = s14[5];
-  assign s19 = s18[2];
-  assign s23 = s22[3];
+  CompUnsigned #(
+    .Bits(12)
+  )
+  CompUnsigned_i19 (
+    .a( bolay_temp ),
+    .b( 12'b10100000 ),
+    .\< ( s26 )
+  );
+  CompUnsigned #(
+    .Bits(12)
+  )
+  CompUnsigned_i20 (
+    .a( bolay_temp ),
+    .b( 12'b101000000 ),
+    .\> ( s27 )
+  );
+  assign s16 = s15[5];
+  assign s20 = s19[2];
+  assign s24 = s23[3];
   assign reflete = (s9 | s10);
-  assign volta = (s7 | s8);
+  assign s11 = (s7 | s8);
+  assign s28 = (s26 | s27);
+  assign volta = (s11 & ~ s28);
   assign bolax = bolax_temp;
   assign bolay = bolay_temp;
   assign a_rebate = a_rebate_temp;
@@ -976,6 +998,172 @@ module digito (
   assign caracter = ((s0 & s7[0]) | (s2 & s7[1]) | (s5 & s7[2]) | (s6 & s7[3]) | (s4 & s7[4]) | (s1 & s7[5]) | (s3 & s7[6]));
 endmodule
 
+// Um time de cinco jogadores: um goleiro, dois de defesa e dois de ataque
+module \time  (
+  input [11:0] x,
+  input [11:0] y,
+  input [11:0] jy,
+  input [11:0] goleiromin,
+  input [11:0] goleiromax,
+  input [11:0] defesamin,
+  input [11:0] defesamax,
+  input [11:0] ataquemin,
+  input [11:0] ataquemax,
+  output jogador
+);
+  wire [11:0] s0;
+  wire [11:0] s1;
+  wire s2;
+  wire [11:0] s3;
+  wire [11:0] s4;
+  wire s5;
+  wire [11:0] s6;
+  wire [11:0] s7;
+  wire s8;
+  wire [11:0] s9;
+  wire [11:0] s10;
+  wire s11;
+  wire [11:0] s12;
+  wire [11:0] s13;
+  wire s14;
+  DIG_Sub #(
+    .Bits(12)
+  )
+  DIG_Sub_i0 (
+    .a( jy ),
+    .b( 12'b10010110 ),
+    .c_i( 1'b0 ),
+    .s( s0 )
+  );
+  DIG_Add #(
+    .Bits(12)
+  )
+  DIG_Add_i1 (
+    .a( jy ),
+    .b( 12'b11110 ),
+    .c_i( 1'b0 ),
+    .s( s4 )
+  );
+  DIG_Sub #(
+    .Bits(12)
+  )
+  DIG_Sub_i2 (
+    .a( jy ),
+    .b( 12'b11110 ),
+    .c_i( 1'b0 ),
+    .s( s3 )
+  );
+  DIG_Add #(
+    .Bits(12)
+  )
+  DIG_Add_i3 (
+    .a( jy ),
+    .b( 12'b10010110 ),
+    .c_i( 1'b0 ),
+    .s( s7 )
+  );
+  DIG_Sub #(
+    .Bits(12)
+  )
+  DIG_Sub_i4 (
+    .a( jy ),
+    .b( 12'b1011010 ),
+    .c_i( 1'b0 ),
+    .s( s1 )
+  );
+  DIG_Add #(
+    .Bits(12)
+  )
+  DIG_Add_i5 (
+    .a( jy ),
+    .b( 12'b1011010 ),
+    .c_i( 1'b0 ),
+    .s( s6 )
+  );
+  DIG_Sub #(
+    .Bits(12)
+  )
+  DIG_Sub_i6 (
+    .a( jy ),
+    .b( 12'b10010110 ),
+    .c_i( 1'b0 ),
+    .s( s9 )
+  );
+  DIG_Sub #(
+    .Bits(12)
+  )
+  DIG_Sub_i7 (
+    .a( jy ),
+    .b( 12'b1011010 ),
+    .c_i( 1'b0 ),
+    .s( s10 )
+  );
+  DIG_Add #(
+    .Bits(12)
+  )
+  DIG_Add_i8 (
+    .a( jy ),
+    .b( 12'b10010110 ),
+    .c_i( 1'b0 ),
+    .s( s13 )
+  );
+  DIG_Add #(
+    .Bits(12)
+  )
+  DIG_Add_i9 (
+    .a( jy ),
+    .b( 12'b1011010 ),
+    .c_i( 1'b0 ),
+    .s( s12 )
+  );
+  retangulo retangulo_i10 (
+    .x( x ),
+    .y( y ),
+    .xmin( defesamin ),
+    .xmax( defesamax ),
+    .ymin( s0 ),
+    .ymax( s1 ),
+    .r( s2 )
+  );
+  retangulo retangulo_i11 (
+    .x( x ),
+    .y( y ),
+    .xmin( goleiromin ),
+    .xmax( goleiromax ),
+    .ymin( s3 ),
+    .ymax( s4 ),
+    .r( s5 )
+  );
+  retangulo retangulo_i12 (
+    .x( x ),
+    .y( y ),
+    .xmin( defesamin ),
+    .xmax( defesamax ),
+    .ymin( s6 ),
+    .ymax( s7 ),
+    .r( s8 )
+  );
+  retangulo retangulo_i13 (
+    .x( x ),
+    .y( y ),
+    .xmin( ataquemin ),
+    .xmax( ataquemax ),
+    .ymin( s9 ),
+    .ymax( s10 ),
+    .r( s11 )
+  );
+  retangulo retangulo_i14 (
+    .x( x ),
+    .y( y ),
+    .xmin( ataquemin ),
+    .xmax( ataquemax ),
+    .ymin( s12 ),
+    .ymax( s13 ),
+    .r( s14 )
+  );
+  assign jogador = (s11 | s2 | s5 | s8 | s14);
+endmodule
+
 // Este bloco transforma o estado do jogo numa imagem visivel na tela usando
 // a informacao das coordenadas x e y do ponto que esta sendo desenhado na
 // tela neste instante.
@@ -1005,10 +1193,10 @@ module pintor (
   wire [11:0] s5;
   wire [11:0] s6;
   wire [11:0] s7;
-  wire [11:0] s8;
-  wire [11:0] s9;
-  wire [11:0] s10;
-  wire [11:0] s11;
+  wire s8;
+  wire s9;
+  wire s10;
+  wire s11;
   wire s12;
   wire s13;
   wire s14;
@@ -1076,70 +1264,90 @@ module pintor (
     .c_i( 1'b0 ),
     .s( s6 )
   );
-  DIG_Add #(
-    .Bits(12)
-  )
-  DIG_Add_i8 (
-    .a( j1y ),
-    .b( 12'b101000 ),
-    .c_i( 1'b0 ),
-    .s( s9 )
-  );
-  DIG_Sub #(
-    .Bits(12)
-  )
-  DIG_Sub_i9 (
-    .a( j1y ),
-    .b( 12'b101000 ),
-    .c_i( 1'b0 ),
-    .s( s8 )
-  );
-  DIG_Add #(
-    .Bits(12)
-  )
-  DIG_Add_i10 (
-    .a( j2y ),
-    .b( 12'b101000 ),
-    .c_i( 1'b0 ),
-    .s( s11 )
-  );
-  DIG_Sub #(
-    .Bits(12)
-  )
-  DIG_Sub_i11 (
-    .a( j2y ),
-    .b( 12'b101000 ),
-    .c_i( 1'b0 ),
-    .s( s10 )
-  );
-  retangulo retangulo_i12 (
+  retangulo retangulo_i8 (
     .x( x ),
     .y( y ),
     .xmin( 12'b100111100 ),
     .xmax( 12'b101000100 ),
     .ymin( 12'b1 ),
     .ymax( 12'b111011110 ),
-    .r( s12 )
+    .r( s8 )
+  );
+  CompUnsigned #(
+    .Bits(12)
+  )
+  CompUnsigned_i9 (
+    .a( y ),
+    .b( 12'b1000 ),
+    .\< ( s9 )
+  );
+  CompUnsigned #(
+    .Bits(12)
+  )
+  CompUnsigned_i10 (
+    .a( y ),
+    .b( 12'b111011000 ),
+    .\> ( s10 )
+  );
+  CompUnsigned #(
+    .Bits(12)
+  )
+  CompUnsigned_i11 (
+    .a( y ),
+    .b( 12'b10100000 ),
+    .\< ( s11 )
+  );
+  CompUnsigned #(
+    .Bits(12)
+  )
+  CompUnsigned_i12 (
+    .a( y ),
+    .b( 12'b101000000 ),
+    .\> ( s12 )
   );
   CompUnsigned #(
     .Bits(12)
   )
   CompUnsigned_i13 (
-    .a( y ),
-    .b( 12'b1000 ),
+    .a( x ),
+    .b( 12'b11000 ),
     .\< ( s13 )
   );
   CompUnsigned #(
     .Bits(12)
   )
   CompUnsigned_i14 (
-    .a( y ),
-    .b( 12'b111011000 ),
+    .a( x ),
+    .b( 12'b1001101000 ),
     .\> ( s14 )
+  );
+  \time  \time_i15 (
+    .x( x ),
+    .y( y ),
+    .jy( j2y ),
+    .goleiromin( 12'b1001010101 ),
+    .goleiromax( 12'b1001100000 ),
+    .defesamin( 12'b111101001 ),
+    .defesamax( 12'b111110111 ),
+    .ataquemin( 12'b100000001 ),
+    .ataquemax( 12'b100001111 ),
+    .jogador( jogador2 )
+  );
+  \time  \time_i16 (
+    .x( x ),
+    .y( y ),
+    .jy( j1y ),
+    .goleiromin( 12'b100000 ),
+    .goleiromax( 12'b101110 ),
+    .defesamin( 12'b10001001 ),
+    .defesamax( 12'b10010111 ),
+    .ataquemin( 12'b101110001 ),
+    .ataquemax( 12'b101111111 ),
+    .jogador( jogador1 )
   );
   assign placar1 = (s0 | s1);
   assign placar2 = (s2 | s3);
-  retangulo retangulo_i15 (
+  retangulo retangulo_i17 (
     .x( x ),
     .y( y ),
     .xmin( s4 ),
@@ -1148,25 +1356,7 @@ module pintor (
     .ymax( s7 ),
     .r( bola )
   );
-  retangulo retangulo_i16 (
-    .x( x ),
-    .y( y ),
-    .xmin( 12'b100000 ),
-    .xmax( 12'b101110 ),
-    .ymin( s8 ),
-    .ymax( s9 ),
-    .r( jogador1 )
-  );
-  retangulo retangulo_i17 (
-    .x( x ),
-    .y( y ),
-    .xmin( 12'b1001010010 ),
-    .xmax( 12'b1001100000 ),
-    .ymin( s10 ),
-    .ymax( s11 ),
-    .r( jogador2 )
-  );
-  assign borda = (s13 | s12 | s14);
+  assign borda = (s9 | s8 | s10 | ((s11 | s12) & (s13 | s14)));
 endmodule
 module PriorityEncoder3 (
     input in0,

@@ -398,7 +398,7 @@ video, que eh atualizado umas 60 vezes por segundo</string>
       <elementAttributes>
         <entry>
           <string>Value</string>
-          <long>8</long>
+          <long>24</long>
         </entry>
         <entry>
           <string>Bits</string>
@@ -416,7 +416,7 @@ video, que eh atualizado umas 60 vezes por segundo</string>
       <elementAttributes>
         <entry>
           <string>Value</string>
-          <long>632</long>
+          <long>616</long>
         </entry>
         <entry>
           <string>Bits</string>
@@ -542,8 +542,12 @@ video, que eh atualizado umas 60 vezes por segundo</string>
           <string>wideShape</string>
           <boolean>true</boolean>
         </entry>
+        <entry>
+          <string>Inputs</string>
+          <int>3</int>
+        </entry>
       </elementAttributes>
-      <pos x="720" y="740"/>
+      <pos x="780" y="740"/>
     </visualElement>
     <visualElement>
       <elementName>And</elementName>
@@ -573,7 +577,7 @@ video, que eh atualizado umas 60 vezes por segundo</string>
           <string>rebate</string>
         </entry>
       </elementAttributes>
-      <pos x="840" y="760"/>
+      <pos x="900" y="760"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -939,7 +943,7 @@ video, que eh atualizado umas 60 vezes por segundo</string>
           <string>volta</string>
         </entry>
       </elementAttributes>
-      <pos x="1580" y="-580"/>
+      <pos x="1740" y="-560"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -954,6 +958,130 @@ video, que eh atualizado umas 60 vezes por segundo</string>
         </entry>
       </elementAttributes>
       <pos x="820" y="1020"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Comparator</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>12</int>
+        </entry>
+      </elementAttributes>
+      <pos x="1500" y="-440"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Comparator</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>12</int>
+        </entry>
+      </elementAttributes>
+      <pos x="1500" y="-360"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Const</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Value</string>
+          <long>160</long>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>12</int>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>dec</intFormat>
+        </entry>
+      </elementAttributes>
+      <pos x="1460" y="-420"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Const</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Value</string>
+          <long>320</long>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>12</int>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>dec</intFormat>
+        </entry>
+      </elementAttributes>
+      <pos x="1460" y="-340"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Or</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
+      <pos x="1600" y="-400"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>inverterConfig</string>
+          <inverterConfig>
+            <string>In_2</string>
+          </inverterConfig>
+        </entry>
+      </elementAttributes>
+      <pos x="1600" y="-580"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
+      <pos x="1600" y="-660"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>inverterConfig</string>
+          <inverterConfig>
+            <string>In_2</string>
+          </inverterConfig>
+        </entry>
+      </elementAttributes>
+      <pos x="1540" y="-220"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>inverterConfig</string>
+          <inverterConfig>
+            <string>In_2</string>
+          </inverterConfig>
+        </entry>
+      </elementAttributes>
+      <pos x="1540" y="-120"/>
     </visualElement>
   </visualElements>
   <wires>
@@ -984,6 +1112,10 @@ video, que eh atualizado umas 60 vezes por segundo</string>
     <wire>
       <p1 x="1240" y="-260"/>
       <p2 x="1260" y="-260"/>
+    </wire>
+    <wire>
+      <p1 x="1500" y="-260"/>
+      <p2 x="1720" y="-260"/>
     </wire>
     <wire>
       <p1 x="280" y="260"/>
@@ -1030,12 +1162,12 @@ video, que eh atualizado umas 60 vezes por segundo</string>
       <p2 x="160" y="-140"/>
     </wire>
     <wire>
-      <p1 x="680" y="780"/>
-      <p2 x="720" y="780"/>
-    </wire>
-    <wire>
       <p1 x="380" y="780"/>
       <p2 x="440" y="780"/>
+    </wire>
+    <wire>
+      <p1 x="680" y="780"/>
+      <p2 x="780" y="780"/>
     </wire>
     <wire>
       <p1 x="320" y="-400"/>
@@ -1044,6 +1176,10 @@ video, que eh atualizado umas 60 vezes por segundo</string>
     <wire>
       <p1 x="1200" y="-400"/>
       <p2 x="1240" y="-400"/>
+    </wire>
+    <wire>
+      <p1 x="1560" y="-400"/>
+      <p2 x="1600" y="-400"/>
     </wire>
     <wire>
       <p1 x="960" y="400"/>
@@ -1070,6 +1206,10 @@ video, que eh atualizado umas 60 vezes por segundo</string>
       <p2 x="1080" y="-660"/>
     </wire>
     <wire>
+      <p1 x="1540" y="-660"/>
+      <p2 x="1600" y="-660"/>
+    </wire>
+    <wire>
       <p1 x="920" y="20"/>
       <p2 x="1160" y="20"/>
     </wire>
@@ -1079,7 +1219,7 @@ video, que eh atualizado umas 60 vezes por segundo</string>
     </wire>
     <wire>
       <p1 x="820" y="660"/>
-      <p2 x="1380" y="660"/>
+      <p2 x="1660" y="660"/>
     </wire>
     <wire>
       <p1 x="660" y="-280"/>
@@ -1112,6 +1252,10 @@ video, que eh atualizado umas 60 vezes por segundo</string>
     <wire>
       <p1 x="1120" y="-540"/>
       <p2 x="1140" y="-540"/>
+    </wire>
+    <wire>
+      <p1 x="1560" y="-540"/>
+      <p2 x="1580" y="-540"/>
     </wire>
     <wire>
       <p1 x="960" y="540"/>
@@ -1158,6 +1302,10 @@ video, que eh atualizado umas 60 vezes por segundo</string>
       <p2 x="1140" y="-420"/>
     </wire>
     <wire>
+      <p1 x="1460" y="-420"/>
+      <p2 x="1500" y="-420"/>
+    </wire>
+    <wire>
       <p1 x="960" y="420"/>
       <p2 x="980" y="420"/>
     </wire>
@@ -1194,16 +1342,16 @@ video, que eh atualizado umas 60 vezes por segundo</string>
       <p2 x="800" y="40"/>
     </wire>
     <wire>
-      <p1 x="800" y="680"/>
-      <p2 x="1400" y="680"/>
-    </wire>
-    <wire>
       <p1 x="500" y="680"/>
       <p2 x="540" y="680"/>
     </wire>
     <wire>
       <p1 x="280" y="680"/>
       <p2 x="440" y="680"/>
+    </wire>
+    <wire>
+      <p1 x="800" y="680"/>
+      <p2 x="1680" y="680"/>
     </wire>
     <wire>
       <p1 x="540" y="680"/>
@@ -1235,15 +1383,23 @@ video, que eh atualizado umas 60 vezes por segundo</string>
     </wire>
     <wire>
       <p1 x="1200" y="-560"/>
-      <p2 x="1400" y="-560"/>
+      <p2 x="1380" y="-560"/>
     </wire>
     <wire>
       <p1 x="740" y="-560"/>
       <p2 x="800" y="-560"/>
     </wire>
     <wire>
-      <p1 x="1400" y="-560"/>
+      <p1 x="1680" y="-560"/>
+      <p2 x="1700" y="-560"/>
+    </wire>
+    <wire>
+      <p1 x="1380" y="-560"/>
       <p2 x="1440" y="-560"/>
+    </wire>
+    <wire>
+      <p1 x="1700" y="-560"/>
+      <p2 x="1740" y="-560"/>
     </wire>
     <wire>
       <p1 x="280" y="560"/>
@@ -1270,6 +1426,10 @@ video, que eh atualizado umas 60 vezes por segundo</string>
       <p2 x="700" y="1200"/>
     </wire>
     <wire>
+      <p1 x="1500" y="-180"/>
+      <p2 x="1520" y="-180"/>
+    </wire>
+    <wire>
       <p1 x="280" y="180"/>
       <p2 x="320" y="180"/>
     </wire>
@@ -1294,6 +1454,10 @@ video, que eh atualizado umas 60 vezes por segundo</string>
       <p2 x="180" y="-440"/>
     </wire>
     <wire>
+      <p1 x="1480" y="-440"/>
+      <p2 x="1500" y="-440"/>
+    </wire>
+    <wire>
       <p1 x="180" y="-440"/>
       <p2 x="420" y="-440"/>
     </wire>
@@ -1314,12 +1478,16 @@ video, que eh atualizado umas 60 vezes por segundo</string>
       <p2 x="800" y="60"/>
     </wire>
     <wire>
-      <p1 x="680" y="700"/>
-      <p2 x="700" y="700"/>
-    </wire>
-    <wire>
       <p1 x="380" y="700"/>
       <p2 x="440" y="700"/>
+    </wire>
+    <wire>
+      <p1 x="680" y="700"/>
+      <p2 x="720" y="700"/>
+    </wire>
+    <wire>
+      <p1 x="760" y="700"/>
+      <p2 x="1800" y="700"/>
     </wire>
     <wire>
       <p1 x="740" y="-320"/>
@@ -1342,10 +1510,6 @@ video, que eh atualizado umas 60 vezes por segundo</string>
       <p2 x="780" y="960"/>
     </wire>
     <wire>
-      <p1 x="1520" y="-580"/>
-      <p2 x="1540" y="-580"/>
-    </wire>
-    <wire>
       <p1 x="640" y="-580"/>
       <p2 x="800" y="-580"/>
     </wire>
@@ -1354,8 +1518,12 @@ video, que eh atualizado umas 60 vezes por segundo</string>
       <p2 x="560" y="-580"/>
     </wire>
     <wire>
+      <p1 x="1520" y="-580"/>
+      <p2 x="1540" y="-580"/>
+    </wire>
+    <wire>
       <p1 x="1540" y="-580"/>
-      <p2 x="1580" y="-580"/>
+      <p2 x="1600" y="-580"/>
     </wire>
     <wire>
       <p1 x="580" y="580"/>
@@ -1374,6 +1542,14 @@ video, que eh atualizado umas 60 vezes por segundo</string>
       <p2 x="940" y="1220"/>
     </wire>
     <wire>
+      <p1 x="1620" y="-200"/>
+      <p2 x="1660" y="-200"/>
+    </wire>
+    <wire>
+      <p1 x="1020" y="-460"/>
+      <p2 x="1480" y="-460"/>
+    </wire>
+    <wire>
       <p1 x="580" y="460"/>
       <p2 x="640" y="460"/>
     </wire>
@@ -1388,6 +1564,10 @@ video, que eh atualizado umas 60 vezes por segundo</string>
     <wire>
       <p1 x="280" y="-80"/>
       <p2 x="620" y="-80"/>
+    </wire>
+    <wire>
+      <p1 x="1500" y="-80"/>
+      <p2 x="1520" y="-80"/>
     </wire>
     <wire>
       <p1 x="620" y="-80"/>
@@ -1408,6 +1588,10 @@ video, que eh atualizado umas 60 vezes por segundo</string>
     <wire>
       <p1 x="640" y="-340"/>
       <p2 x="800" y="-340"/>
+    </wire>
+    <wire>
+      <p1 x="1460" y="-340"/>
+      <p2 x="1500" y="-340"/>
     </wire>
     <wire>
       <p1 x="960" y="980"/>
@@ -1435,14 +1619,14 @@ video, que eh atualizado umas 60 vezes por segundo</string>
     </wire>
     <wire>
       <p1 x="1200" y="-600"/>
-      <p2 x="1380" y="-600"/>
+      <p2 x="1400" y="-600"/>
     </wire>
     <wire>
       <p1 x="200" y="-600"/>
       <p2 x="600" y="-600"/>
     </wire>
     <wire>
-      <p1 x="1380" y="-600"/>
+      <p1 x="1400" y="-600"/>
       <p2 x="1440" y="-600"/>
     </wire>
     <wire>
@@ -1456,6 +1640,10 @@ video, que eh atualizado umas 60 vezes por segundo</string>
     <wire>
       <p1 x="740" y="-220"/>
       <p2 x="1240" y="-220"/>
+    </wire>
+    <wire>
+      <p1 x="1400" y="-220"/>
+      <p2 x="1540" y="-220"/>
     </wire>
     <wire>
       <p1 x="1240" y="-220"/>
@@ -1490,6 +1678,10 @@ video, que eh atualizado umas 60 vezes por segundo</string>
       <p2 x="300" y="-100"/>
     </wire>
     <wire>
+      <p1 x="1620" y="-100"/>
+      <p2 x="1680" y="-100"/>
+    </wire>
+    <wire>
       <p1 x="600" y="-100"/>
       <p2 x="800" y="-100"/>
     </wire>
@@ -1499,7 +1691,7 @@ video, que eh atualizado umas 60 vezes por segundo</string>
     </wire>
     <wire>
       <p1 x="640" y="-740"/>
-      <p2 x="1540" y="-740"/>
+      <p2 x="1700" y="-740"/>
     </wire>
     <wire>
       <p1 x="280" y="100"/>
@@ -1510,8 +1702,8 @@ video, que eh atualizado umas 60 vezes por segundo</string>
       <p2 x="760" y="100"/>
     </wire>
     <wire>
-      <p1 x="700" y="740"/>
-      <p2 x="720" y="740"/>
+      <p1 x="760" y="740"/>
+      <p2 x="780" y="740"/>
     </wire>
     <wire>
       <p1 x="740" y="-360"/>
@@ -1524,6 +1716,14 @@ video, que eh atualizado umas 60 vezes por segundo</string>
     <wire>
       <p1 x="1200" y="-360"/>
       <p2 x="1240" y="-360"/>
+    </wire>
+    <wire>
+      <p1 x="1560" y="-360"/>
+      <p2 x="1600" y="-360"/>
+    </wire>
+    <wire>
+      <p1 x="1480" y="-360"/>
+      <p2 x="1500" y="-360"/>
     </wire>
     <wire>
       <p1 x="1000" y="1000"/>
@@ -1558,6 +1758,10 @@ video, que eh atualizado umas 60 vezes por segundo</string>
       <p2 x="1140" y="-620"/>
     </wire>
     <wire>
+      <p1 x="1560" y="-620"/>
+      <p2 x="1600" y="-620"/>
+    </wire>
+    <wire>
       <p1 x="280" y="620"/>
       <p2 x="440" y="620"/>
     </wire>
@@ -1586,6 +1790,10 @@ video, que eh atualizado umas 60 vezes por segundo</string>
       <p2 x="720" y="880"/>
     </wire>
     <wire>
+      <p1 x="1560" y="-500"/>
+      <p2 x="1720" y="-500"/>
+    </wire>
+    <wire>
       <p1 x="980" y="500"/>
       <p2 x="1020" y="500"/>
     </wire>
@@ -1606,8 +1814,12 @@ video, que eh atualizado umas 60 vezes por segundo</string>
       <p2 x="400" y="-120"/>
     </wire>
     <wire>
-      <p1 x="800" y="760"/>
-      <p2 x="840" y="760"/>
+      <p1 x="1380" y="-120"/>
+      <p2 x="1540" y="-120"/>
+    </wire>
+    <wire>
+      <p1 x="860" y="760"/>
+      <p2 x="900" y="760"/>
     </wire>
     <wire>
       <p1 x="500" y="760"/>
@@ -1622,6 +1834,10 @@ video, que eh atualizado umas 60 vezes por segundo</string>
       <p2 x="1180" y="760"/>
     </wire>
     <wire>
+      <p1 x="720" y="760"/>
+      <p2 x="780" y="760"/>
+    </wire>
+    <wire>
       <p1 x="540" y="760"/>
       <p2 x="600" y="760"/>
     </wire>
@@ -1632,6 +1848,10 @@ video, que eh atualizado umas 60 vezes por segundo</string>
     <wire>
       <p1 x="1320" y="-380"/>
       <p2 x="1360" y="-380"/>
+    </wire>
+    <wire>
+      <p1 x="1680" y="-380"/>
+      <p2 x="1720" y="-380"/>
     </wire>
     <wire>
       <p1 x="980" y="380"/>
@@ -1674,6 +1894,10 @@ video, que eh atualizado umas 60 vezes por segundo</string>
       <p2 x="940" y="-640"/>
     </wire>
     <wire>
+      <p1 x="1680" y="-640"/>
+      <p2 x="1800" y="-640"/>
+    </wire>
+    <wire>
       <p1 x="640" y="40"/>
       <p2 x="640" y="300"/>
     </wire>
@@ -1686,7 +1910,7 @@ video, que eh atualizado umas 60 vezes por segundo</string>
       <p2 x="640" y="-340"/>
     </wire>
     <wire>
-      <p1 x="1540" y="-740"/>
+      <p1 x="1540" y="-660"/>
       <p2 x="1540" y="-580"/>
     </wire>
     <wire>
@@ -1700,6 +1924,10 @@ video, que eh atualizado umas 60 vezes por segundo</string>
     <wire>
       <p1 x="1160" y="820"/>
       <p2 x="1160" y="1100"/>
+    </wire>
+    <wire>
+      <p1 x="1800" y="-640"/>
+      <p2 x="1800" y="700"/>
     </wire>
     <wire>
       <p1 x="780" y="60"/>
@@ -1716,6 +1944,10 @@ video, que eh atualizado umas 60 vezes por segundo</string>
     <wire>
       <p1 x="400" y="1000"/>
       <p2 x="400" y="1060"/>
+    </wire>
+    <wire>
+      <p1 x="1680" y="-100"/>
+      <p2 x="1680" y="680"/>
     </wire>
     <wire>
       <p1 x="660" y="-480"/>
@@ -1744,6 +1976,14 @@ video, que eh atualizado umas 60 vezes por segundo</string>
     <wire>
       <p1 x="280" y="960"/>
       <p2 x="280" y="1160"/>
+    </wire>
+    <wire>
+      <p1 x="1560" y="-620"/>
+      <p2 x="1560" y="-540"/>
+    </wire>
+    <wire>
+      <p1 x="1560" y="-540"/>
+      <p2 x="1560" y="-500"/>
     </wire>
     <wire>
       <p1 x="1180" y="240"/>
@@ -1784,6 +2024,10 @@ video, que eh atualizado umas 60 vezes por segundo</string>
     <wire>
       <p1 x="420" y="940"/>
       <p2 x="420" y="980"/>
+    </wire>
+    <wire>
+      <p1 x="1700" y="-740"/>
+      <p2 x="1700" y="-560"/>
     </wire>
     <wire>
       <p1 x="680" y="1140"/>
@@ -1854,8 +2098,12 @@ video, que eh atualizado umas 60 vezes por segundo</string>
       <p2 x="440" y="-560"/>
     </wire>
     <wire>
-      <p1 x="700" y="700"/>
-      <p2 x="700" y="740"/>
+      <p1 x="1720" y="-500"/>
+      <p2 x="1720" y="-380"/>
+    </wire>
+    <wire>
+      <p1 x="1720" y="-380"/>
+      <p2 x="1720" y="-260"/>
     </wire>
     <wire>
       <p1 x="60" y="-140"/>
@@ -1906,6 +2154,14 @@ video, que eh atualizado umas 60 vezes por segundo</string>
       <p2 x="580" y="20"/>
     </wire>
     <wire>
+      <p1 x="1480" y="-460"/>
+      <p2 x="1480" y="-440"/>
+    </wire>
+    <wire>
+      <p1 x="1480" y="-440"/>
+      <p2 x="1480" y="-360"/>
+    </wire>
+    <wire>
       <p1 x="200" y="-280"/>
       <p2 x="200" y="-260"/>
     </wire>
@@ -1944,6 +2200,10 @@ video, que eh atualizado umas 60 vezes por segundo</string>
     <wire>
       <p1 x="720" y="880"/>
       <p2 x="720" y="960"/>
+    </wire>
+    <wire>
+      <p1 x="720" y="700"/>
+      <p2 x="720" y="760"/>
     </wire>
     <wire>
       <p1 x="340" y="-660"/>
@@ -2010,6 +2270,14 @@ video, que eh atualizado umas 60 vezes por segundo</string>
       <p2 x="860" y="1060"/>
     </wire>
     <wire>
+      <p1 x="1500" y="-260"/>
+      <p2 x="1500" y="-180"/>
+    </wire>
+    <wire>
+      <p1 x="1500" y="-180"/>
+      <p2 x="1500" y="-80"/>
+    </wire>
+    <wire>
       <p1 x="480" y="-280"/>
       <p2 x="480" y="-260"/>
     </wire>
@@ -2038,8 +2306,8 @@ video, que eh atualizado umas 60 vezes por segundo</string>
       <p2 x="740" y="540"/>
     </wire>
     <wire>
-      <p1 x="1380" y="-600"/>
-      <p2 x="1380" y="660"/>
+      <p1 x="1380" y="-560"/>
+      <p2 x="1380" y="-120"/>
     </wire>
     <wire>
       <p1 x="360" y="240"/>
@@ -2086,20 +2354,28 @@ video, que eh atualizado umas 60 vezes por segundo</string>
       <p2 x="760" y="400"/>
     </wire>
     <wire>
+      <p1 x="760" y="700"/>
+      <p2 x="760" y="740"/>
+    </wire>
+    <wire>
       <p1 x="760" y="400"/>
       <p2 x="760" y="520"/>
     </wire>
     <wire>
-      <p1 x="1400" y="-560"/>
-      <p2 x="1400" y="680"/>
+      <p1 x="1400" y="-600"/>
+      <p2 x="1400" y="-220"/>
     </wire>
     <wire>
-      <p1 x="1020" y="-440"/>
-      <p2 x="1020" y="-420"/>
+      <p1 x="1020" y="-460"/>
+      <p2 x="1020" y="-440"/>
     </wire>
     <wire>
       <p1 x="1020" y="-360"/>
       <p2 x="1020" y="-100"/>
+    </wire>
+    <wire>
+      <p1 x="1020" y="-440"/>
+      <p2 x="1020" y="-420"/>
     </wire>
     <wire>
       <p1 x="1020" y="-420"/>
@@ -2120,6 +2396,10 @@ video, que eh atualizado umas 60 vezes por segundo</string>
     <wire>
       <p1 x="380" y="860"/>
       <p2 x="380" y="880"/>
+    </wire>
+    <wire>
+      <p1 x="1660" y="-200"/>
+      <p2 x="1660" y="660"/>
     </wire>
   </wires>
   <measurementOrdering/>

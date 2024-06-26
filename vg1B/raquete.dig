@@ -131,15 +131,15 @@
       <elementAttributes>
         <entry>
           <string>Value</string>
-          <long>40</long>
-        </entry>
-        <entry>
-          <string>intFormat</string>
-          <intFormat>dec</intFormat>
+          <long>150</long>
         </entry>
         <entry>
           <string>Bits</string>
           <int>12</int>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>dec</intFormat>
         </entry>
       </elementAttributes>
       <pos x="1000" y="320"/>
@@ -149,7 +149,7 @@
       <elementAttributes>
         <entry>
           <string>Value</string>
-          <long>440</long>
+          <long>330</long>
         </entry>
         <entry>
           <string>Bits</string>
@@ -220,12 +220,12 @@
       <elementName>Multiplexer</elementName>
       <elementAttributes>
         <entry>
-          <string>Bits</string>
-          <int>12</int>
-        </entry>
-        <entry>
           <string>Selector Bits</string>
           <int>2</int>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>12</int>
         </entry>
       </elementAttributes>
       <pos x="820" y="20"/>
