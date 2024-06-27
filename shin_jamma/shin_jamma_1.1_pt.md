@@ -90,7 +90,7 @@ Transport Module) no módulo "sj_placa".
 
 ## Mapa do Teclado
 
-![mapa do teclado](mapa_teclado.svg)
+![mapa do teclado](mapa_teclado.svg.png)
 
 Em versões futuras deste padrão será possível escolher que teclas representam os botões do console
 em placas sem joysticks, mas por enquanto foi adotado o mapeamento padrão do emulador snes9x como
