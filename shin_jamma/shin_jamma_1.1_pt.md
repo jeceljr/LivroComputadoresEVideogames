@@ -87,3 +87,12 @@ dmi_req_valid_i, dmi_req_ready_o, dmi_req_address_i[6:0], dmi_req_data_i[31:0], 
 Implementa os sinais sugeridos no padrão de teste externo RISC-V 1.0-STABLE A.3
 com um módulo DM (Debug Module) dentro do bloco "vg" e um módulo DTM (Debug
 Transport Module) no módulo "sj_placa".
+
+## Mapa do Teclado
+
+![mapa do teclado](mapa_teclado.svg)
+
+Em versões futuras deste padrão será possível escolher que teclas representam os botões do console
+em placas sem joysticks, mas por enquanto foi adotado o mapeamento padrão do emulador snes9x como
+definido em seu arquivo snes9x.conf.default
+
