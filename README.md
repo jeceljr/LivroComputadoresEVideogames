@@ -12,5 +12,5 @@ ferramenta [Digital](https://github.com/hneemann/Digital), que
 é um editor de esquemáticos e simulador de circuitos digitais
 escrito na linguagem Java.
 
-[Página](http://professor.ufabc.edu.br/~mario.gazziro/project30.html)
+[Página](http://laob.pesquisa.ufabc.edu.br/project30.html)
 com link para cá e outras informações relacionadas.
