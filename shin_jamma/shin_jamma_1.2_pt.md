@@ -1,4 +1,4 @@
-# SHIN_JAMMA padrão de placa FPGA versão 1.1
+# SHIN_JAMMA padrão de placa FPGA versão 1.2
 
 ## Arquivos
 
@@ -78,7 +78,9 @@ vazia.
 
 ### Sistema de Arquivos
 
-A ser definido. Uma possibilidade é expor os comands do cartão SD. Outra é implementar uma interface de mais alto nível como dos microcomputadores de 8 bits com unidades de disquetes inteligentes (Atari e Commodore).
+O acesso ao sistema de arquivos local (normalmente um cartão SD usando uma interface SPI e com formato FAT) usa o mesmo protocolo que o [GDB usa para acesso remoto a arquivos](https://sourceware.org/gdb/current/onlinedocs/gdb.html/Host-I_002fO-Packets.html). O "$vFile:" no início do pacote e o checksum "#xx" no final podem ser omitidos.
+
+Os pacotes "open", "close", "pread", "pwrite", "fstat", "stat", "unlink", "readlink" são implementados. O pacote "setfs" só funciona com parâmetro "0".
 
 ## Interface de Depuração
 
@@ -87,6 +89,8 @@ dmi_req_valid_i, dmi_req_ready_o, dmi_req_address_i[6:0], dmi_req_data_i[31:0], 
 Implementa os sinais sugeridos no padrão de teste externo RISC-V 1.0-STABLE A.3
 com um módulo DM (Debug Module) dentro do bloco "vg" e um módulo DTM (Debug
 Transport Module) no módulo "sj_placa".
+
+A interface com o computador de desenvolvimento usa o [protocolo serial do GDB](https://sourceware.org/gdb/current/onlinedocs/gdb.html/Remote-Protocol.html), implementando o conjunto mínimo de pacotes "g", "G", "m", "M", "c", e "s". Os pacotes de registradores individuais "p" e "P" também são implementados bem como os de "host i/o" "vFile:" para acesso ao sistema de arquivos local.
 
 ## Mapa do Teclado
 
