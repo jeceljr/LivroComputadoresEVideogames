@@ -1,0 +1,3 @@
+[submodule "shin_jamma"]
+	path = shin_jamma
+	url = git@github.com:jeceljr/shin_jamma.git
