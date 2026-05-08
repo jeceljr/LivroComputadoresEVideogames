@@ -8,7 +8,7 @@
     </entry>
     <entry>
       <string>preloadProgramFile</string>
-      <file>/home/jecel/fpga/pong-fpga/video/VGA-8x16.hex</file>
+      <file>VGA-8x16.hex</file>
     </entry>
   </attributes>
   <visualElements>
